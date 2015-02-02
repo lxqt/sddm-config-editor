@@ -2,7 +2,7 @@ import QtQuick 2.2
 import QtQuick.Layouts 1.1
 import QtQuick.Controls 1.3
 
-import SDDMConfigEditor 0.1
+import SDDMConfigurationEditor 0.1
 
 ApplicationWindow {
   title: 'SDDM Configuration Editor'
