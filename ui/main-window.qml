@@ -22,6 +22,8 @@ ApplicationWindow {
 
         ColumnLayout {
           spacing: 10
+          anchors.left: parent.left
+          anchors.right: parent.right
 
           Repeater {
             Layout.fillWidth: true
