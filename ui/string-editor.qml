@@ -8,6 +8,7 @@ RowLayout {
   }
   TextField {
     placeholderText: default_value
+    text: typeof(value) === 'undefined' ? '' : value
     Layout.fillWidth: true
   }
 }

@@ -4,5 +4,15 @@ import QtQuick.Layouts 1.1
 
 CheckBox {
   text: label
-  checkedState: default_value ? Qt.PartiallyChecked : Qt.Unchecked
+  checkedState: {
+    if(typeof(value) === 'undefined') {
+      if(default_value) {
+        return Qt.PartiallyChecked;
+      } else {
+        return Qt.Unchecked
+      }
+    } else {
+      return value;
+    }
+  }
 }
