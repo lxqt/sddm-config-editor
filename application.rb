@@ -1,3 +1,4 @@
+require 'qml'
 require_relative 'version'
 require_relative 'model'
 
@@ -17,5 +18,9 @@ module SDDMConfigurationEditor
       QML.application.quit
     end
   end
+end
+
+QML.run do |app|
+  app.load_path 'ui/main-window.qml'
 end
 
