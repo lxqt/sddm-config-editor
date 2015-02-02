@@ -27,7 +27,7 @@ ApplicationWindow {
 
           Repeater {
             Layout.fillWidth: true
-            model: entries
+            model: settings
 
             delegate: ColumnLayout {
               Loader {

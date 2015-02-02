@@ -6,13 +6,13 @@ module SDDMConfigurationEditor
     def self.create
       config_schema = ExampleConfigParser.new.parse(File.read('data/example.conf'))
 
-      model = QML::Data::ArrayModel.new(:section, :entries)
+      model = QML::Data::ArrayModel.new(:section, :settings)
       config_schema.each do |section|
-        section_name, entries = section.values_at(:section, :entries)
-        entries_model = QML::Data::ArrayModel.new(*entries.first.keys)
-        entries_model.replace(entries)
+        section_name, settings = section.values_at(:section, :settings)
+        settings_model = QML::Data::ArrayModel.new(*settings.first.keys)
+        settings_model.replace(settings)
         model << {section: section_name,
-                  entries: entries_model}
+                  settings: settings_model}
       end
       model
     end

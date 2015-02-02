@@ -38,9 +38,9 @@ class ExampleConfigTransform < Parslet::Transform
 
   rule(comment: subtree(:_comment),
        name: simple(:_name),
-       entries: subtree(:_entries)) {
+       settings: subtree(:_settings)) {
     {section: _name.str,
-     entries: _entries}
+     settings: _settings}
   }
 
   rule(sections: subtree(:_sections)) {

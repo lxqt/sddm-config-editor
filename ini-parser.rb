@@ -9,10 +9,10 @@ class INIParser < Parslet::Parser
   rule(:section) {
     comment.as(:comment) >>
     open_bracket >> delimited(close_bracket, :name) >> linebreak.repeat >>
-    entry.repeat.as(:entries)
+    setting.repeat.as(:settings)
   }
 
-  rule(:entry) {
+  rule(:setting) {
     comment.as(:comment) >>
     delimited(equal, :key, except(open_bracket | pound)) >>
     delimited(linebreak, :value) >>
