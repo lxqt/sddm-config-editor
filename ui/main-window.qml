@@ -51,9 +51,30 @@ ApplicationWindow {
       Layout.fillWidth: true
       Layout.fillHeight: true
 
-      TextArea {
-        text: ''
+      ColumnLayout {
         anchors.fill: parent
+        TextArea {
+          text: configEditor.config_text
+          Layout.fillWidth: true
+          Layout.fillHeight: true
+        }
+        RowLayout {
+          Layout.alignment: Qt.AlignRight
+          Button {
+            iconName: 'text-x-generic'
+            text: 'Generate'
+            onClicked: configEditor.generate()
+          }
+          Button {
+            iconName: 'document-revert'
+            text: 'Load'
+            onClicked: configEditor.load()
+          }
+          Button {
+            iconName: 'document-save'
+            text: 'Save...'
+          }
+        }
       }
     }
   }

@@ -8,6 +8,19 @@ module SDDMConfigurationEditor
     register_to_qml
 
     property :model, Model.create
+
+    def self.load_config
+      File.read('/etc/sddm.conf')
+    end
+    property :config_text, load_config
+
+    def load
+      self.config_text = self.class.load_config
+    end
+
+    def generate
+      self.config_text = Model.generate_file(model)
+    end
   end
 
   class ApplicationController
