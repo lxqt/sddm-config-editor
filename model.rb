@@ -6,14 +6,16 @@ module SDDMConfigurationEditor
     def self.create
       config_schema = ExampleConfigParser.new.parse(File.read('data/example.conf'))
 
-      model = QML::Data::ArrayModel.new(:section, :settings)
+      # Replace the plain arrays of settings with ArrayModels
       config_schema.each do |section|
-        section_name, settings = section.values_at(:section, :settings)
+        settings = section[:settings]
         settings_model = QML::Data::ArrayModel.new(*settings.first.keys)
         settings_model.replace(settings)
-        model << {section: section_name,
-                  settings: settings_model}
+        section[:settings] = settings_model
       end
+
+      model = QML::Data::ArrayModel.new(:section, :settings)
+      model.replace(config_schema)
       model
     end
   end
