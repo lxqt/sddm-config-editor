@@ -21,7 +21,7 @@ class ExampleConfigTransform < Parslet::Transform
       when /\d+/
         [:integer, Integer(value)]
       when /^true|false$/
-        [:boolean, value == true]
+        [:boolean, value == 'true']
       when %r(^/[^:]+:)
         [:path_list, value]
       when %r(^/)
