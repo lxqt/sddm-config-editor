@@ -46,7 +46,7 @@ module SDDMConfigurationEditor
     end
 
     def isDefined
-      value || value == false
+      value && value != '' || value == false
     end
   end
 
