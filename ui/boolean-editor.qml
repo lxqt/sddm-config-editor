@@ -21,7 +21,12 @@ RowLayout {
   Binding {
     target: modelData
     property: 'value'
-    value: checkBox.checkedState === Qt.Checked
-    when: checkBox.checkedState !== Qt.PartiallyChecked
+    value: {
+      switch(checkBox.checkedState) {
+        case(Qt.Checked): true; break;
+        case(Qt.Unchecked): false; break;
+        default: ''
+      }
+    }
   }
 }
