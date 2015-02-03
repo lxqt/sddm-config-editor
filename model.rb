@@ -4,6 +4,27 @@ require_relative 'config-parser'
 require_relative 'version'
 
 module SDDMConfigurationEditor
+  class Section
+    include QML::Access
+    register_to_qml
+
+    ATTRIBUTES = [:section, :settings]
+    ATTRIBUTES.each do |attribute|
+      property(attribute) {instance_variable_get "@#{attribute}"}
+    end
+
+    def initialize(hash)
+      populate(hash)
+      super()
+    end
+
+    def populate(hash)
+      ATTRIBUTES.each do |attribute|
+        self.instance_variable_set "@#{attribute}", hash[attribute]
+      end
+    end
+  end
+
   class Setting
     include QML::Access
     register_to_qml
@@ -14,8 +35,8 @@ module SDDMConfigurationEditor
     end
 
     def initialize(hash)
-      super()
       populate(hash)
+      super()
     end
 
     def populate(hash)
@@ -65,6 +86,12 @@ module SDDMConfigurationEditor
           Setting.new(setting_data)
         end
       end
+
+      config_schema.map! do |section_data|
+        Section.new(section_data)
+      end
+
+      config_schema
     end
 
     def self.generate_file(model)
