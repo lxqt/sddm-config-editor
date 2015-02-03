@@ -10,10 +10,11 @@ module SDDMConfigurationEditor
 
     ATTRIBUTES = [:key, :value, :default_value, :label, :type, :description]
     ATTRIBUTES.each do |attribute|
-      property(attribute) {instance_variable_get "@{attribute}"}
+      property(attribute) {instance_variable_get "@#{attribute}"}
     end
 
     def initialize(hash)
+      super()
       populate(hash)
     end
 
