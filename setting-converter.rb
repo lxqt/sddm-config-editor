@@ -1,5 +1,5 @@
 module SDDMConfigurationEditor
-  module Setting
+  class Setting
     def self.normalize_string(value)
       if value.respond_to? :str
         value = value.str

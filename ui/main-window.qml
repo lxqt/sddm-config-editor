@@ -18,7 +18,7 @@ ApplicationWindow {
         Layout.fillHeight: true
         Layout.fillWidth: true
 
-        title: section
+        title: modelData.section
 
         ColumnLayout {
           spacing: 10
@@ -27,18 +27,18 @@ ApplicationWindow {
 
           Repeater {
             Layout.fillWidth: true
-            model: settings
+            model: modelData.settings
 
             delegate: ColumnLayout {
               Loader {
-                source: type + '-editor.qml'
+                source: modelData.type + '-editor.qml'
                 Layout.fillWidth: true
               }
 
               Text {
                 font.italic: true
-                text: description
-                visible: description.length > 0
+                text: modelData.description
+                visible: modelData.description.length > 0
               }
             }
           }

@@ -7,7 +7,7 @@ module SDDMConfigurationEditor
     include QML::Access
     register_to_qml
 
-    property :model, Model.create
+    property(:model) {Model.create}
 
     def self.load_config
       File.read('/etc/sddm.conf')

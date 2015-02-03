@@ -7,8 +7,10 @@ RowLayout {
     text: label
   }
   TextField {
-    placeholderText: default_value
-    text: typeof(value) === 'undefined' ? '' : value
+    placeholderText: modelData.default_value
+    text: modelData.isDefined() ? value : ''
     Layout.fillWidth: true
+    onEditingFinished: modelData.value = text
   }
 }
+
