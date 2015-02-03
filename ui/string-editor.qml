@@ -7,10 +7,15 @@ RowLayout {
     text: modelData.label
   }
   TextField {
+    id: textField
     placeholderText: modelData.default_value
     text: modelData.isDefined() ? modelData.value : ''
     Layout.fillWidth: true
-    onEditingFinished: modelData.value = text
+  }
+  Binding {
+    target: modelData
+    property: 'value'
+    value: textField.text
   }
 }
 
