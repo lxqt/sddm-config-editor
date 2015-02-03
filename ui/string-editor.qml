@@ -4,11 +4,11 @@ import QtQuick.Controls 1.1
 
 RowLayout {
   Label {
-    text: label
+    text: modelData.label
   }
   TextField {
     placeholderText: modelData.default_value
-    text: modelData.isDefined() ? value : ''
+    text: modelData.isDefined() ? modelData.value : ''
     Layout.fillWidth: true
     onEditingFinished: modelData.value = text
   }

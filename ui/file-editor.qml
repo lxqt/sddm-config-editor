@@ -9,7 +9,7 @@ RowLayout {
     Layout.fillWidth: true
   }
   Button {
-    iconName: type == 'directory' ? 'folder' : 'application-x-executable'
+    iconName: modelData.type == 'directory' ? 'folder' : 'application-x-executable'
     Layout.alignment: Qt.AlignRight
     onClicked: {
       fileDialog.open()
@@ -18,9 +18,9 @@ RowLayout {
 
   FileDialog {
     id: fileDialog
-    title: "Please choose a " + type
-    folder: default_value || '/'
-    selectFolder: type == 'directory'
+    title: "Please choose a " + modelData.type
+    folder: modelData.default_value || '/'
+    selectFolder: modelData.type == 'directory'
     onAccepted: {
       console.log("You chose: " + fileDialog.fileUrls)
     }

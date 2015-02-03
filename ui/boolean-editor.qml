@@ -3,16 +3,16 @@ import QtQuick.Controls 1.1
 import QtQuick.Layouts 1.1
 
 CheckBox {
-  text: label
+  text: modelData.label
   checkedState: {
-    if(typeof(value) === 'undefined') {
-      if(default_value) {
+    if(typeof(modelData.value) === 'undefined') {
+      if(modelData.default_value) {
         return Qt.PartiallyChecked;
       } else {
         return Qt.Unchecked
       }
     } else {
-      return value;
+      return modelData.value;
     }
   }
 }
