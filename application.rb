@@ -23,7 +23,7 @@ module SDDMConfigurationEditor
       file = Tempfile.new('sddm-config-editor')
       file.write config_text
       file.close
-      spawn 'kdesu', 'cp', file.path, '/etc/sddm.conf'
+      spawn 'pkexec', 'cp', file.path, '/etc/sddm.conf'
     end
 
     def generate
