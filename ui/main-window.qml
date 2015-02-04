@@ -71,7 +71,7 @@ ApplicationWindow {
             onClicked: configEditor.load()
           }
           Button {
-            iconName: 'document-save'
+            iconName: 'run-build-install-root'
             text: 'Save...'
             onClicked: configEditor.save()
           }
