@@ -65,21 +65,25 @@ ApplicationWindow {
             iconName: 'applications-system'
             text: 'Parse'
             onClicked: configEditor.parse(configTextArea.text)
+            tooltip: 'Parse the configuration in the text area and update the displayed settings'
           }
           Button {
             iconName: 'text-x-generic'
             text: 'Generate'
             onClicked: configEditor.generate()
+            tooltip: 'Generate a configuration file from the settings and put it in the text area'
           }
           Button {
             iconName: 'document-revert'
             text: 'Load'
             onClicked: configEditor.load()
+            tooltip: 'Load the configuation file on the system into the text area and update the displayed settins'
           }
           Button {
             iconName: 'run-build-install-root'
             text: 'Save...'
             onClicked: configEditor.save()
+            tooltip: 'Save the configuration file in the text area to the system'
           }
         }
       }
