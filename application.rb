@@ -8,9 +8,12 @@ module SDDMConfigurationEditor
     include QML::Access
     register_to_qml
 
-    model = Model.create
-    Model.merge_values(model)
-    property(:model, model)
+    property(:model) {@configuration.model}
+
+    def initialize
+      @configuration = Configuration.new
+      super
+    end
 
     def self.load_config
       File.read('/etc/sddm.conf')
@@ -30,11 +33,11 @@ module SDDMConfigurationEditor
     end
 
     def parse(text)
-      Model.merge_values(model, text)
+      @configuration.parse_values(text)
     end
 
     def generate
-      self.config_text = Model.generate_file(model)
+      self.config_text = @configuration.generate_file()
     end
   end
 
