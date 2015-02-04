@@ -6,24 +6,28 @@ require_relative 'model/configuration'
 require 'tempfile'
 
 module SDDMConfigurationEditor
+  CODE_PATH = File.dirname(__FILE__)
+  CONFIG_PATH = '/etc/sddm.conf'
+
   class ConfigEditorController
     include QML::Access
     register_to_qml
 
     property(:model) {@configuration.model}
+    property(:config_text) {read_config}
 
     def initialize
-      @configuration = Configuration.new
+      @configuration = Configuration.new(File.read("#{CODE_PATH}/data/example.conf"),
+                                         read_config)
       super
     end
 
-    def self.load_config
-      File.read('/etc/sddm.conf')
+    def read_config
+      File.read(CONFIG_PATH)
     end
-    property :config_text, load_config
 
     def load
-      self.config_text = self.class.load_config
+      self.config_text = read_config
       parse(config_text)
     end
 
@@ -31,7 +35,7 @@ module SDDMConfigurationEditor
       file = Tempfile.new('sddm-config-editor')
       file.write config_text
       file.close
-      spawn 'pkexec', 'cp', file.path, '/etc/sddm.conf'
+      spawn 'pkexec', 'cp', file.path, CONFIG_PATH
     end
 
     def parse(text)
@@ -45,6 +49,6 @@ module SDDMConfigurationEditor
 end
 
 QML.run do |app|
-  app.load_path 'ui/main-window.qml'
+  app.load_path "#{SDDMConfigurationEditor::CODE_PATH}/ui/main-window.qml"
 end
 

@@ -15,13 +15,13 @@ module SDDMConfigurationEditor
     end
 
     attr_reader :model
-    def initialize
-      parse_schema
-      parse_values
+    def initialize(example_config_file, config_file)
+      parse_schema(example_config_file)
+      parse_values(config_file)
     end
 
-    def parse_schema(config_example_file=File.read('data/example.conf'))
-      @model = ExampleConfigurationFileParser.new.parse(File.read('data/example.conf'))
+    def parse_schema(example_config_file)
+      @model = ExampleConfigurationFileParser.new.parse(example_config_file)
 
       # Replace the setting hashes with Setting objects
       @model.each do |section|
@@ -37,8 +37,8 @@ module SDDMConfigurationEditor
       @model
     end
 
-    def parse_values(config_values_file=File.read('/etc/sddm.conf'))
-      config_values = ConfigurationFileParser.new.parse(config_values_file)
+    def parse_values(config_file)
+      config_values = ConfigurationFileParser.new.parse(config_file)
       # Merge values into schema
       find_counterparts(@model, config_values, :section) do
         |(schema_section, value_section)|
