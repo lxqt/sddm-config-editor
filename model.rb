@@ -18,6 +18,10 @@ module SDDMConfigurationEditor
       super()
     end
 
+    def [](name)
+      send(name)
+    end
+
     def populate(hash)
       ATTRIBUTES.each do |attribute|
         self.instance_variable_set "@#{attribute}", hash[attribute]
@@ -37,6 +41,10 @@ module SDDMConfigurationEditor
     def initialize(hash)
       populate(hash)
       super()
+    end
+
+    def [](name)
+      send(name)
     end
 
     def populate(hash)
@@ -60,24 +68,8 @@ module SDDMConfigurationEditor
       end
     end
 
-    def self.create
+    def self.create()
       config_schema = ExampleConfigParser.new.parse(File.read('data/example.conf'))
-      config_values = ConfigParser.new.parse(File.read('/etc/sddm.conf'))
-
-      # Merge values into schema
-      find_counterparts(config_schema, config_values, :section) do
-        |(schema_section, value_section)|
-        if value_section
-          value_settings = value_section[:settings]
-          schema_settings = schema_section[:settings]
-          find_counterparts(schema_settings, value_settings, :key) do
-            |schema_setting, value_setting|
-            if value_setting
-              schema_setting[:value] = value_setting[:value]
-            end
-          end
-        end
-      end
 
       # Replace the setting hashes with Setting objects
       config_schema.each do |section|
@@ -90,7 +82,25 @@ module SDDMConfigurationEditor
       config_schema.map! do |section_data|
         Section.new(section_data)
       end
+      config_schema
+    end
 
+    def self.merge_values(config_schema, config_values_file=File.read('/etc/sddm.conf'))
+      config_values = ConfigParser.new.parse(config_values_file)
+      # Merge values into schema
+      find_counterparts(config_schema, config_values, :section) do
+        |(schema_section, value_section)|
+        if value_section
+          value_settings = value_section[:settings]
+          schema_settings = schema_section.settings
+          find_counterparts(schema_settings, value_settings, :key) do
+            |schema_setting, value_setting|
+            if value_setting
+              schema_setting.value = value_setting[:value]
+            end
+          end
+        end
+      end
       config_schema
     end
 

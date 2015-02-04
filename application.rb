@@ -8,7 +8,9 @@ module SDDMConfigurationEditor
     include QML::Access
     register_to_qml
 
-    property(:model, Model.create)
+    model = Model.create
+    Model.merge_values(model)
+    property(:model, model)
 
     def self.load_config
       File.read('/etc/sddm.conf')
@@ -24,6 +26,10 @@ module SDDMConfigurationEditor
       file.write config_text
       file.close
       spawn 'pkexec', 'cp', file.path, '/etc/sddm.conf'
+    end
+
+    def parse(text)
+      Model.merge_values(model, text)
     end
 
     def generate

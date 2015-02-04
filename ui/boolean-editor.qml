@@ -14,7 +14,7 @@ RowLayout {
           return Qt.Unchecked
         }
       } else {
-        return modelData.value;
+        return modelData.value === 'true';
       }
     }
   }
