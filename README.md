@@ -4,7 +4,7 @@ SDDM Configuration Editor
 
 ## Description
 
-This is to be a graphical editor for [Simple Desktop Display Manager](https://github.com/sddm/sddm)'s configuration file. It does not work yet.
+This is to be a graphical editor for [Simple Desktop Display Manager](https://github.com/sddm/sddm)'s configuration file. It is in early alpha.
 
 ## Dependencies
 
