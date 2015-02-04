@@ -19,6 +19,7 @@ module SDDMConfigurationEditor
 
     def load
       self.config_text = self.class.load_config
+      parse(config_text)
     end
 
     def save
