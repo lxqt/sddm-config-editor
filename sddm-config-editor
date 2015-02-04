@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require 'qml'
 require_relative 'version'
 require_relative 'model/configuration'
