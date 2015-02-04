@@ -44,10 +44,5 @@ module SDDMConfigurationEditor
       @transform.apply @parser.parse(text, *options)
     end
   end
-
-  if __FILE__ == $0
-    require 'pp'
-    pp ConfigurationFileParser.new.parse(File.read('/etc/sddm.conf'))
-  end
 end
 

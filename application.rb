@@ -40,15 +40,6 @@ module SDDMConfigurationEditor
       self.config_text = @configuration.generate_file()
     end
   end
-
-  class ApplicationController
-    include QML::Access
-    register_to_qml
-
-    def quit
-      QML.application.quit
-    end
-  end
 end
 
 QML.run do |app|
