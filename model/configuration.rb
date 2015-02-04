@@ -1,63 +1,9 @@
-require 'qml'
-require_relative 'example-config-parser'
-require_relative 'config-parser'
-require_relative 'version'
+require_relative '../parser/example-configuration-file'
+require_relative '../parser/configuration-file'
+require_relative 'section'
+require_relative 'setting'
 
 module SDDMConfigurationEditor
-  class Section
-    include QML::Access
-    register_to_qml
-
-    ATTRIBUTES = [:section, :settings]
-    ATTRIBUTES.each do |attribute|
-      property(attribute) {instance_variable_get "@#{attribute}"}
-    end
-
-    def initialize(hash)
-      populate(hash)
-      super()
-    end
-
-    def [](name)
-      send(name)
-    end
-
-    def populate(hash)
-      ATTRIBUTES.each do |attribute|
-        self.instance_variable_set "@#{attribute}", hash[attribute]
-      end
-    end
-  end
-
-  class Setting
-    include QML::Access
-    register_to_qml
-
-    ATTRIBUTES = [:key, :value, :default_value, :label, :type, :description]
-    ATTRIBUTES.each do |attribute|
-      property(attribute) {instance_variable_get "@#{attribute}"}
-    end
-
-    def initialize(hash)
-      populate(hash)
-      super()
-    end
-
-    def [](name)
-      send(name)
-    end
-
-    def populate(hash)
-      ATTRIBUTES.each do |attribute|
-        self.instance_variable_set "@#{attribute}", hash[attribute]
-      end
-    end
-
-    def isDefined
-      value && value != '' || value == false
-    end
-  end
-
   class Configuration
     def find_counterparts(array1, array2, key, &block)
       array1.each do |item1|
@@ -75,7 +21,7 @@ module SDDMConfigurationEditor
     end
 
     def parse_schema(config_example_file=File.read('data/example.conf'))
-      @model = ExampleConfigParser.new.parse(File.read('data/example.conf'))
+      @model = ExampleConfigurationFileParser.new.parse(File.read('data/example.conf'))
 
       # Replace the setting hashes with Setting objects
       @model.each do |section|
@@ -92,7 +38,7 @@ module SDDMConfigurationEditor
     end
 
     def parse_values(config_values_file=File.read('/etc/sddm.conf'))
-      config_values = ConfigParser.new.parse(config_values_file)
+      config_values = ConfigurationFileParser.new.parse(config_values_file)
       # Merge values into schema
       find_counterparts(@model, config_values, :section) do
         |(schema_section, value_section)|

@@ -1,6 +1,6 @@
 require 'qml'
 require_relative 'version'
-require_relative 'model'
+require_relative 'model/configuration'
 require 'tempfile'
 
 module SDDMConfigurationEditor

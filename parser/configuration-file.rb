@@ -1,9 +1,9 @@
 require 'parslet'
-require_relative 'ini-parser'
-require_relative 'setting-converter'
+require_relative 'ini-file'
+require_relative 'setting-conversion'
 
 module SDDMConfigurationEditor
-  class ConfigTransform < Parslet::Transform
+  class ConfigurationFileTransform < Parslet::Transform
     rule(line: simple(:line)) {
       line.str.strip
     }
@@ -15,7 +15,7 @@ module SDDMConfigurationEditor
     rule(comment: simple(:_comment),
          key: simple(:_key),
          value: subtree(:_value)) {
-      (_, key, value) = Setting.convert(_key, _value)
+      (_, key, value) = SettingConversion.convert(_key, _value)
       {comment: _comment,
        key: key,
        value: value}
@@ -34,10 +34,10 @@ module SDDMConfigurationEditor
     }
   end
 
-  class ConfigParser
+  class ConfigurationFileParser
     def initialize
       @parser = INIParser.new
-      @transform = ConfigTransform.new
+      @transform = ConfigurationFileTransform.new
     end
 
     def parse(text, *options)
@@ -47,7 +47,7 @@ module SDDMConfigurationEditor
 
   if __FILE__ == $0
     require 'pp'
-    pp ConfigParser.new.parse(File.read('/etc/sddm.conf'))
+    pp ConfigurationFileParser.new.parse(File.read('/etc/sddm.conf'))
   end
 end
 

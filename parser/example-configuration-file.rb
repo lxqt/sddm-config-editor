@@ -1,9 +1,9 @@
 require 'parslet'
-require_relative 'ini-parser'
-require_relative 'setting-converter'
+require_relative 'ini-file'
+require_relative 'setting-conversion'
 
 module SDDMConfigurationEditor
-  class ExampleConfigTransform < Parslet::Transform
+  class ExampleConfigurationFileTransform < Parslet::Transform
     rule(line: simple(:line)) {
       line.str.strip
     }
@@ -17,7 +17,7 @@ module SDDMConfigurationEditor
          value: subtree(:_value)) {
       key = _key.str.strip
       value = _value == [] ? '' : _value.str.strip
-      (type, key, default) = Setting.convert(key, value)
+      (type, key, default) = SettingConversion.convert(key, value)
       {label: _comment && _comment.first || '',
        description: _comment && _comment[1] && _comment[1..-1].join("\n") || '',
        key: key, type: type, default_value: default}
@@ -35,10 +35,10 @@ module SDDMConfigurationEditor
     }
   end
 
-  class ExampleConfigParser
+  class ExampleConfigurationFileParser
     def initialize
       @parser = INIParser.new
-      @transform = ExampleConfigTransform.new
+      @transform = ExampleConfigurationFileTransform.new
     end
 
     def parse(text, *options)
