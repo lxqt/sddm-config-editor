@@ -3,6 +3,7 @@ import QtQuick.Layouts 1.1
 import QtQuick.Controls 1.1
 
 RowLayout {
+  property TextField textField: textField
   Label {
     text: modelData.label
   }

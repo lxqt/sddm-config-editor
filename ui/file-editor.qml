@@ -5,6 +5,7 @@ import QtQuick.Dialogs 1.2
 
 RowLayout {
   Loader {
+    id: loader
     source: 'string-editor.qml'
     Layout.fillWidth: true
   }
@@ -19,13 +20,10 @@ RowLayout {
   FileDialog {
     id: fileDialog
     title: "Please choose a " + modelData.type
-    folder: modelData.default_value || '/'
+    folder: 'file://' + (modelData.default_value || '/')
     selectFolder: modelData.type == 'directory'
     onAccepted: {
-      console.log("You chose: " + fileDialog.fileUrls)
-    }
-    onRejected: {
-      console.log("Canceled")
+      loader.item.textField.text = fileDialog.fileUrl.toString().replace(/^file:\/\//, '')
     }
   }
 }
