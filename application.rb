@@ -1,6 +1,7 @@
 require 'qml'
 require_relative 'version'
 require_relative 'model'
+require 'tempfile'
 
 module SDDMConfigurationEditor
   class ConfigEditorController
@@ -16,6 +17,13 @@ module SDDMConfigurationEditor
 
     def load
       self.config_text = self.class.load_config
+    end
+
+    def save
+      file = Tempfile.new('sddm-config-editor')
+      file.write config_text
+      file.close
+      spawn 'kdesu', 'cp', file.path, '/etc/sddm.conf'
     end
 
     def generate

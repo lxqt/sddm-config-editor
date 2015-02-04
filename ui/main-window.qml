@@ -73,6 +73,7 @@ ApplicationWindow {
           Button {
             iconName: 'document-save'
             text: 'Save...'
+            onClicked: configEditor.save()
           }
         }
       }
