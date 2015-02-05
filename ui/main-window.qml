@@ -2,17 +2,21 @@ import QtQuick 2.2
 import QtQuick.Layouts 1.1
 import QtQuick.Controls 1.3
 
+import 'ubuntu-ui-extras'
 import SDDMConfigurationEditor 0.1
 
 ApplicationWindow {
   title: 'SDDM Configuration Editor'
   visible: true
+  width: 1200
+  height: 700
 
-  GridLayout {
-    rows: 2
-    flow: GridLayout.TopToBottom
-
-    Repeater {
+  RowLayout {
+    anchors.fill: parent
+    ColumnFlow {
+      columns: 2
+      Layout.fillWidth: true
+      Layout.fillHeight: true
       model: configEditor.model
       delegate: GroupBox {
         Layout.fillHeight: true
@@ -48,7 +52,6 @@ ApplicationWindow {
 
     GroupBox {
       title: 'Configuration file'
-      Layout.fillWidth: true
       Layout.fillHeight: true
 
       ColumnLayout {

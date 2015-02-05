@@ -1,0 +1,3 @@
+[submodule "ui/ubuntu-ui-extras"]
+	path = ui/ubuntu-ui-extras
+	url = https://github.com/iBeliever/ubuntu-ui-extras.git
