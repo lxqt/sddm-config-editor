@@ -68,17 +68,12 @@ ApplicationWindow {
           TextArea {
             id: configTextArea
             text: configEditor.config_text
+            readOnly: true
             Layout.fillWidth: true
             Layout.fillHeight: true
           }
           RowLayout {
             Layout.alignment: Qt.AlignRight
-            Button {
-              iconName: 'applications-system'
-              text: 'Parse'
-              onClicked: configEditor.parse(configTextArea.text)
-              tooltip: 'Parse the configuration in the text area and update the displayed settings'
-            }
             Button {
               iconName: 'text-x-generic'
               text: 'Generate'
