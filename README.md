@@ -4,7 +4,9 @@ SDDM Configuration Editor
 
 ## Description
 
-This is to be a graphical editor for [Simple Desktop Display Manager](https://github.com/sddm/sddm)'s configuration file. It is in early alpha.
+This is to be a graphical editor for [Simple Desktop Display
+Manager](https://github.com/sddm/sddm)'s configuration file. It is in
+early alpha.
 
 ## Dependencies
 
@@ -18,13 +20,18 @@ This program requires
 
 Run `sddm-configuration-editor`.
 
-The program displays available settings with current values in its GUI. Gray (placeholder) text and partially checked checkboxes indicate default values. There are buttons to generate a new configuration file from the values set in the GUI, load settings from the system configuration file, and save settings to it.
+The program displays available settings with current values in its
+GUI. Gray (placeholder) text and partially checked checkboxes indicate
+default values. There are buttons to generate a new configuration
+file from the values set in the GUI, load settings from the system
+configuration file, and save settings to it.
 
 ![screenshot](http://i.imgur.com/6itn8qx.png)
 
 ## Features / TODO
 
-- [x] Display descriptions and default values of settings from `sddm --example-config` output
+- [x] Display descriptions and default values of settings from
+  `sddm --example-config` output
 - [x] Display settings in system configuration file
 - [x] Generate configuration file from settings in the GUI
 - [x] Save generated configuration file to the system
