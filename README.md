@@ -32,6 +32,5 @@ The program displays available settings with current values in its GUI. Gray (pl
 - [ ] Handle enum setting types
 - [ ] Launch theme preview
 - [ ] Validate configuration file
-- [ ] Automatically generate configuration file when GUI settings change
-- [ ] Automatically parse when configuration file in text area is edited
+- [X] Automatically generate configuration file when GUI settings change
 - [ ] Provide install scripts

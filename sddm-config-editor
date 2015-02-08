@@ -13,7 +13,16 @@ module SDDMConfigurationEditor
     include QML::Access
     register_to_qml
 
-    property(:model) {@configuration.model}
+    property(:model) do
+      @configuration.model.tap do |model|
+        # On any setting value change, update generated configuration file
+        model.each do |section|
+          section.settings.each do |setting|
+            setting.value_changed.connect {generate}
+          end
+        end
+      end
+    end
     property(:config_text) {read_config}
 
     def initialize
@@ -46,9 +55,9 @@ module SDDMConfigurationEditor
       self.config_text = @configuration.generate_file()
     end
   end
+
 end
 
 QML.run do |app|
   app.load_path "#{SDDMConfigurationEditor::CODE_PATH}/ui/main-window.qml"
 end
-

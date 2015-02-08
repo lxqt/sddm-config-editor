@@ -75,12 +75,6 @@ ApplicationWindow {
           RowLayout {
             Layout.alignment: Qt.AlignRight
             Button {
-              iconName: 'text-x-generic'
-              text: 'Generate'
-              onClicked: configEditor.generate()
-              tooltip: 'Generate a configuration file from the settings and put it in the text area'
-            }
-            Button {
               iconName: 'document-revert'
               text: 'Load'
               onClicked: configEditor.load()
