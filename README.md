@@ -21,11 +21,11 @@ This program requires
 Run `sddm-configuration-editor`.
 
 The program displays available settings with current values in its
-GUI. Gray (placeholder) text and partially checked checkboxes indicate
-default values. There are buttons to load settings from the system
-configuration file, and save settings to it.
+GUI. Gray (placeholder) text and gray checkboxes indicate default
+values. There are buttons to load settings from the system configuration
+file, and save settings to it.
 
-![screenshot](http://i.imgur.com/SrsVkYL.png)
+![screenshot](http://i.imgur.com/APeBFwA.png)
 
 ## Features / TODO
 
