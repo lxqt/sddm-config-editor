@@ -27,13 +27,17 @@ ApplicationWindow {
   property variant columnItems: layout(configEditor.model, columns)
 
   RowLayout {
+    anchors.margins: 10
     anchors.fill: parent
+    spacing: 10
 
     Repeater {
       id: settingColumns
       model: columnItems.slice(0, columns - 1)
 
       ColumnLayout {
+        spacing: 10
+
         Repeater {
           model: modelData
 
@@ -47,6 +51,8 @@ ApplicationWindow {
     }
 
     ColumnLayout {
+      spacing: 10
+
       Repeater {
         model: columnItems[columns - 1]
 
@@ -57,35 +63,34 @@ ApplicationWindow {
         }
       }
 
-      GroupBox {
-        id: configFile
-        title: 'Configuration file'
-        Layout.fillWidth: true
+      ColumnLayout {
         Layout.fillHeight: true
-
-        ColumnLayout {
-          anchors.fill: parent
-          TextArea {
-            id: configTextArea
-            text: configEditor.config_text
-            readOnly: true
+        Label {
+          text: 'Configuration file'
+          Layout.alignment: Qt.AlignCenter
+        }
+        TextArea {
+          id: configTextArea
+          text: configEditor.config_text
+          readOnly: true
+          Layout.fillWidth: true
+          Layout.fillHeight: true
+        }
+        RowLayout {
+          Layout.alignment: Qt.AlignRight
+          Button {
             Layout.fillWidth: true
-            Layout.fillHeight: true
+            iconName: 'document-revert'
+            text: 'Load'
+            onClicked: configEditor.load()
+            tooltip: 'Load the configuation file on the system into the text area and update the displayed settins'
           }
-          RowLayout {
-            Layout.alignment: Qt.AlignRight
-            Button {
-              iconName: 'document-revert'
-              text: 'Load'
-              onClicked: configEditor.load()
-              tooltip: 'Load the configuation file on the system into the text area and update the displayed settins'
-            }
-            Button {
-              iconName: 'run-build-install-root'
-              text: 'Save...'
-              onClicked: configEditor.save()
-              tooltip: 'Save the configuration file in the text area to the system'
-            }
+          Button {
+            Layout.fillWidth: true
+            iconName: 'run-build-install-root'
+            text: 'Save...'
+            onClicked: configEditor.save()
+            tooltip: 'Save the configuration file in the text area to the system'
           }
         }
       }

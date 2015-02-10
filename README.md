@@ -25,7 +25,7 @@ GUI. Gray (placeholder) text and partially checked checkboxes indicate
 default values. There are buttons to load settings from the system
 configuration file, and save settings to it.
 
-![screenshot](http://i.imgur.com/6itn8qx.png)
+![screenshot](http://i.imgur.com/SrsVkYL.png)
 
 ## Features / TODO
 
