@@ -3,18 +3,19 @@ import QtQuick.Controls 1.1
 import QtQuick.Layouts 1.1
 
 RowLayout {
+  function checkedStateFromBoolean(value) {
+    if(value) {
+      return Qt.Checked;
+    } else {
+      return Qt.Unchecked;
+    }
+  }
   // Display a disabled checkbox indicating the default value
   CheckBox {
     anchors.left: parent.left
     id: defaultCheckBox
     enabled: false
-    checkedState: {
-      if(modelData.default_value) {
-        return Qt.Checked;
-      } else {
-        return Qt.Unchecked;
-      }
-    }
+    checkedState: checkedStateFromBoolean(modelData.defaultValue)
     // Set opacity to 0 when the setting is not following default
     opacity: {
       if(checkBox.checkedState === Qt.PartiallyChecked) {
@@ -35,7 +36,7 @@ RowLayout {
       if(!modelData.isDefined()) {
         return Qt.PartiallyChecked;
       } else {
-        return modelData.value === 'true';
+        return checkedStateFromBoolean(modelData.value);
       }
     }
     // Set opacity to 0 when the setting is following default
