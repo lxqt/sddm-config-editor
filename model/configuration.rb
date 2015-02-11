@@ -1,4 +1,3 @@
-require_relative '../parser/example-configuration-file'
 require_relative '../parser/configuration-file'
 require_relative 'section'
 require_relative 'setting'
@@ -8,20 +7,20 @@ module SDDMConfigurationEditor
     def find_counterparts(array1, array2, key, &block)
       array1.each do |item1|
         found = array2.find do |item2|
-          item2[key] == item1[key]
+          item2[key].to_sym == item1[key].to_sym
         end
         yield [item1, found]
       end
     end
 
     attr_reader :model
-    def initialize(example_config_file, config_file)
-      parse_schema(example_config_file)
+    def initialize(schema, config_file)
+      load_schema(schema)
       parse_values(config_file)
     end
 
-    def parse_schema(example_config_file)
-      @model = ExampleConfigurationFileParser.new.parse(example_config_file)
+    def load_schema(schema)
+      @model = schema
 
       # Replace the setting hashes with Setting objects
       @model.each do |section|

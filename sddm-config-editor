@@ -4,6 +4,7 @@ require 'qml'
 require_relative 'version'
 require_relative 'model/configuration'
 require 'tempfile'
+require 'json'
 
 module SDDMConfigurationEditor
   CODE_PATH = File.dirname(__FILE__)
@@ -26,8 +27,10 @@ module SDDMConfigurationEditor
     property(:config_text) {read_config}
 
     def initialize
-      @configuration = Configuration.new(File.read("#{CODE_PATH}/data/example.conf"),
-                                         read_config)
+      @configuration =
+        Configuration.new(JSON.parse(File.read("#{CODE_PATH}/data/config-schema.json"),
+                                     symbolize_names: true),
+        read_config)
       super
     end
 

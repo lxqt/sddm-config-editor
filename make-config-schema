@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+require 'json'
+require_relative 'parser/example-configuration-file'
+
+example_config_file = File.read 'data/example.conf'
+schema = SDDMConfigurationEditor::ExampleConfigurationFileParser.new.parse(example_config_file)
+File.open 'data/config-schema.json', 'w' do |file|
+  file.write JSON.pretty_generate(schema)
+end
+
