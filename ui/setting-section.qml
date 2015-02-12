@@ -3,7 +3,7 @@ import QtQuick.Controls 1.3
 import QtQuick.Layouts 1.1
 
 GroupBox {
-  title: modelData.section
+  title: modelData.name
 
   ColumnLayout {
     spacing: 10

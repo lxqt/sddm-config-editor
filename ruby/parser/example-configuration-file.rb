@@ -26,7 +26,7 @@ module SDDMConfigurationEditor
     rule(comment: subtree(:_comment),
          name: simple(:_name),
          settings: subtree(:_settings)) {
-      {section: _name.str,
+      {name: _name.str,
        settings: _settings}
     }
 

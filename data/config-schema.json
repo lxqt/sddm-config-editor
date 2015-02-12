@@ -1,6 +1,6 @@
 [
   {
-    "section": "Autologin",
+    "name": "Autologin",
     "settings": [
       {
         "label": "Autologin again on session exit",
@@ -26,7 +26,7 @@
     ]
   },
   {
-    "section": "General",
+    "name": "General",
     "settings": [
       {
         "label": "Halt command",
@@ -52,7 +52,7 @@
     ]
   },
   {
-    "section": "Theme",
+    "name": "Theme",
     "settings": [
       {
         "label": "Current theme name",
@@ -85,7 +85,7 @@
     ]
   },
   {
-    "section": "Users",
+    "name": "Users",
     "settings": [
       {
         "label": "Default $PATH",
@@ -139,7 +139,7 @@
     ]
   },
   {
-    "section": "XDisplay",
+    "name": "XDisplay",
     "settings": [
       {
         "label": "Xsetup script path",

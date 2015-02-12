@@ -39,7 +39,7 @@ module SDDMConfigurationEditor
     def parse_values(config_file)
       config_values = ConfigurationFileParser.new.parse(config_file)
       # Merge values into schema
-      find_counterparts(@model, config_values, :section) do
+      find_counterparts(@model, config_values, :name) do
         |(schema_section, value_section)|
         if value_section
           value_settings = value_section[:settings]
@@ -63,7 +63,7 @@ module SDDMConfigurationEditor
             setting.isDefined
           end
           unless changed_settings.empty?
-            content << "[#{section.section}]\n"
+            content << "[#{section.name}]\n"
             changed_settings.each do |setting|
               content << "#{setting.key}=#{setting.value}\n"
             end
