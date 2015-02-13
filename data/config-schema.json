@@ -7,7 +7,7 @@
         "description": "",
         "key": "Relogin",
         "type": "boolean",
-        "default_value": false
+        "default_value": "false"
       },
       {
         "label": "Autologin session",
@@ -113,28 +113,28 @@
         "description": "",
         "key": "MaximumUid",
         "type": "integer",
-        "default_value": 65000
+        "default_value": "65000"
       },
       {
         "label": "Minimum user id for displayed users",
         "description": "",
         "key": "MinimumUid",
         "type": "integer",
-        "default_value": 1000
+        "default_value": "1000"
       },
       {
         "label": "Remember the session of the last successfully logged in user",
         "description": "",
         "key": "RememberLastSession",
         "type": "boolean",
-        "default_value": true
+        "default_value": "true"
       },
       {
         "label": "Remember the last successfully logged in user",
         "description": "",
         "key": "RememberLastUser",
         "type": "boolean",
-        "default_value": true
+        "default_value": "true"
       }
     ]
   },
@@ -153,7 +153,7 @@
         "description": "The lowest virtual terminal number that will be used.",
         "key": "MinimumVT",
         "type": "integer",
-        "default_value": 1
+        "default_value": "1"
       },
       {
         "label": "X server path",

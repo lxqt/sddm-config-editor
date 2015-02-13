@@ -4,7 +4,8 @@ import QtQuick.Layouts 1.1
 
 RowLayout {
   function checkedStateFromBoolean(value) {
-    if(value) {
+    console.log(value);
+    if(value === 'true') {
       return Qt.Checked;
     } else {
       return Qt.Unchecked;

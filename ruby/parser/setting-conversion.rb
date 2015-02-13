@@ -15,9 +15,9 @@ module SDDMConfigurationEditor
 
       case value
       when /\d+/
-        [:integer, key, Integer(value)]
+        [:integer, key, value]
       when /^true|false$/
-        [:boolean, key, value == 'true']
+        [:boolean, key, value]
       when %r(^/[^:]+:)
         [:path_list, key, value]
       when %r(^/)
