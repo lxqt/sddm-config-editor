@@ -11,6 +11,7 @@
 class Configuration : public QObject
 {
   Q_OBJECT
+  Q_PROPERTY(QList<QObject*> sections MEMBER m_sections NOTIFY sectionsChanged)
   Q_PROPERTY(QObject* controller MEMBER m_controller)
 
   public:
@@ -19,7 +20,9 @@ class Configuration : public QObject
     QString toFile() const;
     void loadSchema(const QJsonArray&);
     void loadSettings(QSettings&);
-    Section* sectionWithName(const QString&);
+
+  signals:
+    void sectionsChanged();
 
   private:
     QList<QObject*> m_sections;

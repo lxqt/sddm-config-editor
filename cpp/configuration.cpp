@@ -6,6 +6,7 @@
 #include <QSettings>
 #include <QDebug>
 #include "section.h"
+#include "controller.h"
 
 Configuration::Configuration(QObject* parent) : QObject(parent),
   m_sections()
@@ -26,37 +27,20 @@ void Configuration::loadSchema(const QJsonArray& schema)
   }
 }
 
-void Configuration::loadSettings(QSettings& settings)
-{
-  foreach (const QString &name, settings.childGroups()) {
-    settings.beginGroup(name);
-    Section* section = sectionWithName(name);
-    if(!section) {
-      qDebug() << "Section [" << name << "] not in schema";
-    } else {
-
-      foreach (const QString &key, settings.childKeys()) {
-        Setting* setting = section->settingWithKey(key);
-        if(!setting) {
-          qDebug() << "Setting [" << name << "]/" << key << " not in schema";
-        } else {
-          setting->setProperty("value", settings.value(key).toString());
-        }
-      }
-    }
-
-    settings.endGroup();
-  }
-}
-
-Section* Configuration::sectionWithName(const QString& name)
+void Configuration::loadSettings(QSettings& qsettings)
 {
   foreach(QObject* section, m_sections) {
-    if(section->property("name") == name) {
-      return reinterpret_cast<Section*>(section);
+    QString name = section->property("name").toString();
+    QList<QObject*> settings = reinterpret_cast<Section*>(section)->property("settings")
+                              .value<QList<QObject*> >();
+    foreach(QObject* setting, settings) {
+      QString key = setting->property("key").toString();
+      QVariant value = qsettings.value(QString("%1/%2").arg(name, key),
+                                       QVariant::fromValue(QString("")));
+      reinterpret_cast<Setting*>(setting)->setProperty("value", value);
     }
   }
-  return 0;
+  emit sectionsChanged();
 }
 
 QList<QObject*> Configuration::model()

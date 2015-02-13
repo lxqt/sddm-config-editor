@@ -19,6 +19,7 @@ Controller::Controller(QObject* parent) : QObject(parent),
 
   QSettings settings("/etc/sddm.conf", QSettings::IniFormat);
   m_configuration->loadSettings(settings);
+  connect(m_configuration, SIGNAL(sectionsChanged()), this, SIGNAL(modelChanged()));
 
   m_model = m_configuration->model();
   m_configText = m_configuration->toFile();

@@ -9,6 +9,7 @@ Setting::Setting(QObject* parent) : QObject(parent)
     QObject* controller = parent->property("controller").value<QObject*>();
     if(controller) {
       QObject::connect(this, SIGNAL(valueChanged()), controller, SLOT(generate()));
+      QObject::connect(this, SIGNAL(valueChanged()), controller, SIGNAL(modelChanged()));
     }
   }
 }

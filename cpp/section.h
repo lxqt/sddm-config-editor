@@ -18,7 +18,6 @@ class Section : public QObject
   public:
     Section(QObject* parent = 0);
     static Section* fromJson(const QJsonObject&, QObject* parent=0);
-    Setting* settingWithKey(const QString&);
     QString toString() const;
 
   signals:

@@ -33,16 +33,6 @@ Section* Section::fromJson(const QJsonObject& object, QObject* parent)
   return section;
 }
 
-Setting* Section::settingWithKey(const QString& key)
-{
-  foreach(QObject* setting, m_settings) {
-    if(setting->property("key") == key) {
-      return reinterpret_cast<Setting*>(setting);
-    }
-  }
-  return 0;
-}
-
 QString Section::toString() const
 {
   QString header = QString("[%1]\n").arg(m_name);
