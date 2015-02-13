@@ -20,7 +20,7 @@ module SDDMConfigurationEditor
       (type, key, default) = SettingConversion.convert(key, value)
       {label: _comment && _comment.first || '',
        description: _comment && _comment[1] && _comment[1..-1].join("\n") || '',
-       key: key, type: type, default_value: default}
+       key: key, type: type, defaultValue: default}
     }
 
     rule(comment: subtree(:_comment),

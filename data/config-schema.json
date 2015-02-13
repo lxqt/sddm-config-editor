@@ -7,21 +7,21 @@
         "description": "",
         "key": "Relogin",
         "type": "boolean",
-        "default_value": "false"
+        "defaultValue": "false"
       },
       {
         "label": "Autologin session",
         "description": "",
         "key": "Session",
         "type": "string",
-        "default_value": ""
+        "defaultValue": ""
       },
       {
         "label": "Autologin user",
         "description": "",
         "key": "User",
         "type": "string",
-        "default_value": ""
+        "defaultValue": ""
       }
     ]
   },
@@ -33,21 +33,21 @@
         "description": "",
         "key": "HaltCommand",
         "type": "string",
-        "default_value": ""
+        "defaultValue": ""
       },
       {
         "label": "Initial NumLock state",
         "description": "Valid values: on|off|none\nIf property is set to none, numlock won't be changed",
         "key": "Numlock",
         "type": "string",
-        "default_value": "none"
+        "defaultValue": "none"
       },
       {
         "label": "Reboot command",
         "description": "",
         "key": "RebootCommand",
         "type": "string",
-        "default_value": ""
+        "defaultValue": ""
       }
     ]
   },
@@ -59,28 +59,28 @@
         "description": "",
         "key": "Current",
         "type": "string",
-        "default_value": "archlinux"
+        "defaultValue": "archlinux"
       },
       {
         "label": "Cursor theme",
         "description": "",
         "key": "CursorTheme",
         "type": "string",
-        "default_value": "breeze"
+        "defaultValue": "breeze"
       },
       {
         "label": "Face icon directory",
         "description": "The files should be in username.face.icon format",
         "key": "FacesDir",
         "type": "directory",
-        "default_value": "/usr/share/sddm/faces"
+        "defaultValue": "/usr/share/sddm/faces"
       },
       {
         "label": "Theme directory path",
         "description": "",
         "key": "ThemeDir",
         "type": "directory",
-        "default_value": "/usr/share/sddm/themes"
+        "defaultValue": "/usr/share/sddm/themes"
       }
     ]
   },
@@ -92,49 +92,49 @@
         "description": "",
         "key": "DefaultPath",
         "type": "path_list",
-        "default_value": "/bin:/usr/bin:/usr/local/bin"
+        "defaultValue": "/bin:/usr/bin:/usr/local/bin"
       },
       {
         "label": "Hidden shells",
         "description": "Users with these shells as their default won't be listed",
         "key": "HideShells",
         "type": "string",
-        "default_value": ""
+        "defaultValue": ""
       },
       {
         "label": "Hidden users",
         "description": "",
         "key": "HideUsers",
         "type": "string",
-        "default_value": ""
+        "defaultValue": ""
       },
       {
         "label": "Maximum user id for displayed users",
         "description": "",
         "key": "MaximumUid",
         "type": "integer",
-        "default_value": "65000"
+        "defaultValue": "65000"
       },
       {
         "label": "Minimum user id for displayed users",
         "description": "",
         "key": "MinimumUid",
         "type": "integer",
-        "default_value": "1000"
+        "defaultValue": "1000"
       },
       {
         "label": "Remember the session of the last successfully logged in user",
         "description": "",
         "key": "RememberLastSession",
         "type": "boolean",
-        "default_value": "true"
+        "defaultValue": "true"
       },
       {
         "label": "Remember the last successfully logged in user",
         "description": "",
         "key": "RememberLastUser",
         "type": "boolean",
-        "default_value": "true"
+        "defaultValue": "true"
       }
     ]
   },
@@ -146,42 +146,42 @@
         "description": "A script to execute when starting the display server",
         "key": "DisplayCommand",
         "type": "file",
-        "default_value": "/usr/share/sddm/scripts/Xsetup"
+        "defaultValue": "/usr/share/sddm/scripts/Xsetup"
       },
       {
         "label": "Minimum VT",
         "description": "The lowest virtual terminal number that will be used.",
         "key": "MinimumVT",
         "type": "integer",
-        "default_value": "1"
+        "defaultValue": "1"
       },
       {
         "label": "X server path",
         "description": "",
         "key": "ServerPath",
         "type": "directory",
-        "default_value": "/usr/bin/X"
+        "defaultValue": "/usr/bin/X"
       },
       {
         "label": "Xsession script path",
         "description": "A script to execute when starting the desktop session",
         "key": "SessionCommand",
         "type": "file",
-        "default_value": "/usr/share/sddm/scripts/Xsession"
+        "defaultValue": "/usr/share/sddm/scripts/Xsession"
       },
       {
         "label": "Session description directory",
         "description": "",
         "key": "SessionDir",
         "type": "directory",
-        "default_value": "/usr/share/xsessions"
+        "defaultValue": "/usr/share/xsessions"
       },
       {
         "label": "Xauth path",
         "description": "",
         "key": "XauthPath",
         "type": "directory",
-        "default_value": "/usr/bin/xauth"
+        "defaultValue": "/usr/bin/xauth"
       }
     ]
   }

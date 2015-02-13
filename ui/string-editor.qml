@@ -9,7 +9,7 @@ RowLayout {
   }
   TextField {
     id: textField
-    placeholderText: modelData.default_value
+    placeholderText: modelData.defaultValue
     text: modelData.isDefined() ? modelData.value : ''
     Layout.fillWidth: true
   }

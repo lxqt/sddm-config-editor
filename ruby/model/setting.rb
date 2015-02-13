@@ -6,7 +6,7 @@ module SDDMConfigurationEditor
     include QML::Access
     register_to_qml
 
-    ATTRIBUTES = [:key, :value, :default_value, :label, :type, :description]
+    ATTRIBUTES = [:key, :value, :defaultValue, :label, :type, :description]
     ATTRIBUTES.each do |attribute|
       property(attribute) {instance_variable_get "@#{attribute}"}
     end
