@@ -3,6 +3,9 @@
 #include <QJsonArray>
 #include <QFile>
 #include <QDebug>
+#include <QTemporaryFile>
+#include <QTextStream>
+#include <QProcess>
 #include "configuration.h"
 
 Controller::Controller(QObject* parent) : QObject(parent),
@@ -38,6 +41,15 @@ void Controller::load()
 
 void Controller::save()
 {
+  QProcess process;
 
+  QTemporaryFile tempFile(&process);
+  tempFile.open();
+  QTextStream output(&tempFile);
+  output << m_configText;
+  tempFile.close();
+
+  process.start("pkexec", QStringList() << "cp" << tempFile.fileName() << "/etc/sddm.conf");
+  process.waitForFinished(-1);
 }
 
