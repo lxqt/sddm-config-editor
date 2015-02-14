@@ -8,13 +8,9 @@ This is to be a graphical editor for [Simple Desktop Display
 Manager](https://github.com/sddm/sddm)'s configuration file. It is in
 early alpha.
 
-## Dependencies
-
-This program requires
-
-* [Ruby 2](https://www.ruby-lang.org)
-* [QML-Ruby](http://seanchas116.github.io/ruby-qml/) `gem install qml`
-* [Parslet](http://kschiess.github.io/parslet/) `gem install parslet`
+There is a [Ruby](ruby) version and a [C++](cpp) version of this program.
+They (should) have the same functionality. See their respective README.md
+for specific information.
 
 ## Usage
 
