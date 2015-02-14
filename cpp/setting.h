@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QString>
 #include <QJsonObject>
+#include <QDebug>
 
 class Setting : public QObject
 {
@@ -22,6 +23,9 @@ class Setting : public QObject
 
     Q_INVOKABLE bool isDefined() const;
 
+  public slots:
+    void debug();
+
   signals:
     void keyChanged();
     void descriptionChanged();
@@ -37,6 +41,8 @@ class Setting : public QObject
     QString m_type;
     QString m_value;
     QString m_defaultValue;
+
+  friend QDebug operator<<(QDebug, const Setting&);
 };
 
 #endif

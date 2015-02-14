@@ -57,3 +57,13 @@ QString Configuration::toFile() const
   return file;
 }
 
+QDebug operator<<(QDebug debug, const Configuration &configuration)
+{
+  debug.nospace();
+  foreach(QObject* section, configuration.m_sections) {
+    debug << *reinterpret_cast<Section*>(section);
+  }
+
+  return debug.space();
+}
+

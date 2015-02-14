@@ -10,6 +10,7 @@ Setting::Setting(QObject* parent) : QObject(parent)
     if(controller) {
       QObject::connect(this, SIGNAL(valueChanged()), controller, SLOT(generate()));
       QObject::connect(this, SIGNAL(valueChanged()), controller, SIGNAL(modelChanged()));
+      QObject::connect(this, SIGNAL(valueChanged()), this, SLOT(debug()));
     }
   }
 }
@@ -33,8 +34,20 @@ QString Setting::toString() const
   }
 }
 
+QDebug operator<<(QDebug debug, const Setting &setting)
+{
+  debug.nospace().noquote()
+    << setting.m_key << "=" << setting.m_value
+    << "(" << setting.m_defaultValue.toLocal8Bit().constData() << ")";
+  return debug.space();
+}
+
 bool Setting::isDefined() const
 {
   return !m_value.isEmpty();
 }
 
+void Setting::debug()
+{
+  qDebug() << *this;
+}

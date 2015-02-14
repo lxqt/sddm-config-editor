@@ -5,6 +5,7 @@
 #include <QString>
 #include <QList>
 #include <QJsonObject>
+#include <QDebug>
 #include "setting.h"
 
 class Section : public QObject
@@ -28,6 +29,8 @@ class Section : public QObject
     QString m_name;
     QList<QObject*> m_settings;
     QObject* m_controller;
+
+  friend QDebug operator<<(QDebug, const Section&);
 };
 
 #endif

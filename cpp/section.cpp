@@ -47,3 +47,12 @@ QString Section::toString() const
   }
 }
 
+QDebug operator<<(QDebug debug, const Section &section)
+{
+  debug.nospace().noquote() << "[" << section.m_name << "]";
+  foreach(QObject* setting, section.m_settings) {
+    debug.maybeSpace() << *static_cast<Setting*>(setting);
+  }
+  return debug.space();
+}
+

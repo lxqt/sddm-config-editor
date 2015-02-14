@@ -20,6 +20,7 @@ class Configuration : public QObject
     QString toFile() const;
     void loadSchema(const QJsonArray&);
     void loadSettings(QSettings&);
+    friend QDebug operator<<(QDebug, const Configuration&);
 
   signals:
     void sectionsChanged();
