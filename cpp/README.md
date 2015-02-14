@@ -9,3 +9,4 @@
     qmake
     make
 
+See the [general README.md](/README.md) for other information.
