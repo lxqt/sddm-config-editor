@@ -6,6 +6,6 @@
 
 ## Building
 
-  qmake
-  make
+    qmake
+    make
 
