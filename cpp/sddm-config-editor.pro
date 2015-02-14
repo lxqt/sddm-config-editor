@@ -8,8 +8,10 @@ HEADERS += controller.h configuration.h section.h setting.h
 
 RESOURCES += qml.qrc
 
-# Additional import path used to resolve QML modules in Qt Creator's code model
-QML_IMPORT_PATH =
+target.path = /usr/bin/
 
-# Default rules for deployment.
-include(deployment.pri)
+desktop_file.path = /usr/share/applications/
+desktop_file.files = data/sddm-config-editor.desktop
+
+INSTALLS += desktop_file target
+
