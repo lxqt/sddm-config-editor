@@ -12,6 +12,10 @@ There is a [Ruby](ruby) version and a [C++](cpp) version of this program.
 They (should) have the same functionality. See their respective README.md
 for specific information.
 
+## License
+
+Apache 2.0
+
 ## Usage
 
 Run `sddm-configuration-editor`.
