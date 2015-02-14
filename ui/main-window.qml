@@ -8,6 +8,7 @@ ApplicationWindow {
   title: 'SDDM Configuration Editor'
   visible: true
   property int columns: 3
+  Component.onCompleted: configEditor.load()
 
   function layout(sections, columns) {
     columns = Math.min(columns, sections.length);

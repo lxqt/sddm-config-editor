@@ -37,7 +37,6 @@ RowLayout {
     anchors.right: label.right
     id: checkBox
     partiallyCheckedEnabled: true
-    checkedState: checkedStateForValue()
     // Set opacity to 0 when the setting is following default
     opacity: {
       if(checkedState === Qt.PartiallyChecked) {

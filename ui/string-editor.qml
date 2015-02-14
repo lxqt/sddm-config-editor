@@ -12,7 +12,6 @@ RowLayout {
   }
   TextField {
     id: textField
-    text: textForValue()
     placeholderText: modelData.defaultValue
     Layout.fillWidth: true
   }
