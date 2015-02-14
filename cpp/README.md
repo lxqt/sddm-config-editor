@@ -3,6 +3,7 @@
 ## Dependencies
 
 - [Qt](http://qt-project.org/)
+- [PolKit](http://www.freedesktop.org/wiki/Software/polkit/) (for the Save button)
 
 ## Building
 
