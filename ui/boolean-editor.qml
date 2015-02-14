@@ -6,9 +6,14 @@ RowLayout {
   function checkedStateFromBoolean(value) {
     if(value === 'true') {
       return Qt.Checked;
-    } else {
+    } else if(value === 'false') {
       return Qt.Unchecked;
+    } else {
+      return Qt.PartiallyChecked;
     }
+  }
+  function checkedStateForValue() {
+    return checkedStateFromBoolean(modelData.value);
   }
   // Display a disabled checkbox indicating the default value
   CheckBox {
@@ -32,13 +37,7 @@ RowLayout {
     anchors.right: label.right
     id: checkBox
     partiallyCheckedEnabled: true
-    checkedState: {
-      if(!modelData.isDefined()) {
-        return Qt.PartiallyChecked;
-      } else {
-        return checkedStateFromBoolean(modelData.value);
-      }
-    }
+    checkedState: checkedStateForValue()
     // Set opacity to 0 when the setting is following default
     opacity: {
       if(checkedState === Qt.PartiallyChecked) {
@@ -69,5 +68,9 @@ RowLayout {
         default: ''
       }
     }
+  }
+  Connections {
+    target: configEditor
+    onConfigurationChanged: checkBox.checkedState = checkedStateForValue()
   }
 }

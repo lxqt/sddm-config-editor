@@ -23,6 +23,7 @@ class Controller : public QObject
   signals:
     void modelChanged();
     void configTextChanged();
+    void configurationChanged();
 
   private:
     Configuration* m_configuration;
