@@ -25,6 +25,7 @@ module SDDMConfigurationEditor
       end
     end
     property(:config_text) {read_config}
+    signal :configurationChanged, []
 
     def initialize
       @configuration =
@@ -52,6 +53,7 @@ module SDDMConfigurationEditor
 
     def parse(text)
       @configuration.parse_values(text)
+      configurationChanged.emit
     end
 
     def generate

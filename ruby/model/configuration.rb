@@ -26,6 +26,7 @@ module SDDMConfigurationEditor
       @model.each do |section|
         settings = section[:settings]
         settings.map! do |setting_data|
+          setting_data[:value] = ''
           Setting.new(setting_data)
         end
       end
@@ -48,6 +49,8 @@ module SDDMConfigurationEditor
             |schema_setting, value_setting|
             if value_setting
               schema_setting.value = value_setting[:value]
+            else
+              schema_setting.value = ''
             end
           end
         end
