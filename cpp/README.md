@@ -2,7 +2,7 @@
 
 ## Dependencies
 
-- Qt
+- [Qt](http://qt-project.org/)
 
 ## Building
 
