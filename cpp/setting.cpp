@@ -10,7 +10,6 @@ Setting::Setting(QObject* parent) : QObject(parent)
     if(controller) {
       QObject::connect(this, SIGNAL(valueChanged()), controller, SLOT(generate()));
       QObject::connect(this, SIGNAL(valueChanged()), controller, SIGNAL(modelChanged()));
-      QObject::connect(this, SIGNAL(valueChanged()), this, SLOT(debug()));
     }
   }
 }
@@ -47,7 +46,3 @@ bool Setting::isDefined() const
   return !m_value.isEmpty();
 }
 
-void Setting::debug()
-{
-  qDebug() << *this;
-}

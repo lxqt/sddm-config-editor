@@ -23,9 +23,6 @@ class Setting : public QObject
 
     Q_INVOKABLE bool isDefined() const;
 
-  public slots:
-    void debug();
-
   signals:
     void keyChanged();
     void descriptionChanged();
