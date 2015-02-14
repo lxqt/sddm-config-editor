@@ -6,7 +6,7 @@ Comment=Qt configuration editor for SDDM
 Categories=Settings;System;Qt
 Icon=preferences-system
 Terminal=false
-Exec=sddm-configuration-editor
+Exec=sddm-config-editor
 Terminal=false
 StartupNotify=false
 
