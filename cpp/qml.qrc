@@ -4,7 +4,6 @@
         <file>ui/boolean-editor.qml</file>
         <file>ui/directory-editor.qml</file>
         <file>ui/file-editor.qml</file>
-        <file>ui/file-tab.qml</file>
         <file>ui/integer-editor.qml</file>
         <file>ui/string-editor.qml</file>
         <file>ui/path_list-editor.qml</file>
