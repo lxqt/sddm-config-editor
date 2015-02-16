@@ -32,8 +32,8 @@
         "label": "Halt command",
         "description": "",
         "key": "HaltCommand",
-        "type": "string",
-        "defaultValue": ""
+        "type": "file",
+        "defaultValue": "/usr/bin/systemctl poweroff"
       },
       {
         "label": "Initial NumLock state",
@@ -46,8 +46,8 @@
         "label": "Reboot command",
         "description": "",
         "key": "RebootCommand",
-        "type": "string",
-        "defaultValue": ""
+        "type": "file",
+        "defaultValue": "/usr/bin/systemctl reboot"
       }
     ]
   },
@@ -59,14 +59,14 @@
         "description": "",
         "key": "Current",
         "type": "string",
-        "defaultValue": "archlinux"
+        "defaultValue": "maui"
       },
       {
         "label": "Cursor theme",
         "description": "",
         "key": "CursorTheme",
         "type": "string",
-        "defaultValue": "breeze"
+        "defaultValue": ""
       },
       {
         "label": "Face icon directory",
