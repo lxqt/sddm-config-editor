@@ -159,7 +159,7 @@
         "label": "X server path",
         "description": "",
         "key": "ServerPath",
-        "type": "directory",
+        "type": "file",
         "defaultValue": "/usr/bin/X"
       },
       {
@@ -180,7 +180,7 @@
         "label": "Xauth path",
         "description": "",
         "key": "XauthPath",
-        "type": "directory",
+        "type": "file",
         "defaultValue": "/usr/bin/xauth"
       }
     ]

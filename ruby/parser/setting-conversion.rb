@@ -21,7 +21,13 @@ module SDDMConfigurationEditor
       when %r(^/[^:]+:)
         [:path_list, key, value]
       when %r(^/)
-        [/(?:Path|Dir)$/ === key ? :directory : :file, key, value]
+        type =
+          if !value.empty? && File.directory?(value)
+            :directory
+          else
+            :file
+          end
+        [type, key, value]
       when []
         [:string, key, '']
       else
