@@ -2,6 +2,7 @@
 #include <QString>
 #include <QVariantList>
 #include <QApplication>
+#include <QUrl>
 #include "configuration.h"
 #include "section.h"
 
@@ -19,6 +20,8 @@ class Controller : public QObject
     void generate();
     void load();
     void save();
+    QString chooseDirectory(const QString&);
+    QString chooseFile(const QString&);
 
   signals:
     void modelChanged();

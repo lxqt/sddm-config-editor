@@ -6,6 +6,7 @@
 #include <QTemporaryFile>
 #include <QTextStream>
 #include <QProcess>
+#include <QFileDialog>
 #include "configuration.h"
 
 Controller::Controller(QObject* parent) : QObject(parent),
@@ -51,5 +52,15 @@ void Controller::save()
 
   process.start("pkexec", QStringList() << "cp" << tempFile.fileName() << "/etc/sddm.conf");
   process.waitForFinished(-1);
+}
+
+QString Controller::chooseDirectory(const QString& initial)
+{
+  return QFileDialog::getExistingDirectory(0, "Choose a directory", initial);
+}
+
+QString Controller::chooseFile(const QString& initial)
+{
+  return QFileDialog::getOpenFileName(0, "Choose a file", initial);
 }
 

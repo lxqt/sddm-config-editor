@@ -13,7 +13,12 @@ RowLayout {
     iconName: modelData.type == 'directory' ? 'folder' : 'application-x-executable'
     Layout.alignment: Qt.AlignRight
     onClicked: {
-      fileDialog.open()
+      var dialogMethod = modelData.type === 'directory' ? 'chooseDirectory' : 'chooseFile';
+      if(dialogMethod in configEditor) {
+        loader.item.textField.text = configEditor[dialogMethod](modelData.defaultValue);
+      } else {
+        fileDialog.open();
+      }
     }
   }
 
