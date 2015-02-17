@@ -5,6 +5,7 @@ import QtQuick.Window 2.2
 
 RowLayout {
   property var previewProcesses: []
+  property var effectiveTheme: modelData.value || modelData.defaultValue
   Loader {
     Layout.fillWidth: true
     source: 'enum-editor.qml'
@@ -17,7 +18,7 @@ RowLayout {
     onClicked: {
       closePreviewWindow.visible = true
       previewProcesses.push(configEditor.spawnProcess(
-        'sddm-greeter --test-mode --theme /usr/share/sddm/themes/' + modelData.value
+        'sddm-greeter --test-mode --theme /usr/share/sddm/themes/' + effectiveTheme
       ));
     }
   }
@@ -41,7 +42,7 @@ RowLayout {
         onMouseYChanged: closePreviewWindow.y += (mouseY - lastMouseY)
       }
       Label {
-        text: 'Displaying preview for theme ' + modelData.value + '...'
+        text: 'Displaying preview for theme ' + effectiveTheme + '...'
       }
       Button {
         Layout.fillWidth: true
