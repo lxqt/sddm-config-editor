@@ -39,7 +39,7 @@
         "label": "Initial NumLock state",
         "description": "Valid values: on|off|none\nIf property is set to none, numlock won't be changed",
         "key": "Numlock",
-        "type": "string",
+        "type": "numlock",
         "defaultValue": "none"
       },
       {
@@ -58,7 +58,7 @@
         "label": "Current theme name",
         "description": "",
         "key": "Current",
-        "type": "string",
+        "type": "theme",
         "defaultValue": "maui"
       },
       {

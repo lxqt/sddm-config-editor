@@ -2,8 +2,18 @@
 require 'json'
 require_relative 'parser/example-configuration-file'
 
+def find_setting(schema, section_name, key)
+  schema.find do |section|
+    section[:name] == section_name
+  end[:settings].find do |setting|
+    setting[:key] == key
+  end
+end
+
 example_config_file = File.read 'data/example.conf'
 schema = SDDMConfigurationEditor::ExampleConfigurationFileParser.new.parse(example_config_file)
+find_setting(schema, 'Theme', 'Current')[:type] = 'theme'
+find_setting(schema, 'General', 'Numlock')[:type] = 'numlock'
 File.open 'data/config-schema.json', 'w' do |file|
   file.write JSON.pretty_generate(schema)
 end

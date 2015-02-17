@@ -7,6 +7,7 @@
 #include <QTextStream>
 #include <QProcess>
 #include <QFileDialog>
+#include <QDir>
 #include "configuration.h"
 
 Controller::Controller(QObject* parent) : QObject(parent),
@@ -62,5 +63,11 @@ QString Controller::chooseDirectory(const QString& initial)
 QString Controller::chooseFile(const QString& initial)
 {
   return QFileDialog::getOpenFileName(0, "Choose a file", initial);
+}
+
+QStringList Controller::subDirectories(const QString& path)
+{
+  QDir directory(path);
+  return directory.entryList(QDir::Dirs | QDir::NoDotAndDotDot);
 }
 

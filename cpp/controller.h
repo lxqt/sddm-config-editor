@@ -3,6 +3,7 @@
 #include <QVariantList>
 #include <QApplication>
 #include <QUrl>
+#include <QStringList>
 #include "configuration.h"
 #include "section.h"
 
@@ -22,6 +23,7 @@ class Controller : public QObject
     void save();
     QString chooseDirectory(const QString&);
     QString chooseFile(const QString&);
+    QStringList subDirectories(const QString&);
 
   signals:
     void modelChanged();
