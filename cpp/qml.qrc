@@ -9,6 +9,7 @@
         <file>ui/numlock-editor.qml</file>
         <file>ui/string-editor.qml</file>
         <file>ui/path_list-editor.qml</file>
+        <file>ui/session-editor.qml</file>
         <file>ui/theme-editor.qml</file>
         <file>ui/setting-section.qml</file>
         <file>data/config-schema.json</file>

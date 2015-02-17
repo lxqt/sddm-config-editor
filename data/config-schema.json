@@ -13,7 +13,7 @@
         "label": "Autologin session",
         "description": "",
         "key": "Session",
-        "type": "string",
+        "type": "session",
         "defaultValue": ""
       },
       {

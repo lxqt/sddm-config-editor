@@ -10,7 +10,7 @@ RowLayout {
     Layout.fillWidth: true
     source: 'enum-editor.qml'
     Component.onCompleted: {
-      item.choices = configEditor.subDirectories("/usr/share/sddm/themes");
+      item.choices = configEditor.directoryEntries("/usr/share/sddm/themes");
     }
   }
   Button {

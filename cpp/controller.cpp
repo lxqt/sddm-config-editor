@@ -65,10 +65,10 @@ QString Controller::chooseFile(const QString& initial)
   return QFileDialog::getOpenFileName(0, "Choose a file", initial);
 }
 
-QStringList Controller::subDirectories(const QString& path)
+QStringList Controller::directoryEntries(const QString& path)
 {
   QDir directory(path);
-  return directory.entryList(QDir::Dirs | QDir::NoDotAndDotDot);
+  return directory.entryList(QDir::AllEntries | QDir::NoDotAndDotDot);
 }
 
 QObject* Controller::spawnProcess(const QString& line)

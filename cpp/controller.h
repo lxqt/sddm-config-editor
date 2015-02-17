@@ -23,7 +23,7 @@ class Controller : public QObject
     void save();
     QString chooseDirectory(const QString&);
     QString chooseFile(const QString&);
-    QStringList subDirectories(const QString&);
+    QStringList directoryEntries(const QString&);
     QObject* spawnProcess(const QString&);
     void closeProcess(QObject*);
 
