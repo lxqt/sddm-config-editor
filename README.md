@@ -35,8 +35,8 @@ file, and save settings to it.
 - [x] Generate configuration file from settings in the GUI
 - [x] Save generated configuration file to the system
 - [x] Handle string, boolean and integer setting types
-- [ ] Handle enum setting types
+- [x] Handle enum setting types
 - [ ] Launch theme preview
 - [ ] Validate configuration file
-- [X] Automatically generate configuration file when GUI settings change
-- [ ] Provide install scripts
+- [x] Automatically generate configuration file when GUI settings change
+- [x] Provide install scripts
