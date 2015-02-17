@@ -34,6 +34,7 @@ RowLayout {
         anchors.fill: parent
         property real lastMouseX: 0
         property real lastMouseY: 0
+        cursorShape: pressed ? Qt.DragMoveCursor : Qt.OpenHandCursor
         onPressed: {
           lastMouseX = mouseX
           lastMouseY = mouseY
