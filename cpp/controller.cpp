@@ -71,3 +71,15 @@ QStringList Controller::subDirectories(const QString& path)
   return directory.entryList(QDir::Dirs | QDir::NoDotAndDotDot);
 }
 
+QObject* Controller::spawnProcess(const QString& line)
+{
+  QProcess* process = new QProcess();
+  process->start(line);
+  return process;
+}
+
+void Controller::closeProcess(QObject* process)
+{
+  static_cast<QProcess*>(process)->close();
+}
+

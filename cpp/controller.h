@@ -24,6 +24,8 @@ class Controller : public QObject
     QString chooseDirectory(const QString&);
     QString chooseFile(const QString&);
     QStringList subDirectories(const QString&);
+    QObject* spawnProcess(const QString&);
+    void closeProcess(QObject*);
 
   signals:
     void modelChanged();

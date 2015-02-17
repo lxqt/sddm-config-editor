@@ -25,7 +25,7 @@ GUI. Gray (placeholder) text and gray checkboxes indicate default
 values. There are buttons to load settings from the system configuration
 file, and save settings to it.
 
-![screenshot](http://i.imgur.com/APeBFwA.png)
+![screenshot](http://i.imgur.com/luavnNX.png)
 
 ## Features / TODO
 
@@ -36,7 +36,7 @@ file, and save settings to it.
 - [x] Save generated configuration file to the system
 - [x] Handle string, boolean and integer setting types
 - [x] Handle enum setting types
-- [ ] Launch theme preview
+- [x] Launch theme preview
 - [ ] Validate configuration file
 - [x] Automatically generate configuration file when GUI settings change
 - [x] Provide install scripts
