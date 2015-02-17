@@ -42,7 +42,7 @@ RowLayout {
         onMouseYChanged: closePreviewWindow.y += (mouseY - lastMouseY)
       }
       Label {
-        text: 'Displaying preview for theme ' + effectiveTheme + '...'
+        text: 'Displaying preview for SDDM theme <b>' + effectiveTheme + '</b>...'
       }
       Button {
         Layout.fillWidth: true
