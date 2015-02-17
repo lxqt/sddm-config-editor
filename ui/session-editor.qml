@@ -5,9 +5,10 @@ Loader {
   Layout.fillWidth: true
   source: 'enum-editor.qml'
   Component.onCompleted: {
-    item.choices = configEditor.directoryEntries("/usr/share/xsessions").map(function(name) {
-      return name.replace(/\.desktop$/, '');
-    });
+    item.choices =
+      configEditor.directoryEntries("/usr/share/xsessions").filter(function(name) {
+        return /\.desktop$/.test(name);
+      });
   }
 }
 
