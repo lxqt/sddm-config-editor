@@ -8,7 +8,7 @@ RowLayout {
     return modelData.value;
   }
   Label {
-    text: qsTr(modelData.label)
+    text: qsTranslate('config-strings', modelData.label)
   }
   TextField {
     id: textField

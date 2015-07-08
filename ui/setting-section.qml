@@ -20,7 +20,7 @@ ColumnLayout {
       Text {
         anchors.leftMargin: 10
         anchors.left: parent.left
-        text: qsTr(modelData.description)
+        text: qsTranslate('config-strings', modelData.description)
         visible: modelData.description.length > 0
       }
     }

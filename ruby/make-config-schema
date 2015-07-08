@@ -19,3 +19,27 @@ File.open 'data/config-schema.json', 'w' do |file|
   file.write JSON.pretty_generate(schema)
 end
 
+def _(string)
+  if string.empty?
+    ''
+  else
+    <<-"END"
+    ListElement {
+      name: QT_TR_NOOP("#{string}")
+    }
+    END
+  end
+end
+
+File.open 'config-strings.qml', 'w' do |file|
+  file << "ListModel {\n"
+  schema.map do |section|
+    file.write _(section[:name])
+    section[:settings].each do |setting|
+      file.write _(setting[:label])
+      file.write _(setting[:description])
+    end
+  end
+  file << "}"
+end
+

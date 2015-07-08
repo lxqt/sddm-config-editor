@@ -8,7 +8,7 @@ RowLayout {
   property ComboBox comboBox: comboBox
   property var choices: []
   Label {
-    text: qsTr(modelData.label)
+    text: qsTranslate('config-strings', modelData.label)
   }
   ComboBox {
     id: comboBox

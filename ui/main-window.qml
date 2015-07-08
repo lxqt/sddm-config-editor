@@ -22,7 +22,7 @@ ApplicationWindow {
       Repeater {
         model: configEditor.model
         Tab {
-          title: qsTr(modelData.name)
+          title: qsTranslate('config-strings', modelData.name)
           source: 'setting-section.qml'
         }
       }

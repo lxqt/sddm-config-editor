@@ -15,7 +15,7 @@ desktop_file.path = "$$PREFIX/usr/share/applications/"
 desktop_file.files = data/sddm-config-editor.desktop
 
 lupdate_only {
-  SOURCES += ui/*.qml
+  SOURCES += ui/*.qml config-strings.qml
 }
 TRANSLATIONS = sddm-config-editor_zh_CN.ts
 

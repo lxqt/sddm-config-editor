@@ -50,7 +50,7 @@ RowLayout {
   // transparent when following default
   Label {
     id: label
-    text: qsTr(modelData.label)
+    text: qsTranslate('config-strings', modelData.label)
     anchors.left: parent.left
     // QtQuick displays an empty gap after the checkbox indicator when the text
     // is empty. This hack tries to move the label to make it look like the checkbox
