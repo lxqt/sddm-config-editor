@@ -5,7 +5,7 @@ import QtQuick.Controls 1.3
 import SDDMConfigurationEditor 0.1
 
 ApplicationWindow {
-  title: 'SDDM Configuration Editor'
+  title: qsTr('SDDM Configuration Editor')
   visible: true
   property int columns: 3
   Component.onCompleted: configEditor.load()
@@ -67,7 +67,7 @@ ApplicationWindow {
       ColumnLayout {
         Layout.fillHeight: true
         Label {
-          text: 'Configuration file'
+          text: qsTr('Configuration file')
           Layout.alignment: Qt.AlignCenter
         }
         TextArea {
@@ -82,16 +82,16 @@ ApplicationWindow {
           Button {
             Layout.fillWidth: true
             iconName: 'document-revert'
-            text: 'Load'
+            text: qsTr('Load')
             onClicked: configEditor.load()
             tooltip: 'Load the configuation file on the system into the text area and update the displayed settins'
           }
           Button {
             Layout.fillWidth: true
             iconName: 'run-build-install-root'
-            text: 'Save...'
+            text: qsTr('Save...')
             onClicked: configEditor.save()
-            tooltip: 'Save the configuration file in the text area to the system'
+            tooltip: qsTr('Save the configuration file in the text area to the system')
           }
         }
       }

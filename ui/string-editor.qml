@@ -8,7 +8,7 @@ RowLayout {
     return modelData.value;
   }
   Label {
-    text: modelData.label
+    text: qsTr(modelData.label)
   }
   TextField {
     id: textField

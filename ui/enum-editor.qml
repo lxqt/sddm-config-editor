@@ -8,7 +8,7 @@ RowLayout {
   property ComboBox comboBox: comboBox
   property var choices: []
   Label {
-    text: modelData.label
+    text: qsTr(modelData.label)
   }
   ComboBox {
     id: comboBox

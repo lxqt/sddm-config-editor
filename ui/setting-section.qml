@@ -3,7 +3,7 @@ import QtQuick.Controls 1.3
 import QtQuick.Layouts 1.1
 
 GroupBox {
-  title: modelData.name
+  title: qsTr(modelData.name)
 
   ColumnLayout {
     spacing: 10
@@ -24,7 +24,7 @@ GroupBox {
         Text {
           anchors.leftMargin: 10
           anchors.left: parent.left
-          text: modelData.description
+          text: qsTr(modelData.description)
           visible: modelData.description.length > 0
         }
       }

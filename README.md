@@ -40,3 +40,4 @@ file, and save settings to it.
 - [ ] Validate configuration file
 - [x] Automatically generate configuration file when GUI settings change
 - [x] Provide install scripts
+- [ ] Localization
