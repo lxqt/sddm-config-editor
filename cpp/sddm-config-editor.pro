@@ -18,6 +18,11 @@ lupdate_only {
   SOURCES += ui/*.qml config-strings.qml
 }
 TRANSLATIONS = sddm-config-editor_zh_CN.ts
+QMAKE_EXTRA_COMPILERS += lrelease
+lrelease.input         = TRANSLATIONS
+lrelease.output        = ${QMAKE_FILE_BASE}.qm
+lrelease.commands      = $$[QT_INSTALL_BINS]/lrelease ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_BASE}.qm
+lrelease.CONFIG       += ignore_no_exist no_link
 
 INSTALLS += desktop_file target
 
