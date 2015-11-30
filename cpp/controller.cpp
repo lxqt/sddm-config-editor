@@ -50,6 +50,8 @@ void Controller::save()
   QTextStream output(&tempFile);
   output << m_configText;
   tempFile.close();
+  // Set mode 644 in case /etc/sddm.conf does not exist
+  tempFile.setPermissions(QFile::ReadOwner | QFile::WriteOwner | QFile::ReadGroup | QFile::ReadOther);
 
   process.start("pkexec", QStringList() << "cp" << tempFile.fileName() << "/etc/sddm.conf");
   process.waitForFinished(-1);
