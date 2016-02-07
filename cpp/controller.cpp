@@ -38,6 +38,10 @@ void Controller::load()
 {
   QSettings settings("/etc/sddm.conf", QSettings::IniFormat);
   m_configuration->loadSettings(settings);
+}
+
+void Controller::refreshView()
+{
   emit configurationChanged();
 }
 

@@ -20,6 +20,7 @@ class Controller : public QObject
   public slots:
     void generate();
     void load();
+    void refreshView();
     void save();
     QString chooseDirectory(const QString&);
     QString chooseFile(const QString&);

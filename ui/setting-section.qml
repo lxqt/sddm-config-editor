@@ -30,5 +30,9 @@ ColumnLayout {
   Rectangle {
     Layout.fillHeight: true
   }
+
+  Component.onCompleted: {
+    configEditor.refreshView()
+  }
 }
 
