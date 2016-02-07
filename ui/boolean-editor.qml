@@ -45,6 +45,19 @@ RowLayout {
         return 1;
       }
     }
+    onClicked: {
+      switch(checkedState) {
+        case(Qt.Checked):
+          modelData.value = 'true';
+          break;
+        case(Qt.Unchecked):
+          modelData.value = 'false';
+          break;
+        case(Qt.PartiallyChecked):
+          modelData.value = '';
+          break;
+      }
+    }
   }
   // Use a separate label instead of checkbox text so that label does not become
   // transparent when following default
@@ -56,17 +69,6 @@ RowLayout {
     // is empty. This hack tries to move the label to make it look like the checkbox
     // text
     anchors.leftMargin: 25
-  }
-  Binding {
-    target: modelData
-    property: 'value'
-    value: {
-      switch(checkBox.checkedState) {
-        case(Qt.Checked): true; break;
-        case(Qt.Unchecked): false; break;
-        default: ''
-      }
-    }
   }
   Connections {
     target: configEditor
