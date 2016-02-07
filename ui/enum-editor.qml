@@ -14,15 +14,7 @@ RowLayout {
     id: comboBox
     editable: true
     Layout.fillWidth: true
-    model: {
-      choices.push('');
-      return choices;
-    }
-    onActivated: {
-      if(index === count - 1) {
-        currentIndex = -1;
-      }
-    }
+    model: [''].concat(choices)
     // Emulate placeholder text
     Label {
       anchors.left: parent.left
@@ -32,15 +24,12 @@ RowLayout {
       opacity: modelData.value === '' && comboBox.editText === '' ? 1 : 0
       color: 'gray'
     }
-  }
-  Binding {
-    target: modelData
-    property: 'value'
-    value: {
-      if(comboBox.currentIndex === comboBox.count - 1 || comboBox.currentIndex === -1) {
-        return '';
+    onActivated: {
+      this.currentIndex = index;
+      if(index > 0) {
+        modelData.value = currentText;
       } else {
-        return comboBox.currentText;
+        modelData.value = '';
       }
     }
   }
@@ -51,7 +40,7 @@ RowLayout {
         comboBox.currentIndex = comboBox.model.indexOf(modelData.value);
         comboBox.editText = comboBox.currentText;
       } else {
-        comboBox.currentIndex = comboBox.count - 1;
+        comboBox.currentIndex = 0;
         comboBox.editText = '';
       }
     }
