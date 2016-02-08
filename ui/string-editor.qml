@@ -4,6 +4,8 @@ import QtQuick.Controls 1.1
 
 RowLayout {
   property TextField textField: textField
+  property bool loadingValue: false
+  id: stringEditor
   function textForValue() {
     return modelData.value;
   }
@@ -14,15 +16,19 @@ RowLayout {
     id: textField
     placeholderText: modelData.defaultValue
     Layout.fillWidth: true
-  }
-  Binding {
-    target: modelData
-    property: 'value'
-    value: textField.text
+    onTextChanged: {
+      if(!stringEditor.loadingValue) {
+        modelData.value = text;
+      }
+    }
   }
   Connections {
     target: configEditor
-    onConfigurationChanged: textField.text = textForValue()
+    onConfigurationChanged: {
+      stringEditor.loadingValue = true;
+      textField.text = textForValue()
+      stringEditor.loadingValue = false;
+    }
   }
 }
 
