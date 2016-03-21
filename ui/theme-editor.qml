@@ -15,6 +15,7 @@ RowLayout {
   }
   Button {
     iconName: 'view-preview'
+    text: 'Preview'
     onClicked: {
       closePreviewWindow.visible = true
       previewProcesses.push(configEditor.spawnProcess(
