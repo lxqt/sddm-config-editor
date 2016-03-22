@@ -181,6 +181,14 @@ If property is set to none, numlock won&apos;t be changed</source>
     </message>
 </context>
 <context>
+    <name>file-editor</name>
+    <message>
+        <location filename="ui/file-editor.qml" line="27"/>
+        <source>Please choose a %1</source>
+        <translation>请选择%1</translation>
+    </message>
+</context>
+<context>
     <name>main-window</name>
     <message>
         <location filename="ui/main-window.qml" line="8"/>
@@ -198,6 +206,11 @@ If property is set to none, numlock won&apos;t be changed</source>
         <translation>还原</translation>
     </message>
     <message>
+        <location filename="ui/main-window.qml" line="47"/>
+        <source>Load settings from the system configuation file</source>
+        <translation>从系统设置文件读取设置</translation>
+    </message>
+    <message>
         <location filename="ui/main-window.qml" line="51"/>
         <source>Save...</source>
         <translation>保存...</translation>
@@ -206,6 +219,29 @@ If property is set to none, numlock won&apos;t be changed</source>
         <location filename="ui/main-window.qml" line="53"/>
         <source>Save the settings to the system configuration file</source>
         <translation>将设置保存到系统</translation>
+    </message>
+</context>
+<context>
+    <name>theme-editor</name>
+    <message>
+        <location filename="ui/theme-editor.qml" line="18"/>
+        <source>Preview</source>
+        <translation>预览</translation>
+    </message>
+    <message>
+        <location filename="ui/theme-editor.qml" line="28"/>
+        <source>Theme Preview</source>
+        <translation>预览主题</translation>
+    </message>
+    <message>
+        <location filename="ui/theme-editor.qml" line="47"/>
+        <source>Displaying preview for SDDM theme &lt;b&gt;%1&lt;/b&gt;...</source>
+        <translation>正在预览 &lt;b&gt;%1&lt;/b&gt; SDDM主题...</translation>
+    </message>
+    <message>
+        <location filename="ui/theme-editor.qml" line="52"/>
+        <source>Close Preview</source>
+        <translation>关闭预览</translation>
     </message>
 </context>
 </TS>

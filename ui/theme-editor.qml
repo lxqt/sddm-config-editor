@@ -15,7 +15,7 @@ RowLayout {
   }
   Button {
     iconName: 'view-preview'
-    text: 'Preview'
+    text: qsTr('Preview')
     onClicked: {
       closePreviewWindow.visible = true
       previewProcesses.push(configEditor.spawnProcess(
@@ -25,7 +25,7 @@ RowLayout {
   }
   ApplicationWindow {
     id: closePreviewWindow
-    title: 'Theme Preview'
+    title: qsTr('Theme Preview')
     flags: Qt.WindowStaysOnTopHint | Qt.FramelessWindowHint
 
     ColumnLayout {
@@ -44,12 +44,12 @@ RowLayout {
         onMouseYChanged: closePreviewWindow.y += (mouseY - lastMouseY)
       }
       Label {
-        text: 'Displaying preview for SDDM theme <b>' + effectiveTheme + '</b>...'
+        text: qsTr('Displaying preview for SDDM theme <b>%1</b>...').arg(effectiveTheme)
       }
       Button {
         Layout.fillWidth: true
         iconName: 'window-close'
-        text: 'Close Preview'
+        text: qsTr('Close Preview')
         onClicked: {
           previewProcesses.forEach(function(process) {
             configEditor.closeProcess(process);

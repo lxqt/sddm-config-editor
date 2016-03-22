@@ -24,7 +24,7 @@ RowLayout {
 
   FileDialog {
     id: fileDialog
-    title: "Please choose a " + modelData.type
+    title: qsTr('Please choose a %1').arg(modelData.type)
     folder: 'file://' + (modelData.default_value || '/')
     selectFolder: modelData.type == 'directory'
     onAccepted: {

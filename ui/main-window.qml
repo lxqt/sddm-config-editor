@@ -44,7 +44,7 @@ ApplicationWindow {
         iconName: 'document-revert'
         text: qsTr('Reset')
         onClicked: configEditor.load()
-        tooltip: 'Load settings from the system configuation file'
+        tooltip: qsTr('Load settings from the system configuation file')
       }
       Button {
         iconName: 'run-build-install-root'
