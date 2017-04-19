@@ -6,13 +6,16 @@ ListModel {
       name: QT_TR_NOOP("Whether sddm should automatically log back into sessions when they exit")
     }
     ListElement {
-      name: QT_TR_NOOP("Name of session file for autologin session")
+      name: QT_TR_NOOP("Name of session file for autologin session (if empty try last logged in)")
     }
     ListElement {
       name: QT_TR_NOOP("Username for autologin session")
     }
     ListElement {
       name: QT_TR_NOOP("General")
+    }
+    ListElement {
+      name: QT_TR_NOOP("Enable Qt's automatic high-DPI scaling")
     }
     ListElement {
       name: QT_TR_NOOP("Halt command")

@@ -10,7 +10,7 @@
         "defaultValue": "false"
       },
       {
-        "label": "Name of session file for autologin session",
+        "label": "Name of session file for autologin session (if empty try last logged in)",
         "description": "",
         "key": "Session",
         "type": "session",
@@ -29,11 +29,18 @@
     "name": "General",
     "settings": [
       {
+        "label": "Enable Qt's automatic high-DPI scaling",
+        "description": "",
+        "key": "EnableHiDPI",
+        "type": "boolean",
+        "defaultValue": "true"
+      },
+      {
         "label": "Halt command",
         "description": "",
         "key": "HaltCommand",
-        "type": "file",
-        "defaultValue": "/usr/bin/systemctl poweroff"
+        "type": "string",
+        "defaultValue": ""
       },
       {
         "label": "Input method module",
@@ -53,8 +60,8 @@
         "label": "Reboot command",
         "description": "",
         "key": "RebootCommand",
-        "type": "file",
-        "defaultValue": "/usr/bin/systemctl reboot"
+        "type": "string",
+        "defaultValue": ""
       }
     ]
   },
@@ -66,14 +73,14 @@
         "description": "",
         "key": "Current",
         "type": "theme",
-        "defaultValue": ""
+        "defaultValue": "breeze"
       },
       {
         "label": "Cursor theme used in the greeter",
         "description": "",
         "key": "CursorTheme",
         "type": "string",
-        "defaultValue": ""
+        "defaultValue": "breeze_cursors"
       },
       {
         "label": "Number of users to use as threshold",
@@ -134,7 +141,7 @@
         "description": "",
         "key": "MaximumUid",
         "type": "integer",
-        "defaultValue": "60000"
+        "defaultValue": "65000"
       },
       {
         "label": "Minimum user id for displayed users",

@@ -31,7 +31,7 @@
         <translation>一般</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="18"/>
+        <location filename="config-strings.qml" line="21"/>
         <source>Halt command</source>
         <translation>关机命令</translation>
     </message>
@@ -45,17 +45,17 @@ If property is set to none, numlock won&apos;t be changed</source>
         <translation type="vanished">有效值：on|off|none 如果设为 none，则不影响 NumLock</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="31"/>
+        <location filename="config-strings.qml" line="34"/>
         <source>Reboot command</source>
         <translation>重启命令</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="34"/>
+        <location filename="config-strings.qml" line="37"/>
         <source>Theme</source>
         <translation>主题</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="37"/>
+        <location filename="config-strings.qml" line="40"/>
         <source>Current theme name</source>
         <translation>当前主题名</translation>
     </message>
@@ -72,12 +72,12 @@ If property is set to none, numlock won&apos;t be changed</source>
         <translation type="vanished">文件名应为 用户名.face.icon 格式</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="59"/>
+        <location filename="config-strings.qml" line="62"/>
         <source>Theme directory path</source>
         <translation>主题目录</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="62"/>
+        <location filename="config-strings.qml" line="65"/>
         <source>Users</source>
         <translation>用户</translation>
     </message>
@@ -90,7 +90,7 @@ If property is set to none, numlock won&apos;t be changed</source>
         <translation type="vanished">隐藏外壳</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="71"/>
+        <location filename="config-strings.qml" line="74"/>
         <source>Users with these shells as their default won&apos;t be listed</source>
         <translation>默认使用这些外壳的用户不会列出</translation>
     </message>
@@ -105,7 +105,8 @@ If property is set to none, numlock won&apos;t be changed</source>
     </message>
     <message>
         <location filename="config-strings.qml" line="9"/>
-        <source>Name of session file for autologin session</source>
+        <source>Name of session file for autologin session (if empty try last logged in)</source>
+        <oldsource>Name of session file for autologin session</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -114,151 +115,156 @@ If property is set to none, numlock won&apos;t be changed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="21"/>
-        <source>Input method module</source>
+        <location filename="config-strings.qml" line="18"/>
+        <source>Enable Qt&apos;s automatic high-DPI scaling</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="24"/>
-        <source>Initial NumLock state. Can be on, off or none.</source>
+        <source>Input method module</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="27"/>
+        <source>Initial NumLock state. Can be on, off or none.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="30"/>
         <source>If property is set to none, numlock won&apos;t be changed
 NOTE: Currently ignored if autologin is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="40"/>
+        <location filename="config-strings.qml" line="43"/>
         <source>Cursor theme used in the greeter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="43"/>
+        <location filename="config-strings.qml" line="46"/>
         <source>Number of users to use as threshold</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="46"/>
+        <location filename="config-strings.qml" line="49"/>
         <source>above which avatars are disabled
 unless explicitly enabled with EnableAvatars</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="50"/>
+        <location filename="config-strings.qml" line="53"/>
         <source>Enable display of custom user avatars</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="53"/>
+        <location filename="config-strings.qml" line="56"/>
         <source>Global directory for user avatars</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="56"/>
+        <location filename="config-strings.qml" line="59"/>
         <source>The files should be named &lt;username&gt;.face.icon</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="65"/>
+        <location filename="config-strings.qml" line="68"/>
         <source>Default $PATH for logged in users</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="68"/>
+        <location filename="config-strings.qml" line="71"/>
         <source>Comma-separated list of shells.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="74"/>
+        <location filename="config-strings.qml" line="77"/>
         <source>Comma-separated list of users that should not be listed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="77"/>
+        <location filename="config-strings.qml" line="80"/>
         <source>Maximum user id for displayed users</source>
         <translation>显示用户的最大用户 id</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="80"/>
+        <location filename="config-strings.qml" line="83"/>
         <source>Minimum user id for displayed users</source>
         <translation>显示用户的最小用户 id</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="83"/>
+        <location filename="config-strings.qml" line="86"/>
         <source>Remember the session of the last successfully logged in user</source>
         <translation>记住上次成功登录的用户的桌面</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="86"/>
+        <location filename="config-strings.qml" line="89"/>
         <source>Remember the last successfully logged in user</source>
         <translation>记住上次成功登录的用户</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="89"/>
+        <location filename="config-strings.qml" line="92"/>
         <source>Wayland</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="92"/>
-        <location filename="config-strings.qml" line="119"/>
+        <location filename="config-strings.qml" line="95"/>
+        <location filename="config-strings.qml" line="122"/>
         <source>Path to a script to execute when starting the desktop session</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="95"/>
+        <location filename="config-strings.qml" line="98"/>
         <source>Directory containing available Wayland sessions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="98"/>
-        <location filename="config-strings.qml" line="125"/>
+        <location filename="config-strings.qml" line="101"/>
+        <location filename="config-strings.qml" line="128"/>
         <source>Path to the user session log file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="101"/>
+        <location filename="config-strings.qml" line="104"/>
         <source>X11</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="104"/>
+        <location filename="config-strings.qml" line="107"/>
         <source>Path to a script to execute when starting the display server</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="107"/>
+        <location filename="config-strings.qml" line="110"/>
         <source>Path to a script to execute when stopping the display server</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="113"/>
+        <location filename="config-strings.qml" line="116"/>
         <source>Arguments passed to the X server invocation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="116"/>
+        <location filename="config-strings.qml" line="119"/>
         <source>Path to X server binary</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="122"/>
+        <location filename="config-strings.qml" line="125"/>
         <source>Directory containing available X sessions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="128"/>
+        <location filename="config-strings.qml" line="131"/>
         <source>Path to the Xauthority file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="131"/>
+        <location filename="config-strings.qml" line="134"/>
         <source>Path to xauth binary</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="134"/>
+        <location filename="config-strings.qml" line="137"/>
         <source>Path to Xephyr binary</source>
         <translation type="unfinished"></translation>
     </message>
@@ -279,7 +285,7 @@ unless explicitly enabled with EnableAvatars</source>
         <translation type="vanished">最小 VT</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="110"/>
+        <location filename="config-strings.qml" line="113"/>
         <source>The lowest virtual terminal number that will be used.</source>
         <translation>最低的虚拟终端数。</translation>
     </message>
