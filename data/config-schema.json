@@ -3,21 +3,21 @@
     "name": "Autologin",
     "settings": [
       {
-        "label": "Autologin again on session exit",
+        "label": "Whether sddm should automatically log back into sessions when they exit",
         "description": "",
         "key": "Relogin",
         "type": "boolean",
         "defaultValue": "false"
       },
       {
-        "label": "Autologin session",
+        "label": "Name of session file for autologin session",
         "description": "",
         "key": "Session",
         "type": "session",
         "defaultValue": ""
       },
       {
-        "label": "Autologin user",
+        "label": "Username for autologin session",
         "description": "",
         "key": "User",
         "type": "string",
@@ -36,8 +36,15 @@
         "defaultValue": "/usr/bin/systemctl poweroff"
       },
       {
-        "label": "Initial NumLock state",
-        "description": "Valid values: on|off|none\nIf property is set to none, numlock won't be changed",
+        "label": "Input method module",
+        "description": "",
+        "key": "InputMethod",
+        "type": "string",
+        "defaultValue": ""
+      },
+      {
+        "label": "Initial NumLock state. Can be on, off or none.",
+        "description": "If property is set to none, numlock won't be changed\nNOTE: Currently ignored if autologin is enabled.",
         "key": "Numlock",
         "type": "numlock",
         "defaultValue": "none"
@@ -59,18 +66,32 @@
         "description": "",
         "key": "Current",
         "type": "theme",
-        "defaultValue": "maui"
+        "defaultValue": ""
       },
       {
-        "label": "Cursor theme",
+        "label": "Cursor theme used in the greeter",
         "description": "",
         "key": "CursorTheme",
         "type": "string",
         "defaultValue": ""
       },
       {
-        "label": "Face icon directory",
-        "description": "The files should be in username.face.icon format",
+        "label": "Number of users to use as threshold",
+        "description": "above which avatars are disabled\nunless explicitly enabled with EnableAvatars",
+        "key": "DisableAvatarsThreshold",
+        "type": "integer",
+        "defaultValue": "7"
+      },
+      {
+        "label": "Enable display of custom user avatars",
+        "description": "",
+        "key": "EnableAvatars",
+        "type": "boolean",
+        "defaultValue": "true"
+      },
+      {
+        "label": "Global directory for user avatars",
+        "description": "The files should be named <username>.face.icon",
         "key": "FacesDir",
         "type": "directory",
         "defaultValue": "/usr/share/sddm/faces"
@@ -88,21 +109,21 @@
     "name": "Users",
     "settings": [
       {
-        "label": "Default $PATH",
+        "label": "Default $PATH for logged in users",
         "description": "",
         "key": "DefaultPath",
         "type": "path_list",
         "defaultValue": "/bin:/usr/bin:/usr/local/bin"
       },
       {
-        "label": "Hidden shells",
+        "label": "Comma-separated list of shells.",
         "description": "Users with these shells as their default won't be listed",
         "key": "HideShells",
         "type": "string",
         "defaultValue": ""
       },
       {
-        "label": "Hidden users",
+        "label": "Comma-separated list of users that should not be listed",
         "description": "",
         "key": "HideUsers",
         "type": "string",
@@ -113,7 +134,7 @@
         "description": "",
         "key": "MaximumUid",
         "type": "integer",
-        "defaultValue": "65000"
+        "defaultValue": "60000"
       },
       {
         "label": "Minimum user id for displayed users",
@@ -139,49 +160,110 @@
     ]
   },
   {
-    "name": "XDisplay",
+    "name": "Wayland",
     "settings": [
       {
-        "label": "Xsetup script path",
-        "description": "A script to execute when starting the display server",
+        "label": "Path to a script to execute when starting the desktop session",
+        "description": "",
+        "key": "SessionCommand",
+        "type": "file",
+        "defaultValue": "/usr/share/sddm/scripts/wayland-session"
+      },
+      {
+        "label": "Directory containing available Wayland sessions",
+        "description": "",
+        "key": "SessionDir",
+        "type": "directory",
+        "defaultValue": "/usr/share/wayland-sessions"
+      },
+      {
+        "label": "Path to the user session log file",
+        "description": "",
+        "key": "SessionLogFile",
+        "type": "string",
+        "defaultValue": ".local/share/sddm/wayland-session.log"
+      }
+    ]
+  },
+  {
+    "name": "X11",
+    "settings": [
+      {
+        "label": "Path to a script to execute when starting the display server",
+        "description": "",
         "key": "DisplayCommand",
         "type": "file",
         "defaultValue": "/usr/share/sddm/scripts/Xsetup"
       },
       {
-        "label": "Minimum VT",
-        "description": "The lowest virtual terminal number that will be used.",
+        "label": "Path to a script to execute when stopping the display server",
+        "description": "",
+        "key": "DisplayStopCommand",
+        "type": "file",
+        "defaultValue": "/usr/share/sddm/scripts/Xstop"
+      },
+      {
+        "label": "The lowest virtual terminal number that will be used.",
+        "description": "",
         "key": "MinimumVT",
         "type": "integer",
         "defaultValue": "1"
       },
       {
-        "label": "X server path",
+        "label": "Arguments passed to the X server invocation",
+        "description": "",
+        "key": "ServerArguments",
+        "type": "string",
+        "defaultValue": "-nolisten tcp"
+      },
+      {
+        "label": "Path to X server binary",
         "description": "",
         "key": "ServerPath",
         "type": "file",
         "defaultValue": "/usr/bin/X"
       },
       {
-        "label": "Xsession script path",
-        "description": "A script to execute when starting the desktop session",
+        "label": "Path to a script to execute when starting the desktop session",
+        "description": "",
         "key": "SessionCommand",
         "type": "file",
         "defaultValue": "/usr/share/sddm/scripts/Xsession"
       },
       {
-        "label": "Session description directory",
+        "label": "Directory containing available X sessions",
         "description": "",
         "key": "SessionDir",
         "type": "directory",
         "defaultValue": "/usr/share/xsessions"
       },
       {
-        "label": "Xauth path",
+        "label": "Path to the user session log file",
+        "description": "",
+        "key": "SessionLogFile",
+        "type": "string",
+        "defaultValue": ".local/share/sddm/xorg-session.log"
+      },
+      {
+        "label": "Path to the Xauthority file",
+        "description": "",
+        "key": "UserAuthFile",
+        "type": "string",
+        "defaultValue": ".Xauthority"
+      },
+      {
+        "label": "Path to xauth binary",
         "description": "",
         "key": "XauthPath",
         "type": "file",
         "defaultValue": "/usr/bin/xauth"
+      },
+      {
+        "label": "Path to Xephyr binary",
+        "description": "",
+        "key": "XephyrPath",
+        "type": "file",
+        "defaultValue": "/usr/bin/Xephyr"
       }
     ]
   }

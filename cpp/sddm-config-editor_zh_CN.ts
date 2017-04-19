@@ -9,9 +9,8 @@
         <translation>自动登录</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="6"/>
         <source>Autologin again on session exit</source>
-        <translation>退出时自动登录</translation>
+        <translation type="vanished">退出时自动登录</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="6"/>
@@ -19,14 +18,12 @@
         <translation></translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="9"/>
         <source>Autologin session</source>
-        <translation>自动登录桌面</translation>
+        <translation type="vanished">自动登录桌面</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="12"/>
         <source>Autologin user</source>
-        <translation>自动登录用户</translation>
+        <translation type="vanished">自动登录用户</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="15"/>
@@ -39,209 +36,325 @@
         <translation>关机命令</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="21"/>
         <source>Initial NumLock state</source>
-        <translation>起始 NumLock 状态</translation>
+        <translation type="vanished">起始 NumLock 状态</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="24"/>
         <source>Valid values: on|off|none
 If property is set to none, numlock won&apos;t be changed</source>
-        <translation>有效值：on|off|none 如果设为 none，则不影响 NumLock</translation>
+        <translation type="vanished">有效值：on|off|none 如果设为 none，则不影响 NumLock</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="28"/>
+        <location filename="config-strings.qml" line="31"/>
         <source>Reboot command</source>
         <translation>重启命令</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="31"/>
+        <location filename="config-strings.qml" line="34"/>
         <source>Theme</source>
         <translation>主题</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="34"/>
+        <location filename="config-strings.qml" line="37"/>
         <source>Current theme name</source>
         <translation>当前主题名</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="37"/>
         <source>Cursor theme</source>
-        <translation>鼠标主题名</translation>
+        <translation type="vanished">鼠标主题名</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="40"/>
         <source>Face icon directory</source>
-        <translation>相片目录</translation>
+        <translation type="vanished">相片目录</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="43"/>
         <source>The files should be in username.face.icon format</source>
-        <translation>文件名应为 用户名.face.icon 格式</translation>
+        <translation type="vanished">文件名应为 用户名.face.icon 格式</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="46"/>
+        <location filename="config-strings.qml" line="59"/>
         <source>Theme directory path</source>
         <translation>主题目录</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="49"/>
+        <location filename="config-strings.qml" line="62"/>
         <source>Users</source>
         <translation>用户</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="52"/>
         <source>Default $PATH</source>
-        <translation>默认 $PATH</translation>
+        <translation type="vanished">默认 $PATH</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="55"/>
         <source>Hidden shells</source>
-        <translation>隐藏外壳</translation>
+        <translation type="vanished">隐藏外壳</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="58"/>
+        <location filename="config-strings.qml" line="71"/>
         <source>Users with these shells as their default won&apos;t be listed</source>
         <translation>默认使用这些外壳的用户不会列出</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="61"/>
         <source>Hidden users</source>
-        <translation>隐藏用户</translation>
+        <translation type="vanished">隐藏用户</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="64"/>
+        <location filename="config-strings.qml" line="6"/>
+        <source>Whether sddm should automatically log back into sessions when they exit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="9"/>
+        <source>Name of session file for autologin session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="12"/>
+        <source>Username for autologin session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="21"/>
+        <source>Input method module</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="24"/>
+        <source>Initial NumLock state. Can be on, off or none.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="27"/>
+        <source>If property is set to none, numlock won&apos;t be changed
+NOTE: Currently ignored if autologin is enabled.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="40"/>
+        <source>Cursor theme used in the greeter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="43"/>
+        <source>Number of users to use as threshold</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="46"/>
+        <source>above which avatars are disabled
+unless explicitly enabled with EnableAvatars</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="50"/>
+        <source>Enable display of custom user avatars</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="53"/>
+        <source>Global directory for user avatars</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="56"/>
+        <source>The files should be named &lt;username&gt;.face.icon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="65"/>
+        <source>Default $PATH for logged in users</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="68"/>
+        <source>Comma-separated list of shells.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="74"/>
+        <source>Comma-separated list of users that should not be listed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="77"/>
         <source>Maximum user id for displayed users</source>
         <translation>显示用户的最大用户 id</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="67"/>
+        <location filename="config-strings.qml" line="80"/>
         <source>Minimum user id for displayed users</source>
         <translation>显示用户的最小用户 id</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="70"/>
+        <location filename="config-strings.qml" line="83"/>
         <source>Remember the session of the last successfully logged in user</source>
         <translation>记住上次成功登录的用户的桌面</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="73"/>
+        <location filename="config-strings.qml" line="86"/>
         <source>Remember the last successfully logged in user</source>
         <translation>记住上次成功登录的用户</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="76"/>
+        <location filename="config-strings.qml" line="89"/>
+        <source>Wayland</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="92"/>
+        <location filename="config-strings.qml" line="119"/>
+        <source>Path to a script to execute when starting the desktop session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="95"/>
+        <source>Directory containing available Wayland sessions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="98"/>
+        <location filename="config-strings.qml" line="125"/>
+        <source>Path to the user session log file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="101"/>
+        <source>X11</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="104"/>
+        <source>Path to a script to execute when starting the display server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="107"/>
+        <source>Path to a script to execute when stopping the display server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="113"/>
+        <source>Arguments passed to the X server invocation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="116"/>
+        <source>Path to X server binary</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="122"/>
+        <source>Directory containing available X sessions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="128"/>
+        <source>Path to the Xauthority file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="131"/>
+        <source>Path to xauth binary</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="config-strings.qml" line="134"/>
+        <source>Path to Xephyr binary</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>XDisplay</source>
-        <translation>XDisplay</translation>
+        <translation type="vanished">XDisplay</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="79"/>
         <source>Xsetup script path</source>
-        <translation>Xsetup 脚本路径</translation>
+        <translation type="vanished">Xsetup 脚本路径</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="82"/>
         <source>A script to execute when starting the display server</source>
-        <translation>启动显示服务器时执行的脚本</translation>
+        <translation type="vanished">启动显示服务器时执行的脚本</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="85"/>
         <source>Minimum VT</source>
-        <translation>最小 VT</translation>
+        <translation type="vanished">最小 VT</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="88"/>
+        <location filename="config-strings.qml" line="110"/>
         <source>The lowest virtual terminal number that will be used.</source>
         <translation>最低的虚拟终端数。</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="91"/>
         <source>X server path</source>
-        <translation>X 服务器路径</translation>
+        <translation type="vanished">X 服务器路径</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="94"/>
         <source>Xsession script path</source>
-        <translation>Xsession 脚本路径</translation>
+        <translation type="vanished">Xsession 脚本路径</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="97"/>
         <source>A script to execute when starting the desktop session</source>
-        <translation>启动桌面时执行的脚本</translation>
+        <translation type="vanished">启动桌面时执行的脚本</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="100"/>
         <source>Session description directory</source>
-        <translation>桌面描述文件目录</translation>
+        <translation type="vanished">桌面描述文件目录</translation>
     </message>
     <message>
-        <location filename="config-strings.qml" line="103"/>
         <source>Xauth path</source>
-        <translation>Xauth 路径</translation>
+        <translation type="vanished">Xauth 路径</translation>
     </message>
 </context>
 <context>
     <name>file-editor</name>
     <message>
-        <location filename="ui/file-editor.qml" line="27"/>
         <source>Please choose a %1</source>
-        <translation>请选择%1</translation>
+        <translation type="vanished">请选择%1</translation>
     </message>
 </context>
 <context>
     <name>main-window</name>
     <message>
-        <location filename="ui/main-window.qml" line="8"/>
         <source>SDDM Configuration Editor</source>
-        <translation>SDDM 设置工具</translation>
+        <translation type="vanished">SDDM 设置工具</translation>
     </message>
     <message>
-        <location filename="ui/main-window.qml" line="30"/>
         <source>File</source>
-        <translation>设置文件</translation>
+        <translation type="vanished">设置文件</translation>
     </message>
     <message>
-        <location filename="ui/main-window.qml" line="45"/>
         <source>Reset</source>
-        <translation>还原</translation>
+        <translation type="vanished">还原</translation>
     </message>
     <message>
-        <location filename="ui/main-window.qml" line="47"/>
         <source>Load settings from the system configuation file</source>
-        <translation>从系统设置文件读取设置</translation>
+        <translation type="vanished">从系统设置文件读取设置</translation>
     </message>
     <message>
-        <location filename="ui/main-window.qml" line="51"/>
         <source>Save...</source>
-        <translation>保存...</translation>
+        <translation type="vanished">保存...</translation>
     </message>
     <message>
-        <location filename="ui/main-window.qml" line="53"/>
         <source>Save the settings to the system configuration file</source>
-        <translation>将设置保存到系统</translation>
+        <translation type="vanished">将设置保存到系统</translation>
     </message>
 </context>
 <context>
     <name>theme-editor</name>
     <message>
-        <location filename="ui/theme-editor.qml" line="18"/>
         <source>Preview</source>
-        <translation>预览</translation>
+        <translation type="vanished">预览</translation>
     </message>
     <message>
-        <location filename="ui/theme-editor.qml" line="28"/>
         <source>Theme Preview</source>
-        <translation>预览主题</translation>
+        <translation type="vanished">预览主题</translation>
     </message>
     <message>
-        <location filename="ui/theme-editor.qml" line="47"/>
         <source>Displaying preview for SDDM theme &lt;b&gt;%1&lt;/b&gt;...</source>
-        <translation>正在预览 &lt;b&gt;%1&lt;/b&gt; SDDM主题...</translation>
+        <translation type="vanished">正在预览 &lt;b&gt;%1&lt;/b&gt; SDDM主题...</translation>
     </message>
     <message>
-        <location filename="ui/theme-editor.qml" line="52"/>
         <source>Close Preview</source>
-        <translation>关闭预览</translation>
+        <translation type="vanished">关闭预览</translation>
     </message>
 </context>
 </TS>

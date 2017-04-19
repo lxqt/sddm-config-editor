@@ -9,8 +9,8 @@ ApplicationWindow {
   visible: true
   Component.onCompleted: configEditor.load()
 
-  width: 500
-  height: 400
+  width: 600
+  height: 600
 
   ColumnLayout {
     anchors.margins: 5
