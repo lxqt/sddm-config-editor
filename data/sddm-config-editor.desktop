@@ -1,12 +1,13 @@
 [Desktop Entry]
 Type=Application
 Name=SDDM Configuration
+Name[ru]=Настройка SDDM
 GenericName=Display Manager Configuration
+GenericName[ru]=Параметры входа в систему
 Comment=Qt configuration editor for SDDM
+Comment[ru]=Редактор конфигурации SDDM
 Categories=Settings;System;Qt
 Icon=preferences-system-login
 Terminal=false
 Exec=sddm-config-editor
-Terminal=false
 StartupNotify=false
-
