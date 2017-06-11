@@ -2,9 +2,12 @@
 Type=Application
 Name=SDDM Configuration
 Name[ru]=Настройка входа в систему (SDDM)
+Name[pl]=Konfiguracja SDDM
 GenericName=Display Manager Configuration
 GenericName[ru]=Параметры входа в систему
+GenericName[pl]=Konfiguracja menedżera wyświetlania
 Comment=Qt configuration editor for SDDM
+Comment[pl]=Edytor konfiguracji menedżera wyświetlania SDDM napisany z użyciem Qt
 Comment[ru]=Редактор конфигурации SDDM
 Categories=Settings;System;Qt
 Icon=preferences-system-login
