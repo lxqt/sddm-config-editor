@@ -45,6 +45,11 @@ void Controller::refreshView()
   emit configurationChanged();
 }
 
+QString Controller::getValue(const QString& sectionName, const QString& key)
+{
+  return m_configuration->getValue(sectionName, key);
+}
+
 void Controller::save()
 {
   QProcess process;

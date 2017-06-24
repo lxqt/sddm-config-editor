@@ -24,6 +24,15 @@ Setting* Setting::fromJson(const QJsonObject& object, QObject* parent)
   return setting;
 }
 
+QString Setting::getValue() const
+{
+  if(isDefined()) {
+    return m_value;
+  } else {
+    return m_defaultValue;
+  }
+}
+
 QString Setting::toString() const
 {
   if(isDefined()) {

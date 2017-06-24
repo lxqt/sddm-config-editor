@@ -22,6 +22,7 @@ class Controller : public QObject
     void load();
     void refreshView();
     void save();
+    QString getValue(const QString&, const QString&);
     QString chooseDirectory(const QString&);
     QString chooseFile(const QString&);
     QStringList directoryEntries(const QString&);

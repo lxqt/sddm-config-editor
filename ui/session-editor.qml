@@ -5,10 +5,15 @@ Loader {
   Layout.fillWidth: true
   source: 'enum-editor.qml'
   Component.onCompleted: {
-    item.choices =
-      configEditor.directoryEntries("/usr/share/xsessions").filter(function(name) {
-        return /\.desktop$/.test(name);
+    var files = [];
+    ["X11", "Wayland"].forEach(function(sectionName) {
+      configEditor.directoryEntries(
+        configEditor.getValue(sectionName, "SessionDir")
+      ).forEach(function(file) {
+        files.push(file);
       });
+    });
+    item.choices = files;
   }
 }
 

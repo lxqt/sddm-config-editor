@@ -19,6 +19,7 @@ class Setting : public QObject
   public:
     Setting(QObject* parent = 0);
     static Setting* fromJson(const QJsonObject&, QObject* parent = 0);
+    QString getValue() const;
     QString toString() const;
 
     Q_INVOKABLE bool isDefined() const;

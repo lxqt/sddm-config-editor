@@ -5,6 +5,7 @@
 #include <QObject>
 #include <QVariant>
 #include <QDebug>
+#include <algorithm>
 #include "setting.h"
 
 Section::Section(QObject* parent) : QObject(parent)
@@ -31,6 +32,17 @@ Section* Section::fromJson(const QJsonObject& object, QObject* parent)
   }
   section->setProperty("settings", QVariant::fromValue(settings));
   return section;
+}
+
+QString Section::getValue(QString key) const
+{
+  auto found = std::find_if(m_settings.begin(), m_settings.end(), [key](auto o) {
+      return o->property("key") == key;
+  });
+  if(found != m_settings.end()) {
+    return reinterpret_cast<Setting*>(*found)->getValue();
+  }
+  return "";
 }
 
 QString Section::toString() const

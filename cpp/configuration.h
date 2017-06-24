@@ -20,6 +20,7 @@ class Configuration : public QObject
     QString toFile() const;
     void loadSchema(const QJsonArray&);
     void loadSettings(QSettings&);
+    QString getValue(const QString&, const QString&) const;
     friend QDebug operator<<(QDebug, const Configuration&);
 
   signals:

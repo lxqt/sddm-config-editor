@@ -5,6 +5,7 @@
 #include <QFile>
 #include <QSettings>
 #include <QDebug>
+#include <algorithm>
 #include "section.h"
 #include "controller.h"
 
@@ -41,6 +42,17 @@ void Configuration::loadSettings(QSettings& qsettings)
     }
   }
   emit sectionsChanged();
+}
+
+QString Configuration::getValue(const QString& sectionName, const QString& key) const
+{
+  auto found = std::find_if(m_sections.begin(), m_sections.end(), [sectionName](auto o) {
+      return o->property("name") == sectionName;
+  });
+  if(found != m_sections.end()) {
+    return reinterpret_cast<Section*>(*found)->getValue(key);
+  }
+  return "";
 }
 
 QList<QObject*> Configuration::model()
