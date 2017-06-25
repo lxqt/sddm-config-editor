@@ -10,7 +10,7 @@ RowLayout {
     Layout.fillWidth: true
     source: 'enum-editor.qml'
     Component.onCompleted: {
-      item.choices = configEditor.directoryEntries("/usr/share/sddm/themes");
+      item.choices = configEditor.directoryEntries(configEditor.getValue("Theme", "ThemeDir"));
     }
   }
   Button {
@@ -19,7 +19,7 @@ RowLayout {
     onClicked: {
       closePreviewWindow.visible = true
       previewProcesses.push(configEditor.spawnProcess(
-        'sddm-greeter --test-mode --theme /usr/share/sddm/themes/' + effectiveTheme
+        'sddm-greeter --test-mode --theme ' + configEditor.absolutePath(configEditor.getValue("Theme", "ThemeDir"), effectiveTheme)
       ));
     }
   }
