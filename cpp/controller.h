@@ -26,6 +26,7 @@ class Controller : public QObject
     QString chooseDirectory(const QString&);
     QString chooseFile(const QString&);
     QStringList directoryEntries(const QString&);
+    QString absolutePath(const QString&, const QString&);
     QObject* spawnProcess(const QString&);
     void closeProcess(QObject*);
 

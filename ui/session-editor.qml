@@ -7,10 +7,9 @@ Loader {
   Component.onCompleted: {
     var files = [];
     ["X11", "Wayland"].forEach(function(sectionName) {
-      configEditor.directoryEntries(
-        configEditor.getValue(sectionName, "SessionDir")
-      ).forEach(function(file) {
-        files.push(file);
+      var directory = configEditor.getValue(sectionName, "SessionDir");
+      configEditor.directoryEntries(directory).forEach(function(file) {
+        files.push(configEditor.absolutePath(directory, file));
       });
     });
     item.choices = files;

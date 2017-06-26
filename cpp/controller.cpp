@@ -82,6 +82,12 @@ QStringList Controller::directoryEntries(const QString& path)
   return directory.entryList(QDir::AllEntries | QDir::NoDotAndDotDot);
 }
 
+QString Controller::absolutePath(const QString& path, const QString& filename)
+{
+  QDir directory(path);
+  return directory.absoluteFilePath(filename);
+}
+
 QObject* Controller::spawnProcess(const QString& line)
 {
   QProcess* process = new QProcess();
