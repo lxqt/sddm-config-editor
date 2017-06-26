@@ -1,0 +1,11 @@
+*.swp
+config-strings.qml
+cpp/Makefile
+cpp/.qmake.stash
+cpp/*.o
+cpp/qrc_*.cpp
+cpp/moc_*.cpp
+cpp/moc_predefs.h
+cpp/*.qm
+cpp/sddm-config-editor
+
