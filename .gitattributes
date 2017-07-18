@@ -1,0 +1,31 @@
+# remove files from deployment using `git archive`
+
+# git files
+.gitattributes export-ignore
+.gitignore     export-ignore
+
+
+# several files and directories we never want to export 
+# a little bit belt and braces as the most of these files
+# should never ever be in the repository
+
+.*~                    export-ignore
+*.swp                  export-ignore
+.kdev4                 export-ignore
+config-strings.qml     export-ignore
+
+/build                 export-ignore
+
+cpp/Makefile           export-ignore
+cpp/.qmake.stash       export-ignore
+cpp/*.o                export-ignore
+cpp/qrc_*.cpp          export-ignore
+cpp/moc_*.cpp          export-ignore
+cpp/moc_predefs.h      export-ignore
+cpp/*.qm               export-ignore
+cpp/sddm-config-editor export-ignore
+
+/temp                  export-ignore
+/tmp                   export-ignore
+
+
