@@ -10,7 +10,8 @@ lupdate_only {
   SOURCES += ui/*.qml config-strings.qml
 }
 TRANSLATIONS = sddm-config-editor_zh_CN.ts \
-               sddm-config-editor_ru.ts
+               sddm-config-editor_ru.ts \
+               sddm-config-editor_it.ts
 QMAKE_EXTRA_COMPILERS += lrelease
 lrelease.input         = TRANSLATIONS
 lrelease.output        = ${QMAKE_FILE_BASE}.qm
