@@ -6,7 +6,7 @@
     <message>
         <location filename="config-strings.qml" line="3"/>
         <source>Autologin</source>
-        <translation>Login automatico</translation>
+        <translation>Autologin</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="6"/>
@@ -16,7 +16,8 @@
     <message>
         <location filename="config-strings.qml" line="9"/>
         <source>Name of session file for autologin session (if empty try last logged in)</source>
-        <translation>Tipo sessione per sessioni con autologin (se vuoto verrà usato ultimo login)</translation>
+        <translation>File di sessione per l&apos;autologin
+(se vuoto verrà usato il tipo sessione del ultimo login)</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="12"/>
@@ -46,13 +47,13 @@
     <message>
         <location filename="config-strings.qml" line="27"/>
         <source>Initial NumLock state. Can be on, off or none.</source>
-        <translation>Stato iniziale del blocco numeri(on, off, none)</translation>
+        <translation>Stato iniziale del blocco numeri (on, off, none)</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="30"/>
         <source>If property is set to none, numlock won&apos;t be changed
 NOTE: Currently ignored if autologin is enabled.</source>
-        <translation>Se  viene scelto &lt;i&gt;none&lt;/i&gt; lo stato del blocco numeri rimarrà invariato
+        <translation>Se viene scelto &quot;none&quot; lo stato del BlocNum rimarrà invariato.
 NOTA: attualmente ignorato se l&apos; autologin è attivato</translation>
     </message>
     <message>
@@ -228,23 +229,42 @@ se non esplicitamente attivati con &quot;Permetti avatar&quot;</translation>
 <context>
     <name>main-window</name>
     <message>
+        <location filename="main-window.qml" line="9"/>
         <source>SDDM Configuration Editor</source>
-        <translation type="obsolete">Editor di configurazione di SDDM</translation>
+        <translation>Editor di configurazione di SDDM</translation>
     </message>
     <message>
         <source>File</source>
-        <translation type="obsolete">File</translation>
+        <location filename="main-window.qml" line="32"/>
+        <translation>File</translation>
     </message>
     <message>
+        <location filename="main-window.qml" line="47"/>
         <source>Reset</source>
-        <translation type="obsolete">Ripristina</translation>
+        <translation>Ripristina</translation>
+    </message>
+     <message>
+        <location filename="main-window.qml" line="53"/>
+        <source>Save...</source>
+        <translation>Salva</translation>
     </message>
 </context>
 <context>
     <name>theme-editor</name>
     <message>
+        <location filename="theme-editor.qml" line="18"/>
         <source>Preview</source>
-        <translation type="obsolete">Anteprima</translation>
+        <translation>Anteprima</translation>
+    </message>
+    <message>
+        <location filename="theme-editor.qml" line="47"/>
+        <source>Displaying preview for SDDM theme &lt;b&gt;%1&lt;/b&gt;...</source>
+        <translation>Anteprima del tema &lt;b&gt;%1&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location filename="theme-editor.qml" line="52"/>
+        <source>Close Preview</source>
+        <translation>Chiudi anteprima</translation>
     </message>
 </context>
 </TS>
