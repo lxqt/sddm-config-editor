@@ -3,8 +3,8 @@ TEMPLATE = app
 CONFIG += debug
 QT += qml quick widgets
 
-SOURCES += main.cpp controller.cpp configuration.cpp section.cpp setting.cpp
-HEADERS += controller.h configuration.h section.h setting.h
+SOURCES += main.cpp src/controller.cpp src/configuration.cpp src/section.cpp src/setting.cpp
+HEADERS += src/controller.h src/configuration.h src/section.h src/setting.h
 
 lupdate_only {
   SOURCES += ui/*.qml config-strings.qml

@@ -2,7 +2,7 @@
 #include <QTranslator>
 #include <QQmlApplicationEngine>
 #include <QtQml>
-#include "controller.h"
+#include "src/controller.h"
 
 int main(int argc, char *argv[])
 {
