@@ -1,7 +1,7 @@
 <RCC>
     <qresource prefix="/">
-        <file>sddm-config-editor_zh_CN.qm</file>
-        <file>sddm-config-editor_ru.qm</file>
-        <file>sddm-config-editor_it.qm</file>
+        <file>translations/sddm-config-editor_zh_CN.qm</file>
+        <file>translations/sddm-config-editor_ru.qm</file>
+        <file>translations/sddm-config-editor_it.qm</file>
     </qresource>
 </RCC>
