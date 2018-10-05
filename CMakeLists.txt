@@ -26,17 +26,13 @@ endif()
 
 # include(LXQtPreventInSourceBuilds)
 include(LXQtTranslateTs)
-include(LXQtTranslateDesktop)
-#include(LXQtCompilerSettings)
+# include(LXQtTranslateDesktop)
+# include(LXQtCompilerSettings)
 # include(LXQtCompilerSettings NO_POLICY_SCOPE)
-
 
 
 set(QT5_LIBRARIES Qt5::Widgets Qt5::Qml Qt5::Quick)
 
-#
-# project main
-#
 set(TARGET ${CMAKE_PROJECT_NAME})
 
 set(SOURCES
@@ -51,27 +47,10 @@ set(SOURCES
     src/setting.h
 )
 
+qt5_add_resources(QT_RESOURCES qml.qrc)
 
-qt5_add_resources(QT_RESOURCES ui/qml.qrc)
+add_executable(${TARGET} ${SOURCES} ${QT_RESOURCES})
 
-#
-# Generate necessary headers from .ui files. (qmake lets `uic` do this job.)
-# hint from [Cross-platform Qt5 project using cmake](http://stackoverflow.com/questions/21174586/cross-platform-qt5-project-using-cmake)
-#
-# qt5_wrap_ui(UI_GENERATED_HEADERS ${UI_SOURCES})
-#
-# IMPORTANT: Adding generated headers to target as dependencies
-# hint from [unable to include a ui_form header of QT5 in cmake](http://stackoverflow.com/questions/16245147/unable-to-include-a-ui-form-header-of-qt5-in-cmake)
-#
-
-
-add_subdirectory(ui)
-add_executable(${TARGET} ${SOURCES} ${UI_GENERATED_HEADERS} ${QT_RESOURCES})
-
-#
-# `target_link_libraries()` rather than `qt5_use_modules()` for CMake 2.8.11 or later
-# hint from [CMake & QT5 - QT5_WRAP_UI not generating ui header files](http://stackoverflow.com/questions/25875255/cmake-qt5-qt5-wrap-ui-not-generating-ui-header-files)
-#
 target_link_libraries(${TARGET}
     Qt5::Widgets
     Qt5::Qml

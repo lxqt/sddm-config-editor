@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ui/main-window.qml</file>
+        <file>ui/boolean-editor.qml</file>
+        <file>ui/directory-editor.qml</file>
+        <file>ui/enum-editor.qml</file>
+        <file>ui/file-editor.qml</file>
+        <file>ui/integer-editor.qml</file>
+        <file>ui/numlock-editor.qml</file>
+        <file>ui/string-editor.qml</file>
+        <file>ui/path_list-editor.qml</file>
+        <file>ui/session-editor.qml</file>
+        <file>ui/theme-editor.qml</file>
+        <file>ui/setting-section.qml</file>
+        <file>data/config-schema.json</file>
+    </qresource>
+</RCC>
