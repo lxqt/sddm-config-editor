@@ -1,110 +1,80 @@
+cmake_minimum_required(VERSION 3.2.0)
+
 project(sddm-config-editor)
-cmake_minimum_required(VERSION 3.0.2 FATAL_ERROR)
-set(LXQTBT_MINIMUM_VERSION "0.5.0")
 
-option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
+#
+# Qt5 support
+#
+# general overview:
+#  * [Modern CMake with Qt and Boost](http://www.kdab.com/modern-cmake-with-qt-and-boost/)
+#  * [Using CMake with Qt 5](http://www.kdab.com/using-cmake-with-qt-5/)
+#
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
+find_package(Qt5Widgets REQUIRED)
+find_package(Qt5Qml REQUIRED)
+find_package(Qt5Quick REQUIRED)
+find_package(lxqt-build-tools REQUIRED)
+
 
 if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Release)
 endif()
 
-
-
-#include(LXQtPreventInSourceBuilds)
-include(LXQtConfigVars)
+# include(LXQtPreventInSourceBuilds)
 include(LXQtTranslateTs)
 include(LXQtTranslateDesktop)
-
-set(CMAKE_INCLUDE_CURRENT_DIR ON)
-set(CMAKE_POSITION_INDEPENDENT_CODE ON)
-set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTOUIC ON)
-
-find_package(Qt5Gui REQUIRED)
-find_package(Qt5Widgets REQUIRED)
-find_package(Qt5X11Extras REQUIRED)
-find_package(Qt5LinguistTools REQUIRED)
-find_package(X11 REQUIRED)
-include(GNUInstallDirs REQUIRED)
-include(LXQtCompilerSettings NO_POLICY_SCOPE)
-
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DQT_NO_KEYWORDS")
-
-set(QTX_INCLUDE_DIRS "")
-set(QTX_LIBRARIES Qt5:Core Qt5:Gui Qt5::Widgets Qt5::DBus)
+#include(LXQtCompilerSettings)
+# include(LXQtCompilerSettings NO_POLICY_SCOPE)
 
 
-set(CPP_FILES
-    src/configuration.cpp
-    src/controller.cpp
-    src/section.cpp
-    src/setting.cpp
-    src/configuration.h
-    src/controller.h
-    src/section.h
-    src/setting.h
+
+set(QT5_LIBRARIES Qt5::Widgets Qt5::Qml Qt5::Quick)
+
+#
+# project main
+#
+set(TARGET ${CMAKE_PROJECT_NAME})
+
+set(SOURCES
     main.cpp
+    src/section.cpp
+    src/section.h
+    src/configuration.cpp
+    src/configuration.h
+    src/controller.cpp
+    src/controller.h
+    src/setting.cpp
+    src/setting.h
 )
 
 
-set(UI_FILES
-    ui/boolean-editor.qml
-    ui/directory-editor.qml
-    ui/enum-editor.qml
-    ui/file-editor.qml
-    ui/integer-editor.qml
-    ui/main-window.qml
-    ui/numlock-editor.qml
-    ui/path_list-editor.qml
-    ui/session-editor.qml
-    ui/setting-section.qml
-    ui/string-editor.qml
-    ui/theme-editor.qml
+qt5_add_resources(QT_RESOURCES ui/qml.qrc)
+
+#
+# Generate necessary headers from .ui files. (qmake lets `uic` do this job.)
+# hint from [Cross-platform Qt5 project using cmake](http://stackoverflow.com/questions/21174586/cross-platform-qt5-project-using-cmake)
+#
+# qt5_wrap_ui(UI_GENERATED_HEADERS ${UI_SOURCES})
+#
+# IMPORTANT: Adding generated headers to target as dependencies
+# hint from [unable to include a ui_form header of QT5 in cmake](http://stackoverflow.com/questions/16245147/unable-to-include-a-ui-form-header-of-qt5-in-cmake)
+#
+
+
+add_subdirectory(ui)
+add_executable(${TARGET} ${SOURCES} ${UI_GENERATED_HEADERS} ${QT_RESOURCES})
+
+#
+# `target_link_libraries()` rather than `qt5_use_modules()` for CMake 2.8.11 or later
+# hint from [CMake & QT5 - QT5_WRAP_UI not generating ui header files](http://stackoverflow.com/questions/25875255/cmake-qt5-qt5-wrap-ui-not-generating-ui-header-files)
+#
+target_link_libraries(${TARGET}
+    Qt5::Widgets
+    Qt5::Qml
+    Qt5::Quick
 )
 
-
-
-
-
-# lxqt_translate_ts(QM_FILES
-#     UPDATE_TRANSLATIONS ${UPDATE_TRANSLATIONS}
-#     SOURCES
-#         ${H_FILES}
-#         ${CPP_FILES}
-#         ${UI_FILES}
-#     INSTALL_DIR
-#         "${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}"
-# )
-
-
-# lxqt_translate_desktop(DESKTOP_FILES
-#     SOURCES
-#     resources/lxqt-about.desktop.in
-# )
-#************************************************
-
-# include(translatorsinfo/CMakeLists.txt)
-# get_translatorsinfo_qrc(translatorsinfo_qrc)
-
-add_executable(${PROJECT_NAME}
-    ${CPP_FILES}
-)
-
-
-target_link_libraries(${PROJECT_NAME}
-    lxqt
-)
-
-install(TARGETS
-    ${PROJECT_NAME}
-    RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}"
-    COMPONENT Runtime
-)
-
-#install(FILES
-#    ${DESKTOP_FILES}
-#    DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/applications"
-#    COMPONENT Runtime
-#)
