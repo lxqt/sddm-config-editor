@@ -27,34 +27,37 @@ RowLayout {
     id: closePreviewWindow
     title: qsTr('Theme Preview')
     flags: Qt.WindowStaysOnTopHint | Qt.FramelessWindowHint
+    width: 350
+    height: 60
 
-    ColumnLayout {
-      anchors.margins: 10
+    MouseArea {
       anchors.fill: parent
-      MouseArea {
-        anchors.fill: parent
-        property real lastMouseX: 0
-        property real lastMouseY: 0
-        cursorShape: pressed ? Qt.DragMoveCursor : Qt.OpenHandCursor
-        onPressed: {
-          lastMouseX = mouseX
-          lastMouseY = mouseY
+      property real lastMouseX: 0
+      property real lastMouseY: 0
+      cursorShape: pressed ? Qt.DragMoveCursor : Qt.OpenHandCursor
+      onPressed: {
+        lastMouseX = mouseX
+        lastMouseY = mouseY
+      }
+      onMouseXChanged: closePreviewWindow.x += (mouseX - lastMouseX)
+      onMouseYChanged: closePreviewWindow.y += (mouseY - lastMouseY)
+
+      ColumnLayout {
+        anchors { left: parent.left; right: parent.right; margins: 10 }
+        Label {
+          text: qsTr('Displaying preview for SDDM theme <b>%1</b>...').arg(effectiveTheme)
+          Layout.fillWidth: true
         }
-        onMouseXChanged: closePreviewWindow.x += (mouseX - lastMouseX)
-        onMouseYChanged: closePreviewWindow.y += (mouseY - lastMouseY)
-      }
-      Label {
-        text: qsTr('Displaying preview for SDDM theme <b>%1</b>...').arg(effectiveTheme)
-      }
-      Button {
-        Layout.fillWidth: true
-        iconName: 'window-close'
-        text: qsTr('Close Preview')
-        onClicked: {
-          previewProcesses.forEach(function(process) {
-            configEditor.closeProcess(process);
-          });
-          closePreviewWindow.visible = false;
+        Button {
+          Layout.fillWidth: true
+          iconName: 'window-close'
+          text: qsTr('Close Preview')
+          onClicked: {
+            previewProcesses.forEach(function(process) {
+             configEditor.closeProcess(process);
+            });
+           closePreviewWindow.visible = false;
+          }
         }
       }
     }
