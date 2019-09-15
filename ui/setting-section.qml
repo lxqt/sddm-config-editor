@@ -18,8 +18,6 @@ ColumnLayout {
       }
 
       Text {
-        anchors.leftMargin: 10
-        anchors.left: parent.left
         text: qsTranslate('config-strings', modelData.description)
         visible: modelData.description.length > 0
       }

@@ -17,7 +17,6 @@ RowLayout {
   }
   // Display a disabled checkbox indicating the default value
   CheckBox {
-    anchors.left: parent.left
     id: defaultCheckBox
     enabled: false
     checkedState: checkedStateFromBoolean(modelData.defaultValue)
@@ -32,9 +31,6 @@ RowLayout {
   }
   // Display a checkbox indicating the actual value over the default indicator
   CheckBox {
-    anchors.left: parent.left
-    // Cover the label so that clicking on it activates the checkbox
-    anchors.right: label.right
     id: checkBox
     partiallyCheckedEnabled: true
     // Set opacity to 0 when the setting is following default
@@ -64,11 +60,10 @@ RowLayout {
   Label {
     id: label
     text: qsTranslate('config-strings', modelData.label)
-    anchors.left: parent.left
     // QtQuick displays an empty gap after the checkbox indicator when the text
     // is empty. This hack tries to move the label to make it look like the checkbox
     // text
-    anchors.leftMargin: 25
+    Layout.fillWidth: true
   }
   Connections {
     target: configEditor
