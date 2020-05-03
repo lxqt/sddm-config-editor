@@ -1,19 +1,22 @@
 [Desktop Entry]
 Type=Application
 Name=SDDM Configuration
+Name[cs]=Nastavení SDDM
 Name[ru]=Настройка входа в систему (SDDM)
 Name[pl]=Konfiguracja SDDM
 Name[pt]=Configuração para SDDM
+Name[it]=Configurazione di SDDM
 GenericName=Display Manager Configuration
+GenericName[cs]=Nastavení správce displeje
 GenericName[ru]=Параметры входа в систему
 GenericName[pl]=Konfiguracja menedżera wyświetlania
 GenericName[pt]=Configuração do gestor de ecrã
-Name[it]=Configurazione di SDDM
-Comment[it]=Editor di configurazione del display manager SDDM
 Comment=Qt configuration editor for SDDM
+Comment[cs]=Editor nastavení SDDM, založený na Qt
 Comment[pl]=Edytor konfiguracji menedżera wyświetlania SDDM napisany z użyciem Qt
 Comment[pt]=Editor de configurações do gestor SDDM
 Comment[ru]=Редактор конфигурации SDDM
+Comment[it]=Editor di configurazione del display manager SDDM
 Categories=Settings;System;Qt
 Icon=preferences-system-login
 Terminal=false
