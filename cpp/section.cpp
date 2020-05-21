@@ -22,7 +22,7 @@ Section* Section::fromJson(const QJsonObject& object, QObject* parent)
 
   QList<QObject*> settings;
   QJsonArray array = object.value("settings").toArray();
-  for(QJsonArray::const_iterator element = array.begin(); element != array.end(); element++) {
+  for(QJsonArray::const_iterator element = array.cbegin(); element != array.cend(); element++) {
     if(!element->isObject()) {
       qDebug() << "Unable to load configuration section from schema";
     } else {
