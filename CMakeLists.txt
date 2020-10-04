@@ -23,7 +23,16 @@ set(SRC
 set(RCC cpp/qml.qrc)
 
 set(TS
+    cpp/sddm-config-editor_cs.ts
+    cpp/sddm-config-editor_de.ts
+    cpp/sddm-config-editor_es.ts
+    cpp/sddm-config-editor_fr.ts
+    cpp/sddm-config-editor_hr.ts
     cpp/sddm-config-editor_it.ts
+    cpp/sddm-config-editor_ja.ts
+    cpp/sddm-config-editor_nl.ts
+    cpp/sddm-config-editor_pl.ts
+    cpp/sddm-config-editor_pt.ts
     cpp/sddm-config-editor_ru.ts
     cpp/sddm-config-editor_zh_CN.ts
 )
