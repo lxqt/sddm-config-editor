@@ -41,3 +41,14 @@ file, and save settings to it.
 - [x] Automatically generate configuration file when GUI settings change
 - [x] Provide install scripts
 - [x] Localization
+
+
+
+ 
+## Translations
+
+Translations can be done in [LXQt-Weblate](https://translate.lxqt-project.org/projects/lxqt-configuration/sddm-config-editor/).
+
+<a href="https://translate.lxqt-project.org/projects/lxqt-configuration/sddm-config-editor/">
+<img src="https://translate.lxqt-project.org/widgets/lxqt-configuration/-/sddm-config-editor/multi-auto.svg" alt="Translation status" />
+</a>
