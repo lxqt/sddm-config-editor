@@ -1,16 +1,7 @@
 <RCC>
     <qresource prefix="/">
-        <file>sddm-config-editor_cs.qm</file>
-        <file>sddm-config-editor_de.qm</file>
-        <file>sddm-config-editor_es.qm</file>
-        <file>sddm-config-editor_fr.qm</file>
-        <file>sddm-config-editor_hr.qm</file>
-        <file>sddm-config-editor_it.qm</file>
-        <file>sddm-config-editor_ja.qm</file>
-        <file>sddm-config-editor_nl.qm</file>
-        <file>sddm-config-editor_pl.qm</file>
-        <file>sddm-config-editor_pt.qm</file>
-        <file>sddm-config-editor_ru.qm</file>
         <file>sddm-config-editor_zh_CN.qm</file>
+        <file>sddm-config-editor_ru.qm</file>
+        <file>sddm-config-editor_it.qm</file>
     </qresource>
 </RCC>
