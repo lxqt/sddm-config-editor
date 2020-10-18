@@ -9,18 +9,9 @@ HEADERS += controller.h configuration.h section.h setting.h
 lupdate_only {
   SOURCES += ui/*.qml config-strings.qml
 }
-TRANSLATIONS = sddm-config-editor_cs.ts \
-               sddm-config-editor_de.ts \
-               sddm-config-editor_es.ts \
-               sddm-config-editor_fr.ts \
-               sddm-config-editor_hr.ts \
-               sddm-config-editor_it.ts \
-               sddm-config-editor_ja.ts \
-               sddm-config-editor_nl.ts \
-               sddm-config-editor_pl.ts \
-               sddm-config-editor_pt.ts \
+TRANSLATIONS = sddm-config-editor_zh_CN.ts \
                sddm-config-editor_ru.ts \
-               sddm-config-editor_zh_CN.ts
+               sddm-config-editor_it.ts
 QMAKE_EXTRA_COMPILERS += lrelease
 lrelease.input         = TRANSLATIONS
 lrelease.output        = ${QMAKE_FILE_BASE}.qm

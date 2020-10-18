@@ -9,7 +9,6 @@ GenericName[ru]=Параметры входа в систему
 GenericName[pl]=Konfiguracja menedżera wyświetlania
 GenericName[pt]=Configuração do gestor de ecrã
 Name[it]=Configurazione di SDDM
-GenericName[it]=Editor del file di configurazione di SDDM 
 Comment[it]=Editor di configurazione del display manager SDDM
 Comment=Qt configuration editor for SDDM
 Comment[pl]=Edytor konfiguracji menedżera wyświetlania SDDM napisany z użyciem Qt
