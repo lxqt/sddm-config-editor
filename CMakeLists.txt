@@ -26,11 +26,7 @@ set(SRC
 
 set(RCC cpp/qml.qrc)
 
-set(TS
-    cpp/sddm-config-editor_it.ts
-    cpp/sddm-config-editor_ru.ts
-    cpp/sddm-config-editor_zh_CN.ts
-)
+file(GLOB TS cpp/sddm-config-editor_*.ts)
 
 set_directory_properties(PROPERTIES CLEAN_NO_CUSTOM true)
 
@@ -45,6 +41,14 @@ install(
 )
 
 install(TARGETS sddm-config-editor RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}")
+
+install(
+    FILES ${TRANSLATIONS}
+    DESTINATION "${CMAKE_INSTALL_DATADIR}/sddm-config-editor/translations"
+)
+add_definitions(
+    -DTRANSLATION_DIR="${CMAKE_INSTALL_FULL_DATADIR}/sddm-config-editor/translations"
+)
 
 # uninstall target
 if(NOT TARGET uninstall)
