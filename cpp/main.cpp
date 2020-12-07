@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
 
     QTranslator qtTranslator;
-    qtTranslator.load("sddm-config-editor_" + QLocale::system().name(), ":/");
+    qtTranslator.load("sddm-config-editor_" + QLocale::system().name(), QStringLiteral(TRANSLATION_DIR));
     app.installTranslator(&qtTranslator);
 
     QQmlApplicationEngine engine;
