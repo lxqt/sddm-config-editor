@@ -6,12 +6,12 @@
     <message>
         <location filename="config-strings.qml" line="3"/>
         <source>Autologin</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatische Anmeldung</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="6"/>
         <source>Whether sddm should automatically log back into sessions when they exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Ob sddm sich automatisch wieder in Sitzungen anmelden soll, wenn diese beendet werden</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="9"/>
@@ -21,17 +21,17 @@
     <message>
         <location filename="config-strings.qml" line="12"/>
         <source>Username for autologin session</source>
-        <translation type="unfinished"></translation>
+        <translation>Benutzername für automatische Anmeldung</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="15"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Allgemein</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="18"/>
         <source>Enable Qt&apos;s automatic high-DPI scaling</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatische Hoch-DPI-Skalierung von Qt aktivieren</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="21"/>
@@ -41,12 +41,12 @@
     <message>
         <location filename="config-strings.qml" line="24"/>
         <source>Input method module</source>
-        <translation type="unfinished"></translation>
+        <translation>Eingabemethodenmodul</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="27"/>
         <source>Initial NumLock state. Can be on, off or none.</source>
-        <translation type="unfinished"></translation>
+        <translation>NumLock-Anfangszustand. Möglich sind Ein, Aus oder Nichts.</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="30"/>
@@ -57,17 +57,17 @@ NOTE: Currently ignored if autologin is enabled.</source>
     <message>
         <location filename="config-strings.qml" line="34"/>
         <source>Reboot command</source>
-        <translation type="unfinished"></translation>
+        <translation>Neustart-Befehl</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="37"/>
         <source>Theme</source>
-        <translation type="unfinished"></translation>
+        <translation>Thema</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="40"/>
         <source>Current theme name</source>
-        <translation type="unfinished"></translation>
+        <translation>Name des aktuellen Themas</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="43"/>
@@ -88,47 +88,47 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="53"/>
         <source>Enable display of custom user avatars</source>
-        <translation type="unfinished"></translation>
+        <translation>Anzeige von individuellen Benutzer-Avataren aktivieren</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="56"/>
         <source>Global directory for user avatars</source>
-        <translation type="unfinished"></translation>
+        <translation>Globales Verzeichnis für Benutzer-Avatare</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="59"/>
         <source>The files should be named &lt;username&gt;.face.icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Die Dateien sollten &lt;Benutzername&gt;.face.icon heißen</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="62"/>
         <source>Theme directory path</source>
-        <translation type="unfinished"></translation>
+        <translation>Verzeichnispfad des Themas</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="65"/>
         <source>Users</source>
-        <translation type="unfinished"></translation>
+        <translation>Benutzer</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="68"/>
         <source>Default $PATH for logged in users</source>
-        <translation type="unfinished"></translation>
+        <translation>Standard-$PATH für angemeldete Benutzer</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="71"/>
         <source>Comma-separated list of shells.</source>
-        <translation type="unfinished"></translation>
+        <translation>Komma-getrennte Liste von Shells.</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="74"/>
         <source>Users with these shells as their default won&apos;t be listed</source>
-        <translation type="unfinished"></translation>
+        <translation>Benutzer mit diesen Shells als Standard werden nicht aufgeführt</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="77"/>
         <source>Comma-separated list of users that should not be listed</source>
-        <translation type="unfinished"></translation>
+        <translation>Komma-getrennte Liste von Benutzern, die nicht aufgelistet werden sollten</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="80"/>
@@ -143,17 +143,17 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="86"/>
         <source>Remember the session of the last successfully logged in user</source>
-        <translation type="unfinished"></translation>
+        <translation>Sitzung des zuletzt erfolgreich angemeldeten Benutzers merken</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="89"/>
         <source>Remember the last successfully logged in user</source>
-        <translation type="unfinished"></translation>
+        <translation>Zuletzt erfolgreich angemeldeten Benutzer merken</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="92"/>
         <source>Wayland</source>
-        <translation type="unfinished"></translation>
+        <translation>Wayland</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="95"/>
@@ -164,18 +164,18 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="98"/>
         <source>Directory containing available Wayland sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>Verzeichnis mit verfügbaren Wayland-Sitzungen</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="101"/>
         <location filename="config-strings.qml" line="128"/>
         <source>Path to the user session log file</source>
-        <translation type="unfinished"></translation>
+        <translation>Pfad zur Benutzer-Sitzungsprotokolldatei</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="104"/>
         <source>X11</source>
-        <translation type="unfinished"></translation>
+        <translation>X11</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="107"/>
@@ -200,27 +200,27 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="119"/>
         <source>Path to X server binary</source>
-        <translation type="unfinished"></translation>
+        <translation>Pfad zur X-Server-Binärdatei</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="125"/>
         <source>Directory containing available X sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>Verzeichnis mit verfügbaren X-Sitzungen</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="131"/>
         <source>Path to the Xauthority file</source>
-        <translation type="unfinished"></translation>
+        <translation>Pfad zur Xauthority-Datei</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="134"/>
         <source>Path to xauth binary</source>
-        <translation type="unfinished"></translation>
+        <translation>Pfad zur xauth-Binärdatei</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="137"/>
         <source>Path to Xephyr binary</source>
-        <translation type="unfinished"></translation>
+        <translation>Pfad zur Xephyr-Binärdatei</translation>
     </message>
 </context>
 <context>
@@ -228,22 +228,22 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="main-window.qml" line="9"/>
         <source>SDDM Configuration Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>SDDM-Konfigurationseditor</translation>
     </message>
     <message>
         <source>File</source>
         <location filename="main-window.qml" line="32"/>
-        <translation type="unfinished"></translation>
+        <translation>Datei</translation>
     </message>
     <message>
         <location filename="main-window.qml" line="47"/>
         <source>Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Zurücksetzen</translation>
     </message>
     <message>
         <location filename="main-window.qml" line="53"/>
         <source>Save...</source>
-        <translation type="unfinished"></translation>
+        <translation>Speichern...</translation>
     </message>
 </context>
 <context>
@@ -251,17 +251,17 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="theme-editor.qml" line="18"/>
         <source>Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Vorschau</translation>
     </message>
     <message>
         <location filename="theme-editor.qml" line="47"/>
         <source>Displaying preview for SDDM theme &lt;b&gt;%1&lt;/b&gt;...</source>
-        <translation type="unfinished"></translation>
+        <translation>Vorschau für SDDM-Thema &lt;b&gt;%1&lt;/b&gt; wird angezeigt...</translation>
     </message>
     <message>
         <location filename="theme-editor.qml" line="52"/>
         <source>Close Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Vorschau schließen</translation>
     </message>
 </context>
 </TS>
