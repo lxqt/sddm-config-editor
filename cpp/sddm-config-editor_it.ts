@@ -6,7 +6,7 @@
     <message>
         <location filename="config-strings.qml" line="3"/>
         <source>Autologin</source>
-        <translation>Autologin</translation>
+        <translation>Login automatico</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="6"/>
@@ -47,14 +47,14 @@
     <message>
         <location filename="config-strings.qml" line="27"/>
         <source>Initial NumLock state. Can be on, off or none.</source>
-        <translation>Stato iniziale del blocco numeri (on, off, none)</translation>
+        <translation>Stato iniziale del blocco numeri (on, off, none).</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="30"/>
         <source>If property is set to none, numlock won&apos;t be changed
 NOTE: Currently ignored if autologin is enabled.</source>
-        <translation>Se viene scelto &quot;none&quot; lo stato del BlocNum rimarrà invariato.
-NOTA: attualmente ignorato se l&apos; autologin è attivato</translation>
+        <translation>Se viene scelto &quot;none&quot; lo stato del Blocco Numeri rimarrà invariato.
+NOTA: attualmente ignorato se è attivato il login automatico.</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="34"/>
@@ -101,7 +101,7 @@ se non esplicitamente attivati con &quot;Permetti avatar&quot;</translation>
     <message>
         <location filename="config-strings.qml" line="59"/>
         <source>The files should be named &lt;username&gt;.face.icon</source>
-        <translation>I file dovrebbero essere  del tipo &lt;nomeutente&gt;.face.icon</translation>
+        <translation>I file dovrebbero essere del tipo &lt;nomeutente&gt;.face.icon</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="62"/>
@@ -121,7 +121,7 @@ se non esplicitamente attivati con &quot;Permetti avatar&quot;</translation>
     <message>
         <location filename="config-strings.qml" line="71"/>
         <source>Comma-separated list of shells.</source>
-        <translation>Lista (separata da commata) di shell</translation>
+        <translation>Lista (separata da virgole) di shell.</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="74"/>
@@ -193,7 +193,7 @@ se non esplicitamente attivati con &quot;Permetti avatar&quot;</translation>
     <message>
         <location filename="config-strings.qml" line="113"/>
         <source>The lowest virtual terminal number that will be used.</source>
-        <translation>Numero minimo del terminale virtuale che verrà usato</translation>
+        <translation>Numero minimo del terminale virtuale che verrà usato.</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="116"/>
@@ -243,10 +243,10 @@ se non esplicitamente attivati con &quot;Permetti avatar&quot;</translation>
         <source>Reset</source>
         <translation>Ripristina</translation>
     </message>
-     <message>
+    <message>
         <location filename="main-window.qml" line="53"/>
         <source>Save...</source>
-        <translation>Salva</translation>
+        <translation>Salva...</translation>
     </message>
 </context>
 <context>
@@ -259,7 +259,7 @@ se non esplicitamente attivati con &quot;Permetti avatar&quot;</translation>
     <message>
         <location filename="theme-editor.qml" line="47"/>
         <source>Displaying preview for SDDM theme &lt;b&gt;%1&lt;/b&gt;...</source>
-        <translation>Anteprima del tema &lt;b&gt;%1&lt;/b&gt;</translation>
+        <translation>Anteprima del tema &lt;b&gt;%1&lt;/b&gt;...</translation>
     </message>
     <message>
         <location filename="theme-editor.qml" line="52"/>
