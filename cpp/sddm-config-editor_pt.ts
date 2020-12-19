@@ -135,12 +135,12 @@ a menos que explicitamente definidos em &apos;EnableAvatars&apos;</translation>
     <message>
         <location filename="config-strings.qml" line="80"/>
         <source>Maximum user id for displayed users</source>
-        <translation type="unfinished"></translation>
+        <translation>ID de utilizador máximo para os utilizadores mostrados</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="83"/>
         <source>Minimum user id for displayed users</source>
-        <translation type="unfinished"></translation>
+        <translation>ID de utilizador mínimo para os utilizadores mostrados</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="86"/>
