@@ -6,47 +6,47 @@
     <message>
         <location filename="config-strings.qml" line="3"/>
         <source>Autologin</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatické přihlášení</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="6"/>
         <source>Whether sddm should automatically log back into sessions when they exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Zda se má sddm automaticky přihlásit zpět k sezením po jejich ukončení</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="9"/>
         <source>Name of session file for autologin session (if empty try last logged in)</source>
-        <translation type="unfinished"></translation>
+        <translation>Název souboru se sezením pro automaticky přihlášené sezení (pokud je prázdný, zkusit poslední přihlášení)</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="12"/>
         <source>Username for autologin session</source>
-        <translation type="unfinished"></translation>
+        <translation>Uživatelské jméno pro automaticky přihlášené sezení</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="15"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Obecné</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="18"/>
         <source>Enable Qt&apos;s automatic high-DPI scaling</source>
-        <translation type="unfinished"></translation>
+        <translation>Povolit automatickou změnu HDPI Qt</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="21"/>
         <source>Halt command</source>
-        <translation type="unfinished"></translation>
+        <translation>Příkaz pro zastavení</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="24"/>
         <source>Input method module</source>
-        <translation type="unfinished"></translation>
+        <translation>Modul metody zadávání</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="27"/>
         <source>Initial NumLock state. Can be on, off or none.</source>
-        <translation type="unfinished"></translation>
+        <translation>Počáteční stav zámku klávesnice (NumLock). Může být zapnuta, vypnuta nebo žádný.</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="30"/>
@@ -108,7 +108,7 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="65"/>
         <source>Users</source>
-        <translation type="unfinished"></translation>
+        <translation>Uživatelé</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="68"/>
