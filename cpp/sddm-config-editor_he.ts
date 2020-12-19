@@ -41,7 +41,7 @@
     <message>
         <location filename="config-strings.qml" line="24"/>
         <source>Input method module</source>
-        <translation type="unfinished"></translation>
+        <translation>מודול שיטת קלט</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="27"/>
@@ -62,12 +62,12 @@ NOTE: Currently ignored if autologin is enabled.</source>
     <message>
         <location filename="config-strings.qml" line="37"/>
         <source>Theme</source>
-        <translation type="unfinished"></translation>
+        <translation>ערכת נושא</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="40"/>
         <source>Current theme name</source>
-        <translation type="unfinished"></translation>
+        <translation>שם ערכת הנושא הנוכחית</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="43"/>
@@ -108,7 +108,7 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="65"/>
         <source>Users</source>
-        <translation type="unfinished"></translation>
+        <translation>משתמשים</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="68"/>
@@ -148,12 +148,12 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="89"/>
         <source>Remember the last successfully logged in user</source>
-        <translation type="unfinished"></translation>
+        <translation>לזכור את המשתמש האחרון שנכנס בהצלחה</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="92"/>
         <source>Wayland</source>
-        <translation type="unfinished"></translation>
+        <translation>Wayland</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="95"/>
@@ -175,7 +175,7 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="104"/>
         <source>X11</source>
-        <translation type="unfinished"></translation>
+        <translation>X11</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="107"/>
@@ -228,22 +228,22 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="main-window.qml" line="9"/>
         <source>SDDM Configuration Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>עורך הגדרת SDDM</translation>
     </message>
     <message>
         <source>File</source>
         <location filename="main-window.qml" line="32"/>
-        <translation type="unfinished"></translation>
+        <translation>קובץ</translation>
     </message>
     <message>
         <location filename="main-window.qml" line="47"/>
         <source>Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>איפוס</translation>
     </message>
     <message>
         <location filename="main-window.qml" line="53"/>
         <source>Save...</source>
-        <translation type="unfinished"></translation>
+        <translation>שמירה...</translation>
     </message>
 </context>
 <context>
@@ -251,17 +251,17 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="theme-editor.qml" line="18"/>
         <source>Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>תצוגה מקדימה</translation>
     </message>
     <message>
         <location filename="theme-editor.qml" line="47"/>
         <source>Displaying preview for SDDM theme &lt;b&gt;%1&lt;/b&gt;...</source>
-        <translation type="unfinished"></translation>
+        <translation>בהצגת תצוגה מקדימה לערכת הנושא &lt;b&gt;%1&lt;/b&gt; עבור SDDM...</translation>
     </message>
     <message>
         <location filename="theme-editor.qml" line="52"/>
         <source>Close Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>סגירת תצוגה מקדימה</translation>
     </message>
 </context>
 </TS>
