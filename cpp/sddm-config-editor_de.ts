@@ -36,7 +36,7 @@
     <message>
         <location filename="config-strings.qml" line="21"/>
         <source>Halt command</source>
-        <translation type="unfinished"></translation>
+        <translation>Halt-Befehl</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="24"/>
@@ -180,22 +180,22 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="107"/>
         <source>Path to a script to execute when starting the display server</source>
-        <translation type="unfinished"></translation>
+        <translation>Pfad zu einem Skript, das beim Starten des Anzeigeservers ausgeführt werden soll</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="110"/>
         <source>Path to a script to execute when stopping the display server</source>
-        <translation type="unfinished"></translation>
+        <translation>Pfad zu einem Skript, das beim Stoppen des Anzeigeservers ausgeführt werden soll</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="113"/>
         <source>The lowest virtual terminal number that will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>Die niedrigste virtuelle Terminalnummer, die verwendet werden soll.</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="116"/>
         <source>Arguments passed to the X server invocation</source>
-        <translation type="unfinished"></translation>
+        <translation>Argumente, die an den X-Server-Aufruf übergeben werden</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="119"/>
