@@ -101,85 +101,87 @@ If property is set to none, numlock won&apos;t be changed</source>
     <message>
         <location filename="config-strings.qml" line="6"/>
         <source>Whether sddm should automatically log back into sessions when they exit</source>
-        <translation type="unfinished"></translation>
+        <translation>sddm 是否应在会话退出时自动重新登录到会话</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="9"/>
         <source>Name of session file for autologin session (if empty try last logged in)</source>
         <oldsource>Name of session file for autologin session</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>自动登录会话的会话文件名称（如果留空，则尝试使用上次登录时的）</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="12"/>
         <source>Username for autologin session</source>
-        <translation type="unfinished"></translation>
+        <translation>自动登录会话的用户名</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="18"/>
         <source>Enable Qt&apos;s automatic high-DPI scaling</source>
-        <translation type="unfinished"></translation>
+        <translation>启用 Qt的高分辨率自动缩放功能</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="24"/>
         <source>Input method module</source>
-        <translation type="unfinished"></translation>
+        <translation>输入法模块</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="27"/>
         <source>Initial NumLock state. Can be on, off or none.</source>
-        <translation type="unfinished"></translation>
+        <translation>初始的数字键盘锁定状态。可以是打开，关闭或者空。</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="30"/>
         <source>If property is set to none, numlock won&apos;t be changed
 NOTE: Currently ignored if autologin is enabled.</source>
-        <translation type="unfinished"></translation>
+        <translation>如果属性设置为无，则不会更改 numlock状态
+注意：如果启用了自动登录，则当前被忽略。</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="43"/>
         <source>Cursor theme used in the greeter</source>
-        <translation type="unfinished"></translation>
+        <translation>greeter 中使用的游标主题</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="46"/>
         <source>Number of users to use as threshold</source>
-        <translation type="unfinished"></translation>
+        <translation>要用作阈值的用户数</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="49"/>
         <source>above which avatars are disabled
 unless explicitly enabled with EnableAvatars</source>
-        <translation type="unfinished"></translation>
+        <translation>以上是禁用的头像
+除非显式启用使用EnableAvatars启用</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="53"/>
         <source>Enable display of custom user avatars</source>
-        <translation type="unfinished"></translation>
+        <translation>启用自定义用户化的显示</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="56"/>
         <source>Global directory for user avatars</source>
-        <translation type="unfinished"></translation>
+        <translation>用户图标的全局目录</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="59"/>
         <source>The files should be named &lt;username&gt;.face.icon</source>
-        <translation type="unfinished"></translation>
+        <translation>这个文件应该命名为 &lt;username&gt;.face.icon</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="68"/>
         <source>Default $PATH for logged in users</source>
-        <translation type="unfinished"></translation>
+        <translation>已登录用户的默认 $PATH</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="71"/>
         <source>Comma-separated list of shells.</source>
-        <translation type="unfinished"></translation>
+        <translation>用逗号分隔的shell列表。</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="77"/>
         <source>Comma-separated list of users that should not be listed</source>
-        <translation type="unfinished"></translation>
+        <translation>不应该被列出的用逗号分隔的用户列表</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="80"/>
@@ -204,69 +206,69 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="92"/>
         <source>Wayland</source>
-        <translation type="unfinished"></translation>
+        <translation>Wayland</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="95"/>
         <location filename="config-strings.qml" line="122"/>
         <source>Path to a script to execute when starting the desktop session</source>
-        <translation type="unfinished"></translation>
+        <translation>启动桌面会话时要执行的脚本路径</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="98"/>
         <source>Directory containing available Wayland sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>包含有效Wayland会话的目录</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="101"/>
         <location filename="config-strings.qml" line="128"/>
         <source>Path to the user session log file</source>
-        <translation type="unfinished"></translation>
+        <translation>用户的会话日志文件路径</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="104"/>
         <source>X11</source>
-        <translation type="unfinished"></translation>
+        <translation>X11</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="107"/>
         <source>Path to a script to execute when starting the display server</source>
-        <translation type="unfinished"></translation>
+        <translation>当启动显示服务时要执行的脚本的路径</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="110"/>
         <source>Path to a script to execute when stopping the display server</source>
-        <translation type="unfinished"></translation>
+        <translation>当停止显示服务时要执行的脚本的路径</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="116"/>
         <source>Arguments passed to the X server invocation</source>
-        <translation type="unfinished"></translation>
+        <translation>传递给 X 服务器调用的参数</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="119"/>
         <source>Path to X server binary</source>
-        <translation type="unfinished"></translation>
+        <translation>X 服务器二进制的路径</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="125"/>
         <source>Directory containing available X sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>包含可用 X 会话的目录</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="131"/>
         <source>Path to the Xauthority file</source>
-        <translation type="unfinished"></translation>
+        <translation>X 的授权文件路径</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="134"/>
         <source>Path to xauth binary</source>
-        <translation type="unfinished"></translation>
+        <translation>X 的授权二进制路径</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="137"/>
         <source>Path to Xephyr binary</source>
-        <translation type="unfinished"></translation>
+        <translation>Xephyr的二进制文件路径</translation>
     </message>
     <message>
         <source>XDisplay</source>
