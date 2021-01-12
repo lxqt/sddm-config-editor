@@ -26,7 +26,7 @@
     <message>
         <location filename="config-strings.qml" line="15"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Bendra</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="18"/>
@@ -36,12 +36,12 @@
     <message>
         <location filename="config-strings.qml" line="21"/>
         <source>Halt command</source>
-        <translation type="unfinished"></translation>
+        <translation>Išjungimo komanda</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="24"/>
         <source>Input method module</source>
-        <translation type="unfinished"></translation>
+        <translation>Įvesties metodo modulis</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="27"/>
@@ -57,17 +57,17 @@ NOTE: Currently ignored if autologin is enabled.</source>
     <message>
         <location filename="config-strings.qml" line="34"/>
         <source>Reboot command</source>
-        <translation type="unfinished"></translation>
+        <translation>Paleidimo iš naujo komanda</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="37"/>
         <source>Theme</source>
-        <translation type="unfinished"></translation>
+        <translation>Apipavidalinimas</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="40"/>
         <source>Current theme name</source>
-        <translation type="unfinished"></translation>
+        <translation>Dabartinio apipavidalinimo pavadinimas</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="43"/>
@@ -77,7 +77,7 @@ NOTE: Currently ignored if autologin is enabled.</source>
     <message>
         <location filename="config-strings.qml" line="46"/>
         <source>Number of users to use as threshold</source>
-        <translation type="unfinished"></translation>
+        <translation>Naudotojų skaičius, kurį naudoti kaip slenkstį</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="49"/>
@@ -98,17 +98,17 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="59"/>
         <source>The files should be named &lt;username&gt;.face.icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Failų pavadinimai turėtų būti &lt;naudotojo_vardas&gt;.face.icon</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="62"/>
         <source>Theme directory path</source>
-        <translation type="unfinished"></translation>
+        <translation>Apipavidalinimo katalogo kelias</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="65"/>
         <source>Users</source>
-        <translation type="unfinished"></translation>
+        <translation>Naudotojai</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="68"/>
@@ -118,7 +118,7 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="71"/>
         <source>Comma-separated list of shells.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kableliais atskirtų apvalkalų sąrašas.</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="74"/>
@@ -153,29 +153,29 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="92"/>
         <source>Wayland</source>
-        <translation type="unfinished"></translation>
+        <translation>Wayland</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="95"/>
         <location filename="config-strings.qml" line="122"/>
         <source>Path to a script to execute when starting the desktop session</source>
-        <translation type="unfinished"></translation>
+        <translation>Kelias į scenarijų, kurį vykdyti paleidžiant darbalaukio seansą</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="98"/>
         <source>Directory containing available Wayland sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>Katalogas su prieinamais Wayland seansais</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="101"/>
         <location filename="config-strings.qml" line="128"/>
         <source>Path to the user session log file</source>
-        <translation type="unfinished"></translation>
+        <translation>Kelias į naudotojo seanso žurnalo failą</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="104"/>
         <source>X11</source>
-        <translation type="unfinished"></translation>
+        <translation>X11</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="107"/>
@@ -200,27 +200,27 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="119"/>
         <source>Path to X server binary</source>
-        <translation type="unfinished"></translation>
+        <translation>Kelias į X serverio dvejetainę</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="125"/>
         <source>Directory containing available X sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>Katalogas su prieinamais X seansais</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="131"/>
         <source>Path to the Xauthority file</source>
-        <translation type="unfinished"></translation>
+        <translation>Kelias į Xauthority failą</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="134"/>
         <source>Path to xauth binary</source>
-        <translation type="unfinished"></translation>
+        <translation>Kelias į xauth dvejetainę</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="137"/>
         <source>Path to Xephyr binary</source>
-        <translation type="unfinished"></translation>
+        <translation>Kelias į Xephyr dvejetainę</translation>
     </message>
 </context>
 <context>
@@ -228,22 +228,22 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="main-window.qml" line="9"/>
         <source>SDDM Configuration Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>SDDM konfigūracijos redaktorius</translation>
     </message>
     <message>
         <source>File</source>
         <location filename="main-window.qml" line="32"/>
-        <translation type="unfinished"></translation>
+        <translation>Failas</translation>
     </message>
     <message>
         <location filename="main-window.qml" line="47"/>
         <source>Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Atstatyti</translation>
     </message>
     <message>
         <location filename="main-window.qml" line="53"/>
         <source>Save...</source>
-        <translation type="unfinished"></translation>
+        <translation>Įrašyti...</translation>
     </message>
 </context>
 <context>
@@ -251,17 +251,17 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="theme-editor.qml" line="18"/>
         <source>Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Peržiūra</translation>
     </message>
     <message>
         <location filename="theme-editor.qml" line="47"/>
         <source>Displaying preview for SDDM theme &lt;b&gt;%1&lt;/b&gt;...</source>
-        <translation type="unfinished"></translation>
+        <translation>Rodoma SDDM apipavidalinimo &lt;b&gt;%1&lt;/b&gt; peržiūra...</translation>
     </message>
     <message>
         <location filename="theme-editor.qml" line="52"/>
         <source>Close Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Užverti peržiūrą</translation>
     </message>
 </context>
 </TS>
