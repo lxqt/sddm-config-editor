@@ -16,12 +16,12 @@
     <message>
         <location filename="config-strings.qml" line="9"/>
         <source>Name of session file for autologin session (if empty try last logged in)</source>
-        <translation type="unfinished">Nom de la session pour la connexion automatique (si vide, ce sera la dernière session connectée)</translation>
+        <translation>Nom de la session pour la connexion automatique (si vide, ce sera la dernière session connectée)</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="12"/>
         <source>Username for autologin session</source>
-        <translation type="unfinished">Nom d&apos;utilisateur pour la session de connexion automatique</translation>
+        <translation>Nom d&apos;utilisateur pour la session connectée automatiquement</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="15"/>
@@ -73,7 +73,7 @@ REMARQUE : Actuellement ignoré si la connexion automatique est activée.</trans
     <message>
         <location filename="config-strings.qml" line="43"/>
         <source>Cursor theme used in the greeter</source>
-        <translation type="unfinished">Thème du curseur utilisé dans l&apos;accueil</translation>
+        <translation>Thème du curseur utilisé dans l&apos;écran d&apos;accueil</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="46"/>
@@ -125,7 +125,7 @@ sauf si explicitement activé avec EnableAvatars</translation>
     <message>
         <location filename="config-strings.qml" line="74"/>
         <source>Users with these shells as their default won&apos;t be listed</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Les utilisateurs avec ces shells par défaut ne seront pas répertoriés</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="77"/>
@@ -140,7 +140,7 @@ sauf si explicitement activé avec EnableAvatars</translation>
     <message>
         <location filename="config-strings.qml" line="83"/>
         <source>Minimum user id for displayed users</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ID utilisateur minimum pour les utilisateurs affichés</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="86"/>
@@ -155,7 +155,7 @@ sauf si explicitement activé avec EnableAvatars</translation>
     <message>
         <location filename="config-strings.qml" line="92"/>
         <source>Wayland</source>
-        <translation type="unfinished">Wayland</translation>
+        <translation>Wayland</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="95"/>
@@ -166,7 +166,7 @@ sauf si explicitement activé avec EnableAvatars</translation>
     <message>
         <location filename="config-strings.qml" line="98"/>
         <source>Directory containing available Wayland sessions</source>
-        <translation type="unfinished">Répertoire contenant les sessions Wayland disponibles</translation>
+        <translation>Répertoire contenant les sessions Wayland disponibles</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="101"/>
@@ -197,7 +197,7 @@ sauf si explicitement activé avec EnableAvatars</translation>
     <message>
         <location filename="config-strings.qml" line="116"/>
         <source>Arguments passed to the X server invocation</source>
-        <translation type="unfinished">Arguments passés à l&apos;appel du serveur X</translation>
+        <translation>Arguments passés à l&apos;appel du serveur X</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="119"/>
@@ -212,7 +212,7 @@ sauf si explicitement activé avec EnableAvatars</translation>
     <message>
         <location filename="config-strings.qml" line="131"/>
         <source>Path to the Xauthority file</source>
-        <translation type="unfinished">Chemin vers le fichier Xauthority</translation>
+        <translation>Chemin vers le fichier Xauthority</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="134"/>
@@ -240,7 +240,7 @@ sauf si explicitement activé avec EnableAvatars</translation>
     <message>
         <location filename="main-window.qml" line="47"/>
         <source>Reset</source>
-        <translation type="unfinished">Réinitialiser</translation>
+        <translation>Réinitialiser</translation>
     </message>
     <message>
         <location filename="main-window.qml" line="53"/>
