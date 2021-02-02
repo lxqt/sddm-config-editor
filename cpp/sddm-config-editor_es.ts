@@ -257,7 +257,7 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="theme-editor.qml" line="47"/>
         <source>Displaying preview for SDDM theme &lt;b&gt;%1&lt;/b&gt;...</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrando vista previa para el tema &lt;b&gt;%1&lt;/b&gt; de SDDM...</translation>
     </message>
     <message>
         <location filename="theme-editor.qml" line="52"/>
