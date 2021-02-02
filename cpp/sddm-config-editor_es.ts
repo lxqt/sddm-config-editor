@@ -16,7 +16,7 @@
     <message>
         <location filename="config-strings.qml" line="9"/>
         <source>Name of session file for autologin session (if empty try last logged in)</source>
-        <translation type="unfinished"></translation>
+        <translation>Nombre del archivo de sesión para autoinicio de sesión (si en blanco, prueba última sesión)</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="12"/>
@@ -89,7 +89,7 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="53"/>
         <source>Enable display of custom user avatars</source>
-        <translation type="unfinished"></translation>
+        <translation>Habilitar el despliegue de avatares de usuario personalizados</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="56"/>
@@ -134,12 +134,12 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="80"/>
         <source>Maximum user id for displayed users</source>
-        <translation type="unfinished"></translation>
+        <translation>Máximas identificaciones de usuario (uid) para usuarios mostrados</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="83"/>
         <source>Minimum user id for displayed users</source>
-        <translation type="unfinished"></translation>
+        <translation>Mínimas identificaciones de usuario (uid) para usuarios mostrados</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="86"/>
@@ -257,7 +257,7 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="theme-editor.qml" line="47"/>
         <source>Displaying preview for SDDM theme &lt;b&gt;%1&lt;/b&gt;...</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrando vista previa para el tema &lt;b&gt;%1&lt;/b&gt; de SDDM...</translation>
     </message>
     <message>
         <location filename="theme-editor.qml" line="52"/>
