@@ -78,13 +78,13 @@ REMARQUE : Actuellement ignoré si la connexion automatique est activée.</trans
     <message>
         <location filename="config-strings.qml" line="46"/>
         <source>Number of users to use as threshold</source>
-        <translation type="unfinished">Nombre d&apos;utilisateurs à utiliser comme seuil</translation>
+        <translation>Nombre d&apos;utilisateurs à utiliser comme seuil</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="49"/>
         <source>above which avatars are disabled
 unless explicitly enabled with EnableAvatars</source>
-        <translation type="unfinished">au-dessus duquel les avatars sont désactivés
+        <translation>seuil au-dessus duquel les avatars sont désactivés
 sauf si explicitement activé avec EnableAvatars</translation>
     </message>
     <message>
@@ -120,12 +120,12 @@ sauf si explicitement activé avec EnableAvatars</translation>
     <message>
         <location filename="config-strings.qml" line="71"/>
         <source>Comma-separated list of shells.</source>
-        <translation type="unfinished">Liste de shells séparés par des virgules.</translation>
+        <translation>Liste de shells séparés par des virgules.</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="74"/>
         <source>Users with these shells as their default won&apos;t be listed</source>
-        <translation type="unfinished">Les utilisateurs avec ces shells par défaut ne seront pas répertoriés</translation>
+        <translation>Les utilisateurs avec ces shells par défaut ne seront pas répertoriés</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="77"/>
@@ -135,12 +135,12 @@ sauf si explicitement activé avec EnableAvatars</translation>
     <message>
         <location filename="config-strings.qml" line="80"/>
         <source>Maximum user id for displayed users</source>
-        <translation type="unfinished">ID utilisateur maximum pour les utilisateurs affichés</translation>
+        <translation>ID utilisateur maximum pour les utilisateurs affichés</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="83"/>
         <source>Minimum user id for displayed users</source>
-        <translation type="unfinished">ID utilisateur minimum pour les utilisateurs affichés</translation>
+        <translation>ID utilisateur minimum pour les utilisateurs affichés</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="86"/>
@@ -182,12 +182,12 @@ sauf si explicitement activé avec EnableAvatars</translation>
     <message>
         <location filename="config-strings.qml" line="107"/>
         <source>Path to a script to execute when starting the display server</source>
-        <translation type="unfinished">Chemin vers un script à exécuter lors du démarrage du serveur d&apos;affichage</translation>
+        <translation>Chemin vers un script à exécuter lors du démarrage du serveur d&apos;affichage</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="110"/>
         <source>Path to a script to execute when stopping the display server</source>
-        <translation type="unfinished">Chemin vers un script à exécuter lors de l&apos;arrêt du serveur d&apos;affichage</translation>
+        <translation>Chemin vers un script à exécuter lors de l&apos;arrêt du serveur d&apos;affichage</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="113"/>
@@ -202,7 +202,7 @@ sauf si explicitement activé avec EnableAvatars</translation>
     <message>
         <location filename="config-strings.qml" line="119"/>
         <source>Path to X server binary</source>
-        <translation type="unfinished">Chemin vers le binaire du serveur X</translation>
+        <translation>Chemin vers le binaire du serveur X</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="125"/>
@@ -217,12 +217,12 @@ sauf si explicitement activé avec EnableAvatars</translation>
     <message>
         <location filename="config-strings.qml" line="134"/>
         <source>Path to xauth binary</source>
-        <translation type="unfinished">Chemin vers le binaire xauth</translation>
+        <translation>Chemin vers le binaire xauth</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="137"/>
         <source>Path to Xephyr binary</source>
-        <translation type="unfinished">Chemin vers le binaire Xephyr</translation>
+        <translation>Chemin vers le binaire Xephyr</translation>
     </message>
 </context>
 <context>
@@ -235,7 +235,7 @@ sauf si explicitement activé avec EnableAvatars</translation>
     <message>
         <source>File</source>
         <location filename="main-window.qml" line="32"/>
-        <translation type="unfinished">Fichier</translation>
+        <translation>Fichier</translation>
     </message>
     <message>
         <location filename="main-window.qml" line="47"/>
