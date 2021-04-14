@@ -6,129 +6,131 @@
     <message>
         <location filename="config-strings.qml" line="3"/>
         <source>Autologin</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatisch aanmelden</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="6"/>
         <source>Whether sddm should automatically log back into sessions when they exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Geef aan of sddm automatisch sessies moet aanmelden nadat ze zijn afgesloten</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="9"/>
         <source>Name of session file for autologin session (if empty try last logged in)</source>
-        <translation type="unfinished"></translation>
+        <translation>Naam van sessiebestand voor automatisch aanmelden (probeer recentste aanmelding indien blanco)</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="12"/>
         <source>Username for autologin session</source>
-        <translation type="unfinished"></translation>
+        <translation>Gebruikersnaam bij automatische aanmeldsessie</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="15"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Algemeen</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="18"/>
         <source>Enable Qt&apos;s automatic high-DPI scaling</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatisch schalen op schermen met hoge dpi&apos;s</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="21"/>
         <source>Halt command</source>
-        <translation type="unfinished"></translation>
+        <translation>Afbreekopdracht</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="24"/>
         <source>Input method module</source>
-        <translation type="unfinished"></translation>
+        <translation>Invoermethodemodule</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="27"/>
         <source>Initial NumLock state. Can be on, off or none.</source>
-        <translation type="unfinished"></translation>
+        <translation>De initiële NumLock-status: on, off of none.</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="30"/>
         <source>If property is set to none, numlock won&apos;t be changed
 NOTE: Currently ignored if autologin is enabled.</source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;none&apos; = NumLock wordt niet aan- of uitgezet
+LET OP: dit wordt momenteel genegeerd als automatisch aanmelden is ingeschakeld.</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="34"/>
         <source>Reboot command</source>
-        <translation type="unfinished"></translation>
+        <translation>Herstartopdracht</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="37"/>
         <source>Theme</source>
-        <translation type="unfinished"></translation>
+        <translation>Thema</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="40"/>
         <source>Current theme name</source>
-        <translation type="unfinished"></translation>
+        <translation>Naam van huidig thema</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="43"/>
         <source>Cursor theme used in the greeter</source>
-        <translation type="unfinished"></translation>
+        <translation>Cursorthema op aanmeldscherm</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="46"/>
         <source>Number of users to use as threshold</source>
-        <translation type="unfinished"></translation>
+        <translation>Aantal gebruikers (drempelwaarde)</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="49"/>
         <source>above which avatars are disabled
 unless explicitly enabled with EnableAvatars</source>
-        <translation type="unfinished"></translation>
+        <translation>daarboven worden gebruikersafbeeldingen uitgeschakeld,
+tenzij expliciet ingeschakeld middels EnableAvatars</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="53"/>
         <source>Enable display of custom user avatars</source>
-        <translation type="unfinished"></translation>
+        <translation>Aangepaste gebruikersafbeeldingen tonen</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="56"/>
         <source>Global directory for user avatars</source>
-        <translation type="unfinished"></translation>
+        <translation>Algemene map met gebruikersafbeeldingen</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="59"/>
         <source>The files should be named &lt;username&gt;.face.icon</source>
-        <translation type="unfinished"></translation>
+        <translation>De bestanden moeten de naam &lt;gebruikersnaam&gt;.face.icon dragen</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="62"/>
         <source>Theme directory path</source>
-        <translation type="unfinished"></translation>
+        <translation>Themamaplocatie</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="65"/>
         <source>Users</source>
-        <translation type="unfinished"></translation>
+        <translation>Gebruikers</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="68"/>
         <source>Default $PATH for logged in users</source>
-        <translation type="unfinished"></translation>
+        <translation>Standaard $PAD van aangemelde gebruikers</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="71"/>
         <source>Comma-separated list of shells.</source>
-        <translation type="unfinished"></translation>
+        <translation>Een kommagescheiden lijst met shells.</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="74"/>
         <source>Users with these shells as their default won&apos;t be listed</source>
-        <translation type="unfinished"></translation>
+        <translation>Gebruikers met deze shells worden niet toegevoegd aan de lijst</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="77"/>
         <source>Comma-separated list of users that should not be listed</source>
-        <translation type="unfinished"></translation>
+        <translation>Een kommagescheiden lijst met gebruikers niet moeten worden toegevoegd aan de lijst</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="80"/>

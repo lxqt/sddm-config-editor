@@ -160,7 +160,7 @@ unless explicitly enabled with EnableAvatars</source>
         <location filename="config-strings.qml" line="95"/>
         <location filename="config-strings.qml" line="122"/>
         <source>Path to a script to execute when starting the desktop session</source>
-        <translation>デスクトップセッションの開始時に実行するスクリプトへのパス</translation>
+        <translation>デスクトップセッションの起動時に実行するスクリプトへのパス</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="98"/>
@@ -181,7 +181,7 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="107"/>
         <source>Path to a script to execute when starting the display server</source>
-        <translation>ディスプレイサーバーの開始時に実行するスクリプトへのパス</translation>
+        <translation>ディスプレイサーバーの起動時に実行するスクリプトへのパス</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="110"/>
