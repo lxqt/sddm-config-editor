@@ -11,12 +11,12 @@
     <message>
         <location filename="config-strings.qml" line="6"/>
         <source>Whether sddm should automatically log back into sessions when they exit</source>
-        <translation>Ob sddm sich automatisch wieder in Sitzungen anmelden soll, wenn diese beendet werden</translation>
+        <translation>Soll sddm beim Verlassen eine automatische Neuanmeldung durchführen</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="9"/>
         <source>Name of session file for autologin session (if empty try last logged in)</source>
-        <translation type="unfinished"></translation>
+        <translation>Name der Session-Datei für die automatische Anmeldung (falls leer versuche letzte Anmeldung)</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="12"/>
@@ -31,12 +31,12 @@
     <message>
         <location filename="config-strings.qml" line="18"/>
         <source>Enable Qt&apos;s automatic high-DPI scaling</source>
-        <translation>Automatische Hoch-DPI-Skalierung von Qt aktivieren</translation>
+        <translation>Aktiviere automatische high-DPI Skalierung</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="21"/>
         <source>Halt command</source>
-        <translation>Halt-Befehl</translation>
+        <translation>Halt Befehl</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="24"/>
@@ -52,7 +52,8 @@
         <location filename="config-strings.qml" line="30"/>
         <source>If property is set to none, numlock won&apos;t be changed
 NOTE: Currently ignored if autologin is enabled.</source>
-        <translation type="unfinished"></translation>
+        <translation>Wenn die Einstellung auf Nichts steht, wird der NumLock-Zustand nicht geändert
+Anmerkung: Wird bei automatischer Anmeldung ignoriert.</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="34"/>
@@ -72,18 +73,19 @@ NOTE: Currently ignored if autologin is enabled.</source>
     <message>
         <location filename="config-strings.qml" line="43"/>
         <source>Cursor theme used in the greeter</source>
-        <translation type="unfinished"></translation>
+        <translation>Cursor-Thema im Anmeldefenster</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="46"/>
         <source>Number of users to use as threshold</source>
-        <translation type="unfinished"></translation>
+        <translation>Benutzeranzahl als Schwelle</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="49"/>
         <source>above which avatars are disabled
 unless explicitly enabled with EnableAvatars</source>
-        <translation type="unfinished"></translation>
+        <translation>obige Avatare sind deaktiviert
+außer explizit aktiviert mit EnableAvatars</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="53"/>
@@ -133,12 +135,12 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="80"/>
         <source>Maximum user id for displayed users</source>
-        <translation type="unfinished"></translation>
+        <translation>höchste UID der gelisteten Benutzer</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="83"/>
         <source>Minimum user id for displayed users</source>
-        <translation type="unfinished"></translation>
+        <translation>kleinste UID für die gelisteten Benutzer</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="86"/>
@@ -159,7 +161,7 @@ unless explicitly enabled with EnableAvatars</source>
         <location filename="config-strings.qml" line="95"/>
         <location filename="config-strings.qml" line="122"/>
         <source>Path to a script to execute when starting the desktop session</source>
-        <translation type="unfinished"></translation>
+        <translation>Der Dateipfad zum Script, das nach der Anmeldung ausgeführt wird</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="98"/>
