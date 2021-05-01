@@ -6,37 +6,37 @@
     <message>
         <location filename="config-strings.qml" line="3"/>
         <source>Autologin</source>
-        <translation type="unfinished"></translation>
+        <translation>Automaatne sisselogimine</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="6"/>
         <source>Whether sddm should automatically log back into sessions when they exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Kas sddm peaks sesiooni lõpetamisel automaatselt uuesti sisse logima</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="9"/>
         <source>Name of session file for autologin session (if empty try last logged in)</source>
-        <translation type="unfinished"></translation>
+        <translation>Sessioonifaili nimi automaatsel sisselogimisel (kui see väli on väärtustamata, siis proovi viimast sisselogimissessiooni)</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="12"/>
         <source>Username for autologin session</source>
-        <translation type="unfinished"></translation>
+        <translation>Kasutajanimi automaatsel sisselogimisel</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="15"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Üldseadistused</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="18"/>
         <source>Enable Qt&apos;s automatic high-DPI scaling</source>
-        <translation type="unfinished"></translation>
+        <translation>Kasuta Qt automaatset skaleerimist kõrge DPI&apos;ga ekraani puhul</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="21"/>
         <source>Halt command</source>
-        <translation type="unfinished"></translation>
+        <translation>Käsk arvuti seiskamiseks</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="24"/>
@@ -46,18 +46,19 @@
     <message>
         <location filename="config-strings.qml" line="27"/>
         <source>Initial NumLock state. Can be on, off or none.</source>
-        <translation type="unfinished"></translation>
+        <translation>Algne olek NumLock&apos;i jaoks. Võib olla sees, väljas või määramata.</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="30"/>
         <source>If property is set to none, numlock won&apos;t be changed
 NOTE: Currently ignored if autologin is enabled.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kui väärtus on määramata, siis senine olek jääb muutmata
+Märkus: Kui automaatne sisselogimine on kasutusel, siis see seadistus jääb kasutamata.</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="34"/>
         <source>Reboot command</source>
-        <translation type="unfinished"></translation>
+        <translation>Käsk arvuti taaskäivitamiseks</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="37"/>
@@ -77,89 +78,90 @@ NOTE: Currently ignored if autologin is enabled.</source>
     <message>
         <location filename="config-strings.qml" line="46"/>
         <source>Number of users to use as threshold</source>
-        <translation type="unfinished"></translation>
+        <translation>Kasutajate arvu lävi</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="49"/>
         <source>above which avatars are disabled
 unless explicitly enabled with EnableAvatars</source>
-        <translation type="unfinished"></translation>
+        <translation>mille puhul tunnuspildid jäävad kasutamata,
+välja arvatud olukord, kui EnableAvatars nad üheselt kasutusele võtab</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="53"/>
         <source>Enable display of custom user avatars</source>
-        <translation type="unfinished"></translation>
+        <translation>Luba kasutajate tunnuspiltide kuvamine</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="56"/>
         <source>Global directory for user avatars</source>
-        <translation type="unfinished"></translation>
+        <translation>Kasutajate tunnuspiltide üldine asukohakaust</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="59"/>
         <source>The files should be named &lt;username&gt;.face.icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Failide nimi peaks olema &lt;kasutajanimi&gt;.face.icon</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="62"/>
         <source>Theme directory path</source>
-        <translation type="unfinished"></translation>
+        <translation>Teemade kausta asukoht</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="65"/>
         <source>Users</source>
-        <translation type="unfinished"></translation>
+        <translation>Kasutajad</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="68"/>
         <source>Default $PATH for logged in users</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaikimisi $PATH sisseloginud kasutajatele</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="71"/>
         <source>Comma-separated list of shells.</source>
-        <translation type="unfinished"></translation>
+        <translation>Komadega eraldatud kestade loend.</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="74"/>
         <source>Users with these shells as their default won&apos;t be listed</source>
-        <translation type="unfinished"></translation>
+        <translation>Selliste kestadega kasutajad ei ole sisselogimisvaate loendis</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="77"/>
         <source>Comma-separated list of users that should not be listed</source>
-        <translation type="unfinished"></translation>
+        <translation>Komadega eraldatud loend kasutajatest, kes ei peaks olema sisselogimisvaates kuvatud</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="80"/>
         <source>Maximum user id for displayed users</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuva kasutajaid, mille id on väiksem kui</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="83"/>
         <source>Minimum user id for displayed users</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuva kasutajaid, mille id on suurem kui</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="86"/>
         <source>Remember the session of the last successfully logged in user</source>
-        <translation type="unfinished"></translation>
+        <translation>Jäta viimase õnnestunult sisselogija sessioon meelde</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="89"/>
         <source>Remember the last successfully logged in user</source>
-        <translation type="unfinished"></translation>
+        <translation>Jäta viimase õnnestunult sisselogija kasutajanimi meelde</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="92"/>
         <source>Wayland</source>
-        <translation type="unfinished"></translation>
+        <translation>Wayland</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="95"/>
         <location filename="config-strings.qml" line="122"/>
         <source>Path to a script to execute when starting the desktop session</source>
-        <translation type="unfinished"></translation>
+        <translation>Töölauasessiooni sisselogimisel käivitatava skripti asukoht</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="98"/>
