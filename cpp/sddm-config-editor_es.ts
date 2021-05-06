@@ -36,7 +36,7 @@
     <message>
         <location filename="config-strings.qml" line="21"/>
         <source>Halt command</source>
-        <translation>Comando para detener la máquina</translation>
+        <translation>Orden para detener la máquina</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="24"/>
@@ -58,7 +58,7 @@ NOTA: Actualmente es ignorado si el inicio automático de sesión está activado
     <message>
         <location filename="config-strings.qml" line="34"/>
         <source>Reboot command</source>
-        <translation>Comando de reinicio</translation>
+        <translation>Orden de reinicio</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="37"/>
@@ -78,23 +78,24 @@ NOTA: Actualmente es ignorado si el inicio automático de sesión está activado
     <message>
         <location filename="config-strings.qml" line="46"/>
         <source>Number of users to use as threshold</source>
-        <translation>Número de usuarios a usar como límite máximo</translation>
+        <translation>Número de usuarios para utilizar como umbral</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="49"/>
         <source>above which avatars are disabled
 unless explicitly enabled with EnableAvatars</source>
-        <translation type="unfinished"></translation>
+        <translation>sobre el cual se desactivarán los avatares
+a menos que se activen explícitamente mediante EnableAvatars</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="53"/>
         <source>Enable display of custom user avatars</source>
-        <translation>Habilitar el despliegue de avatares de usuario personalizados</translation>
+        <translation>Activar visualización de avatares de usuario personalizados</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="56"/>
         <source>Global directory for user avatars</source>
-        <translation>Directorio global para avatares de usuario</translation>
+        <translation>Directorio global de avatares de usuario</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="59"/>
@@ -114,17 +115,17 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="68"/>
         <source>Default $PATH for logged in users</source>
-        <translation>$PATH por defecto para usuarios con sesión iniciada</translation>
+        <translation>$PATH predeterminada para usuarios con sesión iniciada</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="71"/>
         <source>Comma-separated list of shells.</source>
-        <translation>Lista separada por comas de intérpretes de comandos.</translation>
+        <translation>Lista separada por comas de intérpretes de órdenes.</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="74"/>
         <source>Users with these shells as their default won&apos;t be listed</source>
-        <translation>Los usuarios que usen por defecto estos intérpretes de comandos no serán listados</translation>
+        <translation>No se mostrarán los usuarios cuyos intérpretes predeterminados sean estos</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="77"/>
@@ -160,7 +161,7 @@ unless explicitly enabled with EnableAvatars</source>
         <location filename="config-strings.qml" line="95"/>
         <location filename="config-strings.qml" line="122"/>
         <source>Path to a script to execute when starting the desktop session</source>
-        <translation>Ruta a un script a ejecutar al iniciar la sesión del escritorio</translation>
+        <translation>Ruta a la secuencia de órdenes que se ejecutará al iniciar la sesión del escritorio</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="98"/>
@@ -171,7 +172,7 @@ unless explicitly enabled with EnableAvatars</source>
         <location filename="config-strings.qml" line="101"/>
         <location filename="config-strings.qml" line="128"/>
         <source>Path to the user session log file</source>
-        <translation>Ruta al archivo de log de la sesión de usuario</translation>
+        <translation>Ruta al archivo de registros de la sesión de usuario</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="104"/>
@@ -181,12 +182,12 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="107"/>
         <source>Path to a script to execute when starting the display server</source>
-        <translation type="unfinished"></translation>
+        <translation>Ruta a la secuencia de órdenes que se ejecutará al iniciar el servidor de pantallas</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="110"/>
         <source>Path to a script to execute when stopping the display server</source>
-        <translation type="unfinished"></translation>
+        <translation>Ruta a la secuencia de órdenes que se ejecutará al detener el servidor de pantallas</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="113"/>
@@ -239,7 +240,7 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="main-window.qml" line="47"/>
         <source>Reset</source>
-        <translation>Reiniciar</translation>
+        <translation>Restablecer</translation>
     </message>
     <message>
         <location filename="main-window.qml" line="53"/>
@@ -262,7 +263,7 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="theme-editor.qml" line="52"/>
         <source>Close Preview</source>
-        <translation>Cerrar vista previa</translation>
+        <translation>Cerrar previsualización</translation>
     </message>
 </context>
 </TS>
