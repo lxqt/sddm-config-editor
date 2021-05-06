@@ -41,7 +41,7 @@
     <message>
         <location filename="config-strings.qml" line="24"/>
         <source>Input method module</source>
-        <translation type="unfinished"></translation>
+        <translation>Sisestusmeetodi moodul</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="27"/>
@@ -166,63 +166,63 @@ välja arvatud olukord, kui EnableAvatars nad üheselt kasutusele võtab</transl
     <message>
         <location filename="config-strings.qml" line="98"/>
         <source>Directory containing available Wayland sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaust, kust otsitakse kasutatavaid Wayland&apos;i sessioone</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="101"/>
         <location filename="config-strings.qml" line="128"/>
         <source>Path to the user session log file</source>
-        <translation type="unfinished"></translation>
+        <translation>Kasutajasessiooni logifaili asukoht</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="104"/>
         <source>X11</source>
-        <translation type="unfinished"></translation>
+        <translation>X11</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="107"/>
         <source>Path to a script to execute when starting the display server</source>
-        <translation type="unfinished"></translation>
+        <translation>Graafilise liidese töö alustamisel käivitatava skripti asukoht</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="110"/>
         <source>Path to a script to execute when stopping the display server</source>
-        <translation type="unfinished"></translation>
+        <translation>Graafilise liidese töö lõpetamisel käivitatava skripti asukoht</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="113"/>
         <source>The lowest virtual terminal number that will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>Väikseim virtuaalse terminali number, mida kasutame.</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="116"/>
         <source>Arguments passed to the X server invocation</source>
-        <translation type="unfinished"></translation>
+        <translation>X serveri käivitamisel lisatavad argumendid</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="119"/>
         <source>Path to X server binary</source>
-        <translation type="unfinished"></translation>
+        <translation>X serveri rakendusefaili asukoht</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="125"/>
         <source>Directory containing available X sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaust, kust otsitakse kasutatavaid X serveri sessioone</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="131"/>
         <source>Path to the Xauthority file</source>
-        <translation type="unfinished"></translation>
+        <translation>Xauthority faili asukoht</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="134"/>
         <source>Path to xauth binary</source>
-        <translation type="unfinished"></translation>
+        <translation>Xauth rakendusefaili asukoht</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="137"/>
         <source>Path to Xephyr binary</source>
-        <translation type="unfinished"></translation>
+        <translation>Xephyr rakendusefaili asukoht</translation>
     </message>
 </context>
 <context>
@@ -230,22 +230,22 @@ välja arvatud olukord, kui EnableAvatars nad üheselt kasutusele võtab</transl
     <message>
         <location filename="main-window.qml" line="9"/>
         <source>SDDM Configuration Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>SDDM seadistuste haldur</translation>
     </message>
     <message>
         <source>File</source>
         <location filename="main-window.qml" line="32"/>
-        <translation type="unfinished"></translation>
+        <translation>Fail</translation>
     </message>
     <message>
         <location filename="main-window.qml" line="47"/>
         <source>Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Lähtesta</translation>
     </message>
     <message>
         <location filename="main-window.qml" line="53"/>
         <source>Save...</source>
-        <translation type="unfinished"></translation>
+        <translation>Salvesta...</translation>
     </message>
 </context>
 <context>
@@ -253,17 +253,17 @@ välja arvatud olukord, kui EnableAvatars nad üheselt kasutusele võtab</transl
     <message>
         <location filename="theme-editor.qml" line="18"/>
         <source>Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Eelvaade</translation>
     </message>
     <message>
         <location filename="theme-editor.qml" line="47"/>
         <source>Displaying preview for SDDM theme &lt;b&gt;%1&lt;/b&gt;...</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuvan SDDM &lt;b&gt;%1&lt;/b&gt; teema eelvaadet...</translation>
     </message>
     <message>
         <location filename="theme-editor.qml" line="52"/>
         <source>Close Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Sulge eelvaade</translation>
     </message>
 </context>
 </TS>
