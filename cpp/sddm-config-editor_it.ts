@@ -146,7 +146,7 @@ se non esplicitamente attivati con &quot;Permetti avatar&quot;</translation>
     <message>
         <location filename="config-strings.qml" line="86"/>
         <source>Remember the session of the last successfully logged in user</source>
-        <translation>Ricorda l&apos;ultimo tipo di sessione dell&apos;ultimo utente loggato con sucesso</translation>
+        <translation>Ricorda l&apos;ultimo tipo di sessione dell&apos;ultimo utente loggiato con successo</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="89"/>
