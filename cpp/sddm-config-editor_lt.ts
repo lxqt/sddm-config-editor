@@ -11,7 +11,7 @@
     <message>
         <location filename="config-strings.qml" line="6"/>
         <source>Whether sddm should automatically log back into sessions when they exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Ar sddm turėtų automatiškai prisijungti atgal į seansus, kai iš jų išeinama</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="9"/>
