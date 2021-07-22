@@ -135,94 +135,94 @@ tenzij expliciet ingeschakeld middels EnableAvatars</translation>
     <message>
         <location filename="config-strings.qml" line="80"/>
         <source>Maximum user id for displayed users</source>
-        <translation type="unfinished"></translation>
+        <translation>Maximale gebruikersid van getoonde gebruikers</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="83"/>
         <source>Minimum user id for displayed users</source>
-        <translation type="unfinished"></translation>
+        <translation>Minimale gebruikersid van getoonde gebruikers</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="86"/>
         <source>Remember the session of the last successfully logged in user</source>
-        <translation type="unfinished"></translation>
+        <translation>Sessie van laatst aangemelde gebruiker onthouden</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="89"/>
         <source>Remember the last successfully logged in user</source>
-        <translation type="unfinished"></translation>
+        <translation>Sessie van laatst aangemelde gebruiker onthouden</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="92"/>
         <source>Wayland</source>
-        <translation type="unfinished"></translation>
+        <translation>Wayland</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="95"/>
         <location filename="config-strings.qml" line="122"/>
         <source>Path to a script to execute when starting the desktop session</source>
-        <translation type="unfinished"></translation>
+        <translation>Locatie van uit te voeren script bij aanmelden</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="98"/>
         <source>Directory containing available Wayland sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>Map met beschikbare Wayland-sessies</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="101"/>
         <location filename="config-strings.qml" line="128"/>
         <source>Path to the user session log file</source>
-        <translation type="unfinished"></translation>
+        <translation>Locatie van het gebruikerslogbestand</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="104"/>
         <source>X11</source>
-        <translation type="unfinished"></translation>
+        <translation>X11</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="107"/>
         <source>Path to a script to execute when starting the display server</source>
-        <translation type="unfinished"></translation>
+        <translation>Locatie van uit te voeren script bij starten van ‘display server’</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="110"/>
         <source>Path to a script to execute when stopping the display server</source>
-        <translation type="unfinished"></translation>
+        <translation>Locatie van uit te voeren script bij stoppen van ‘display server’</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="113"/>
         <source>The lowest virtual terminal number that will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>Het laagste te gebruiken getal van de virtuele terminals.</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="116"/>
         <source>Arguments passed to the X server invocation</source>
-        <translation type="unfinished"></translation>
+        <translation>Opdrachtregelopties voor de X-server</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="119"/>
         <source>Path to X server binary</source>
-        <translation type="unfinished"></translation>
+        <translation>Locatie van uitvoerbaar bestand van X-server</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="125"/>
         <source>Directory containing available X sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>Map met beschikbare X-sessies</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="131"/>
         <source>Path to the Xauthority file</source>
-        <translation type="unfinished"></translation>
+        <translation>Locatie van het Xauthority-bestand</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="134"/>
         <source>Path to xauth binary</source>
-        <translation type="unfinished"></translation>
+        <translation>Locatie van uitvoerbaar bestand van xauth</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="137"/>
         <source>Path to Xephyr binary</source>
-        <translation type="unfinished"></translation>
+        <translation>Locatie van uitvoerbaar bestand van Xephyr</translation>
     </message>
 </context>
 <context>
@@ -230,22 +230,22 @@ tenzij expliciet ingeschakeld middels EnableAvatars</translation>
     <message>
         <location filename="main-window.qml" line="9"/>
         <source>SDDM Configuration Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>SDDM-configuratiebewerker</translation>
     </message>
     <message>
         <source>File</source>
         <location filename="main-window.qml" line="32"/>
-        <translation type="unfinished"></translation>
+        <translation>Bestand</translation>
     </message>
     <message>
         <location filename="main-window.qml" line="47"/>
         <source>Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Standaardwaarden</translation>
     </message>
     <message>
         <location filename="main-window.qml" line="53"/>
         <source>Save...</source>
-        <translation type="unfinished"></translation>
+        <translation>Opslaan…</translation>
     </message>
 </context>
 <context>
@@ -253,17 +253,17 @@ tenzij expliciet ingeschakeld middels EnableAvatars</translation>
     <message>
         <location filename="theme-editor.qml" line="18"/>
         <source>Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Voorvertoning</translation>
     </message>
     <message>
         <location filename="theme-editor.qml" line="47"/>
         <source>Displaying preview for SDDM theme &lt;b&gt;%1&lt;/b&gt;...</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig voorvertonen van SDDM-thema &lt;b&gt;%1&lt;/b&gt;…</translation>
     </message>
     <message>
         <location filename="theme-editor.qml" line="52"/>
         <source>Close Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Voorvertoning afsluiten</translation>
     </message>
 </context>
 </TS>
