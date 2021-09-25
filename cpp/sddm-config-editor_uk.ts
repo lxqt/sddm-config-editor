@@ -16,7 +16,7 @@
     <message>
         <location filename="config-strings.qml" line="9"/>
         <source>Name of session file for autologin session (if empty try last logged in)</source>
-        <translation>Назва файлу сеансу для автоматичного входу (якщо порожній, спробуйте останній вхід)</translation>
+        <translation>Назва файлу сеансу для автоматичного входу (якщо не вказано, спробувати останній вхід)</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="12"/>
@@ -58,7 +58,7 @@ NOTE: Currently ignored if autologin is enabled.</source>
     <message>
         <location filename="config-strings.qml" line="34"/>
         <source>Reboot command</source>
-        <translation>Команда для перевантаження</translation>
+        <translation>Команда для перезавантаження</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="37"/>
@@ -78,7 +78,7 @@ NOTE: Currently ignored if autologin is enabled.</source>
     <message>
         <location filename="config-strings.qml" line="46"/>
         <source>Number of users to use as threshold</source>
-        <translation>Поріг кількості користувачів</translation>
+        <translation>Обмеження кількості користувачів</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="49"/>
@@ -90,7 +90,7 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="53"/>
         <source>Enable display of custom user avatars</source>
-        <translation>Увімкнути відображення користувацьких зображень</translation>
+        <translation>Увімкнути показ користувацьких зображень</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="56"/>
@@ -125,7 +125,7 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="74"/>
         <source>Users with these shells as their default won&apos;t be listed</source>
-        <translation>Користувачі з цими оболонками, які є для них типовими, не будуть вказані</translation>
+        <translation>Не буде вказано користувачів, для яких ці оболонки типові</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="77"/>
@@ -135,12 +135,12 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="80"/>
         <source>Maximum user id for displayed users</source>
-        <translation>Максимально можливий UID користувача для відображених користувачів</translation>
+        <translation>Максимально можливий UID для показаних користувачів</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="83"/>
         <source>Minimum user id for displayed users</source>
-        <translation>Мінімально можливий UID користувача для відображених користувачів</translation>
+        <translation>Мінімально можливий UID для показаних користувачів</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="86"/>
@@ -207,7 +207,7 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="125"/>
         <source>Directory containing available X sessions</source>
-        <translation>Тека з дійсними файлами X sessions</translation>
+        <translation>Каталог з файлами доступних X-сеансів</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="131"/>
