@@ -36,7 +36,7 @@
     <message>
         <location filename="config-strings.qml" line="21"/>
         <source>Halt command</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Hold kommando</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="24"/>
@@ -52,7 +52,8 @@
         <location filename="config-strings.qml" line="30"/>
         <source>If property is set to none, numlock won&apos;t be changed
 NOTE: Currently ignored if autologin is enabled.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hvis egenskapen settes til ingen, vil ikke numlock endres.
+Merk: Ses bort fra hvis automatisk innlogging er påskrudd.</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="34"/>
@@ -72,7 +73,7 @@ NOTE: Currently ignored if autologin is enabled.</source>
     <message>
         <location filename="config-strings.qml" line="43"/>
         <source>Cursor theme used in the greeter</source>
-        <translation type="unfinished">Pekedrakt bruk i velkomstvindu</translation>
+        <translation type="unfinished">Pekerdrakt bruk i velkomstvindu</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="46"/>
@@ -83,22 +84,23 @@ NOTE: Currently ignored if autologin is enabled.</source>
         <location filename="config-strings.qml" line="49"/>
         <source>above which avatars are disabled
 unless explicitly enabled with EnableAvatars</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">over de avatarene som er avskrudd,
+med mindre de skrus på spesifikt med EnableAvatars</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="53"/>
         <source>Enable display of custom user avatars</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Skru på visning av egendefinerte brukeravatarer</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="56"/>
         <source>Global directory for user avatars</source>
-        <translation type="unfinished"></translation>
+        <translation>Brukeravatarmappe for hele systemet</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="59"/>
         <source>The files should be named &lt;username&gt;.face.icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Filene skal navngis &lt;brukernavn&gt;.face.icon</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="62"/>
@@ -143,12 +145,12 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="86"/>
         <source>Remember the session of the last successfully logged in user</source>
-        <translation type="unfinished"></translation>
+        <translation>Husk normal økt for sist innloggede bruker</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="89"/>
         <source>Remember the last successfully logged in user</source>
-        <translation type="unfinished"></translation>
+        <translation>Husk sist innloggede bruker (med normal økt)</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="92"/>
@@ -159,18 +161,18 @@ unless explicitly enabled with EnableAvatars</source>
         <location filename="config-strings.qml" line="95"/>
         <location filename="config-strings.qml" line="122"/>
         <source>Path to a script to execute when starting the desktop session</source>
-        <translation type="unfinished"></translation>
+        <translation>Sti til et skript å kjøre ved oppstart av skrivebordet</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="98"/>
         <source>Directory containing available Wayland sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>Mappe inneholdende Wayland-økter</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="101"/>
         <location filename="config-strings.qml" line="128"/>
         <source>Path to the user session log file</source>
-        <translation type="unfinished"></translation>
+        <translation>Sti til brukerøkt-loggfil</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="104"/>
@@ -180,42 +182,42 @@ unless explicitly enabled with EnableAvatars</source>
     <message>
         <location filename="config-strings.qml" line="107"/>
         <source>Path to a script to execute when starting the display server</source>
-        <translation type="unfinished"></translation>
+        <translation>Sti til skript å kjøre ved oppstart av skjermtjeneren</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="110"/>
         <source>Path to a script to execute when stopping the display server</source>
-        <translation type="unfinished"></translation>
+        <translation>Sti til skript å kjøre ved stopping av skjermtjeneren</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="113"/>
         <source>The lowest virtual terminal number that will be used.</source>
-        <translation type="unfinished"></translation>
+        <translation>Laveste virtuelle terminalnummer å bruke</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="116"/>
         <source>Arguments passed to the X server invocation</source>
-        <translation type="unfinished"></translation>
+        <translation>Argumenter sendt til X-tjenerkall</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="119"/>
         <source>Path to X server binary</source>
-        <translation type="unfinished"></translation>
+        <translation>Sti til X-tjenerbinærfil</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="125"/>
         <source>Directory containing available X sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>Mappe inneholdende tilgjengelige X-økter</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="131"/>
         <source>Path to the Xauthority file</source>
-        <translation type="unfinished"></translation>
+        <translation>Sti til Xauthority-fil</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="134"/>
         <source>Path to xauth binary</source>
-        <translation type="unfinished"></translation>
+        <translation>Sti til xauth-binærfil</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="137"/>
