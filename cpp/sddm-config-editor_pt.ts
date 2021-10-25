@@ -125,12 +125,12 @@ a menos que explicitamente definidos em &apos;EnableAvatars&apos;</translation>
     <message>
         <location filename="config-strings.qml" line="74"/>
         <source>Users with these shells as their default won&apos;t be listed</source>
-        <translation>Os utilizadores que tenham estas &apos;shell&apos; como padrão não serão mostrados</translation>
+        <translation>Utilizadores com estas &quot;shells&quot; como padrão não serão listados</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="77"/>
         <source>Comma-separated list of users that should not be listed</source>
-        <translation>Lista de utilizadores que não devem ser mostrados (separados por vírgula)</translation>
+        <translation>Lista separada por vírgulas de utilizadores que não devem ser listados</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="80"/>
