@@ -31,7 +31,7 @@
     <message>
         <location filename="config-strings.qml" line="18"/>
         <source>Enable Qt&apos;s automatic high-DPI scaling</source>
-        <translation>Povolit automatickou změnu HDPI Qt</translation>
+        <translation>Povolit automatické škálování HDPI v rámci Qt</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="21"/>
