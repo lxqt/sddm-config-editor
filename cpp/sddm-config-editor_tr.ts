@@ -11,7 +11,7 @@
     <message>
         <location filename="config-strings.qml" line="6"/>
         <source>Whether sddm should automatically log back into sessions when they exit</source>
-        <translation>Sddm&apos;den, çıkıldığında otomatik olarak yeniden giriş yapıp yapmayacağı</translation>
+        <translation>Oturumdan çıkıldığında sddm otomatik olarak yeniden giriş yapsın mı</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="9"/>
@@ -31,7 +31,7 @@
     <message>
         <location filename="config-strings.qml" line="18"/>
         <source>Enable Qt&apos;s automatic high-DPI scaling</source>
-        <translation>Qt&apos;nin otomatik yüksek DPI ölçeklendirmesini etkinleştir&lt;</translation>
+        <translation>Qt&apos;nin otomatik yüksek DPI ölçeklendirmesini etkinleştir</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="21"/>
@@ -46,7 +46,7 @@
     <message>
         <location filename="config-strings.qml" line="27"/>
         <source>Initial NumLock state. Can be on, off or none.</source>
-        <translation>İlk NumLock durumu. Açık, kapalı veya hiçbiri olabilir.</translation>
+        <translation>Başta NumLock durumu. Açık, kapalı veya hiçbiri olabilir.</translation>
     </message>
     <message>
         <location filename="config-strings.qml" line="30"/>
