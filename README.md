@@ -1,6 +1,6 @@
 # sddm-config-editor
 
-Out of support and replaced by [sddm-config](https://github.com/redtide/sddm-conf).
+Out of support and replaced by [sddm-conf](https://github.com/redtide/sddm-conf).
 
 ## Description
 
