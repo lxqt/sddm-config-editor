@@ -1,6 +1,6 @@
 # sddm-config-editor
 
-SDDM Configuration Editor
+Out of support and replaced by [sddm-conf](https://github.com/qtilities/sddm-conf/).
 
 ## Description
 
@@ -45,10 +45,3 @@ file, and save settings to it.
 
 
  
-## Translations
-
-Translations can be done in [LXQt-Weblate](https://translate.lxqt-project.org/projects/lxqt-configuration/sddm-config-editor/).
-
-<a href="https://translate.lxqt-project.org/projects/lxqt-configuration/sddm-config-editor/">
-<img src="https://translate.lxqt-project.org/widgets/lxqt-configuration/-/sddm-config-editor/multi-auto.svg" alt="Translation status" />
-</a>
